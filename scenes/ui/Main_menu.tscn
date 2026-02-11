@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ckh7ohu0m8fev"]
+
+[ext_resource type="Texture2D" uid="uid://dujb2hjf3lntm" path="res://icon.svg" id="1_b07fi"]
+[ext_resource type="PackedScene" uid="uid://c4oveabqy4o5y" path="res://scenes/gameplay/Unruly_mouse.tscn" id="2_x6lt7"]
+
+[node name="Node2D" type="Node2D" unique_id=1723596613]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=494426177]
+position = Vector2(561, 274)
+texture = ExtResource("1_b07fi")
+
+[node name="Unruly_mouse" parent="." unique_id=1415645689 instance=ExtResource("2_x6lt7")]
+random_direction_enabled = false
