@@ -9,13 +9,18 @@
 [ext_resource type="Texture2D" uid="uid://74tdsu4dc4iy" path="res://scenes/gameplay/drag and drop/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
 
+[sub_resource type="Theme" id="Theme_gbcjh"]
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 9
+
 [node name="DragNDropTest" type="Node2D" unique_id=949569843]
 
 [node name="shelf" type="GridContainer" parent="." unique_id=1864656250]
-offset_left = 332.0
-offset_top = 74.0
-offset_right = 774.0
-offset_bottom = 169.0
+offset_left = 293.0
+offset_top = 67.0
+offset_right = 902.0
+offset_bottom = 334.0
+theme = SubResource("Theme_gbcjh")
 columns = 10
 script = ExtResource("1_icbk6")
 
@@ -80,6 +85,69 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Drag_n_drop_field20" parent="shelf" unique_id=58662905 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field21" parent="shelf" unique_id=559204110 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field22" parent="shelf" unique_id=599130309 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field23" parent="shelf" unique_id=2730979 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field24" parent="shelf" unique_id=1145579556 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field25" parent="shelf" unique_id=2109916541 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field26" parent="shelf" unique_id=1634081288 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field27" parent="shelf" unique_id=521193827 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field28" parent="shelf" unique_id=943225164 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field29" parent="shelf" unique_id=679286464 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field30" parent="shelf" unique_id=238188543 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field31" parent="shelf" unique_id=1687338856 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field32" parent="shelf" unique_id=1324998534 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field33" parent="shelf" unique_id=293559565 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field34" parent="shelf" unique_id=1021901729 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field35" parent="shelf" unique_id=1429783166 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field36" parent="shelf" unique_id=834254956 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field37" parent="shelf" unique_id=472088439 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field38" parent="shelf" unique_id=1286181491 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field39" parent="shelf" unique_id=1511653120 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field40" parent="shelf" unique_id=673666737 instance=ExtResource("1_ta5ta")]
 layout_mode = 2
 
 [node name="Staty" type="VBoxContainer" parent="." unique_id=2056150798]
