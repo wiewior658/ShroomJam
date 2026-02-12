@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://de1xswa0cllkq"]
+
+[ext_resource type="Script" uid="uid://x1oa4gwd0pkq" path="res://On_scene_load_timeline_start.gd" id="1_ldsk0"]
+
+[node name="Node2D" type="Node2D" unique_id=940474693]
+script = ExtResource("1_ldsk0")

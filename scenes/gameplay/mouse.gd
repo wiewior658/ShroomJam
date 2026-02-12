@@ -1,4 +1,4 @@
-extends Node2D
+extends DialogicBackground
 
 @export var min_time = 1.0 #minimal rng time
 @export var max_time = 5.0 #maximum rng time
