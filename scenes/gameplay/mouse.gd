@@ -13,7 +13,7 @@ var tug_target := Vector2.ZERO
 var tug_elapsed := 0.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CONFINED
+	#Input.mouse_mode = Input.MOUSE_MODE_CONFINED
 	randomize()
 	_mouse_noise()
 # Called every frame. 'delta' is the elapsed time since the previous frame.

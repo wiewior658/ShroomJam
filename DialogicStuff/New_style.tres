@@ -35,6 +35,9 @@ scene = ExtResource("5_vi2bg")
 [sub_resource type="Resource" id="Resource_rve4h"]
 script = ExtResource("2_ryarb")
 scene = ExtResource("6_24qv2")
+overrides = {
+"box_animation_out": "0"
+}
 
 [sub_resource type="Resource" id="Resource_hu3fd"]
 script = ExtResource("2_ryarb")
