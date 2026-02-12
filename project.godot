@@ -17,8 +17,8 @@ config/icon="uid://cx4q7bkyge5te"
 
 [autoload]
 
-Dialogic="*uid://ds2q0uclmolvu"
 Food="*uid://fhysgsrdv0he"
+Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
