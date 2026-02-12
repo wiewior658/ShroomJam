@@ -83,10 +83,10 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Staty" type="VBoxContainer" parent="." unique_id=2056150798]
-offset_left = 876.0
-offset_top = 188.0
-offset_right = 984.0
-offset_bottom = 265.0
+offset_left = 927.0
+offset_top = 39.0
+offset_right = 1035.0
+offset_bottom = 116.0
 
 [node name="Capacity" type="Label" parent="Staty" unique_id=2102957576]
 layout_mode = 2
