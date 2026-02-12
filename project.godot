@@ -11,18 +11,21 @@ config_version=5
 [application]
 
 config/name="ShroomJamGame"
-run/main_scene="uid://c4oveabqy4o5y"
+run/main_scene="uid://b6iq6hhvhyh62"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Food="*uid://fhysgsrdv0he"
 
 [dialogic]
 
 directories/dch_directory={}
-directories/dtl_directory={}
+directories/dtl_directory={
+"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl"
+}
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
 "New_style": "res://DialogicStuff/New_style.tres"

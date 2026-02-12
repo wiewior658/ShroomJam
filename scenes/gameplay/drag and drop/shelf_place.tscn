@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cowac3vm041g6"]
+
+[ext_resource type="Script" uid="uid://ievpapvjfpl3" path="res://scenes/gameplay/drag and drop/shelf_place.gd" id="2_u0agt"]
+
+[node name="Drag_n_drop_field" type="TextureRect" unique_id=553415141]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+script = ExtResource("2_u0agt")
+
+[node name="Panel" type="Panel" parent="." unique_id=586515366]
+show_behind_parent = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
