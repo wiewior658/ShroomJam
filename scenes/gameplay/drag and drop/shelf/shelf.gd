@@ -7,11 +7,12 @@ func _ready() -> void:
 	for child in get_children():
 		if i<Food.FoodOwned.size():
 			child.start(Food.FoodOwned[i])
+			print(child.name, ", przypisany item: ", Food.FoodOwned[i])
 		else:
 			child.start(null)
 		i+=1
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

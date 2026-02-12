@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cowac3vm041g6"]
 
-[ext_resource type="Script" uid="uid://ievpapvjfpl3" path="res://scenes/gameplay/drag and drop/shelf_place.gd" id="2_u0agt"]
+[ext_resource type="Script" uid="uid://ievpapvjfpl3" path="res://scenes/gameplay/drag and drop/shelf/shelf_place.gd" id="2_u0agt"]
 
 [node name="Drag_n_drop_field" type="TextureRect" unique_id=553415141]
 custom_minimum_size = Vector2(60, 60)

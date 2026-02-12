@@ -1,16 +1,16 @@
 extends TextureRect
 
-var FoodItem =null
+var CurrentFood : FoodItem
 	
 func start(newFoodItem) -> void:
-	FoodItem=newFoodItem
-	if FoodItem!=null:
-		texture=load(FoodItem[-1])
-		tooltip_text=FoodItem[-2]
+	CurrentFood=newFoodItem
+	if CurrentFood!=null:
+		texture=CurrentFood.img
+		tooltip_text=CurrentFood.itemName
 	else:
 		RemoveItem()
  
-func _get_drag_data(at_position):
+func _get_drag_data(_at_position):
 	#setting item following mouse
 	var preview_texture = TextureRect.new()
 	preview_texture.texture = texture	#set texture of item to follow the mouse
@@ -22,11 +22,10 @@ func _get_drag_data(at_position):
 	set_drag_preview(preview)	#attach item following mouse
 	
 	#setting dragged data
-	var DraggedData=[self,FoodItem]
+	var DraggedData=[self,CurrentFood]
 	return DraggedData
 
 func RemoveItem()->void:
-	FoodItem=null
+	CurrentFood=null
 	texture=null
 	tooltip_text=""
-	pass

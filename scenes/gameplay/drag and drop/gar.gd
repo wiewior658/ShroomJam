@@ -4,27 +4,28 @@ var Capacity=5
 var EmptyPotColor=Color.BLACK
 var EmptyPotPos=35.0
 
-var itemNumber
+
 var taste
 var nourishment
 var soupColor
 var soupPos
+var contents=[]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	newSoup()
 
 func newSoup()->void:
-	itemNumber=0
 	nourishment=0
 	taste=0
 	soupColor=EmptyPotColor
 	soupPos=EmptyPotPos
+	contents.clear()
 	updateInfo()
 
 func updateInfo()->void:
 	#wyświetlanie danych liczbowych
-	$"../Staty/Capacity".text=str("Capacity: ",itemNumber,"/",Capacity)
+	$"../Staty/Capacity".text=str("Capacity: ",contents.size(),"/",Capacity)
 	$"../Staty/Taste".text=str("Taste: ",taste)
 	$"../Staty/Nourishment".text=str("Nourishment: ",nourishment)
 	
@@ -36,23 +37,25 @@ func _can_drop_data(_pos, data):
 	return data is Array
  
 func _drop_data(_pos, data):
-	if data[0].texture!=null and itemNumber<Capacity:
+	if data[0].texture!=null and contents.size()<Capacity:
+		var droppedFood : FoodItem=data[1]
 		if data[0].name!="ShroomPantry":
 			data[0].RemoveItem()
-			Food.RemoveItem(data[1])
-			print(Food.FoodOwned)
-		itemNumber+=1
-		taste+=data[1][0]
-		nourishment+=data[1][1]
+			Food.RemoveItem(droppedFood)
+		taste+=droppedFood.taste
+		nourishment+=droppedFood.nourishment
 		soupPos-=6
-		if itemNumber==0:
-			soupColor=data[1][2]
+		contents.push_back(droppedFood)
+		print(contents)
+		if contents.size()==0:
+			soupColor=droppedFood.color
 		else:
-			soupColor=Color((soupColor.r*(itemNumber-1)+data[1][2].r)/itemNumber,(soupColor.g*(itemNumber-1)+data[1][2].g)/itemNumber,(soupColor.b*(itemNumber-1)+data[1][2].b)/itemNumber)
-		
+			soupColor=Color((soupColor.r*(contents.size()-1)+droppedFood.color.r)/contents.size(),
+							(soupColor.g*(contents.size()-1)+droppedFood.color.g)/contents.size(),
+							(soupColor.b*(contents.size()-1)+droppedFood.color.b)/contents.size())
+			
 		updateInfo()
-	print("itemNumber: ", itemNumber,", taste: ",taste,", nourishment: ",nourishment)
-
+	print("itemNumber: ", contents.size(),", taste: ",taste,", nourishment: ",nourishment)
 
 func _on_button_button_up() -> void:
 	newSoup()

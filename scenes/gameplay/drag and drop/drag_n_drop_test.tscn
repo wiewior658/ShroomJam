@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6iq6hhvhyh62"]
 
-[ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/shelf.gd" id="1_icbk6"]
-[ext_resource type="PackedScene" uid="uid://cowac3vm041g6" path="res://scenes/gameplay/drag and drop/shelf_place.tscn" id="1_ta5ta"]
+[ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/shelf/shelf.gd" id="1_icbk6"]
+[ext_resource type="PackedScene" uid="uid://cowac3vm041g6" path="res://scenes/gameplay/drag and drop/shelf/shelf_place.tscn" id="1_ta5ta"]
 [ext_resource type="Texture2D" uid="uid://b18n7oou4ax2f" path="res://scenes/gameplay/drag and drop/pics/carrot.png" id="2_cc5ru"]
 [ext_resource type="Texture2D" uid="uid://cx4q7bkyge5te" path="res://scenes/gameplay/drag and drop/pics/gar.png" id="4_m2xqb"]
 [ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
