@@ -22,7 +22,9 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
+}
 directories/dtl_directory={
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "test_timeline": "res://scenes/gameplay/drag and drop/test_timeline.dtl"
