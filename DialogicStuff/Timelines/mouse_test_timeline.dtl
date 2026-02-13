@@ -1,5 +1,5 @@
 [style name="New_premade_style"]
 join test_character (Res://icon) leftmost
 [background fade="0.0"]
-Hit esc to break loop
+test_character: Hit esc to break loop
 [end_timeline]

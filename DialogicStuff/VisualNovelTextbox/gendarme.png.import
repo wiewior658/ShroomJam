@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcace5p61w5ke"
-path="res://.godot/imported/smuglastor2.png-d7c19c7a89cffbb46c53a34a61bf3ab8.ctex"
+uid="uid://bdlysk3h4halq"
+path="res://.godot/imported/gendarme.png-ceae242d1ddf47a50a2f38198331254f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DialogicStuff/VisualNovelTextbox/smuglastor2.png"
-dest_files=["res://.godot/imported/smuglastor2.png-d7c19c7a89cffbb46c53a34a61bf3ab8.ctex"]
+source_file="res://DialogicStuff/VisualNovelTextbox/gendarme.png"
+dest_files=["res://.godot/imported/gendarme.png-ceae242d1ddf47a50a2f38198331254f.ctex"]
 
 [params]
 

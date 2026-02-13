@@ -211,8 +211,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_x4rpp")
-box_panel = "uid://bcace5p61w5ke"
-name_label_box_panel = "uid://bcace5p61w5ke"
 
 [node name="Animations" type="AnimationPlayer" parent="." unique_id=944469395]
 unique_name_in_owner = true
