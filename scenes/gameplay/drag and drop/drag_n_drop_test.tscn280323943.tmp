@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b6iq6hhvhyh62"]
+
+[ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/shelf.gd" id="1_icbk6"]
+[ext_resource type="PackedScene" uid="uid://cowac3vm041g6" path="res://scenes/gameplay/drag and drop/shelf_place.tscn" id="1_ta5ta"]
+[ext_resource type="Texture2D" uid="uid://b18n7oou4ax2f" path="res://scenes/gameplay/drag and drop/pics/carrot.png" id="2_cc5ru"]
+[ext_resource type="Texture2D" uid="uid://cx4q7bkyge5te" path="res://scenes/gameplay/drag and drop/pics/gar.png" id="4_m2xqb"]
+[ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
+[ext_resource type="Texture2D" uid="uid://vynx1sypbhhp" path="res://scenes/gameplay/drag and drop/pics/soup.png" id="5_vbxp8"]
+
+[node name="DragNDropTest" type="Node2D" unique_id=949569843]
+
+[node name="shelf" type="GridContainer" parent="." unique_id=1864656250]
+offset_left = 332.0
+offset_top = 74.0
+offset_right = 774.0
+offset_bottom = 169.0
+columns = 10
+script = ExtResource("1_icbk6")
+
+[node name="Drag_n_drop_field" parent="shelf" unique_id=553415141 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field2" parent="shelf" unique_id=1439512583 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field3" parent="shelf" unique_id=1121872258 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field4" parent="shelf" unique_id=662456047 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field5" parent="shelf" unique_id=1940935128 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field6" parent="shelf" unique_id=1246914313 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field7" parent="shelf" unique_id=662255609 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field8" parent="shelf" unique_id=1507692891 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field9" parent="shelf" unique_id=1858985892 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field10" parent="shelf" unique_id=1621191371 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field11" parent="shelf" unique_id=1576623913 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field12" parent="shelf" unique_id=1749605043 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field13" parent="shelf" unique_id=1531329663 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+texture = ExtResource("2_cc5ru")
+
+[node name="Drag_n_drop_field14" parent="shelf" unique_id=39176105 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field15" parent="shelf" unique_id=900095837 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field16" parent="shelf" unique_id=865358146 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field17" parent="shelf" unique_id=1737895970 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field18" parent="shelf" unique_id=413489598 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field19" parent="shelf" unique_id=1825278166 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="Drag_n_drop_field20" parent="shelf" unique_id=58662905 instance=ExtResource("1_ta5ta")]
+layout_mode = 2
+
+[node name="gar" type="TextureRect" parent="." unique_id=1849601396]
+offset_left = 416.0
+offset_top = 334.0
+offset_right = 729.0
+offset_bottom = 534.0
+texture = ExtResource("4_m2xqb")
+script = ExtResource("5_gb2nm")
+
+[node name="Button" type="Button" parent="gar" unique_id=1972255597]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 220.0
+offset_right = 194.0
+offset_bottom = 251.0
+text = "New soup"
+
+[node name="soup" type="TextureRect" parent="gar" unique_id=1734242433]
+modulate = Color(0.15127608, 0.15127608, 0.15127608, 1)
+z_index = -20
+layout_mode = 0
+offset_top = 35.0
+offset_right = 313.0
+offset_bottom = 235.0
+texture = ExtResource("5_vbxp8")
+
+[node name="garBack" type="TextureRect" parent="gar" unique_id=1740898430]
+modulate = Color(0.27387273, 0.27387276, 0.2738727, 1)
+z_index = -25
+layout_mode = 0
+offset_right = 313.0
+offset_bottom = 200.0
+texture = ExtResource("5_vbxp8")
