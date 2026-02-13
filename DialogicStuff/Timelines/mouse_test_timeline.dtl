@@ -1,4 +1,5 @@
-[style name="New_style"]
-[background scene="res://scenes/gameplay/Unruly_mouse.tscn" fade="0.0"]
+[style name="New_style_brokken_portraits"]
+join test_character (Res://icon) leftmost
+[background fade="0.0"]
 Hit esc to break loop
 [end_timeline]

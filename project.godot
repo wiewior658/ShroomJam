@@ -21,16 +21,20 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"test_character": "res://DialogicStuff/test_character.dch"
+}
 directories/dtl_directory={
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
-"New_style": "res://DialogicStuff/New_style.tres"
+"New_premade_style": "res://DialogicStuff/New_premade_style.tres",
+"New_style": "res://DialogicStuff/New_style.tres",
+"New_style_brokken_portraits": "res://DialogicStuff/New_style_brokken_portraits.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://DialogicStuff/New_style.tres"]
+layout/style_list=["res://DialogicStuff/New_style.tres", "res://DialogicStuff/New_premade_style.tres", "res://DialogicStuff/New_style_brokken_portraits.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={}
 text/letter_speed=0.01
