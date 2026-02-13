@@ -1,1 +1,12 @@
-Time for new soup.
+[style name="New_style"]
+[background arg="res://DialogicStuff/smuglastor.png" fade="0.0"]
+join lionsmith leftmost
+lionsmith: Time for new soup.
+- GET
+	lionsmith: nooooo
+- BACK
+	[text_input text="woop woop?" placeholder="aha" default="idk man"]
+- IN
+- THE
+- ?/!#@$%^
+[end_timeline]
