@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b2yvjdp6grlx4"]
+
+[ext_resource type="Texture2D" uid="uid://qyejafes2d6f" path="res://DialogicStuff/gendarme.png" id="1_3fs3o"]
+
+[node name="CustomLayer" type="Node2D" unique_id=1031067367]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1103063112]
+modulate = Color(1, 1, 1, 0.5019608)
+texture = ExtResource("1_3fs3o")
+centered = false

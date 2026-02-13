@@ -1,4 +1,4 @@
-[style name="New_style_brokken_portraits"]
+[style name="New_premade_style"]
 join test_character (Res://icon) leftmost
 [background fade="0.0"]
 Hit esc to break loop
