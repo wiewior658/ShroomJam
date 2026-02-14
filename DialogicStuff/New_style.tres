@@ -50,9 +50,10 @@ scene = ExtResource("8_p8nr1")
 overrides = {
 "boxes_stylebox_disabled": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/preview.png\"",
 "boxes_stylebox_focused": "\"res://DialogicStuff/smuglastor.png\"",
-"boxes_stylebox_hovered": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/preview.png\"",
+"boxes_stylebox_hovered": "\"res://DialogicStuff/smuglastor.png\"",
 "boxes_stylebox_normal": "\"res://DialogicStuff/gendarme.png\"",
-"boxes_stylebox_pressed": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/preview.png\""
+"boxes_stylebox_pressed": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/preview.png\"",
+"margin_thickness": "2.0"
 }
 
 [sub_resource type="Resource" id="Resource_fog1p"]

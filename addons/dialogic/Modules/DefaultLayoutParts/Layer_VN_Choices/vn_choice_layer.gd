@@ -23,6 +23,7 @@ extends DialogicLayoutLayer
 @export_subgroup('Panels')
 @export_file('*.png') var boxes_stylebox_normal: String = "res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choice_panel_normal.png"
 @export_file('*.png') var boxes_stylebox_hovered: String = "res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choice_panel_hover.png"
+@export var margin_thickness: int =1
 @export_file('*.png') var boxes_stylebox_pressed: String = ""
 @export_file('*.png') var boxes_stylebox_disabled: String = ""
 @export_file('*.png') var boxes_stylebox_focused: String = "res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choice_panel_focus.pmg"
@@ -111,6 +112,10 @@ func _apply_export_overrides() -> void:
 	sb5.texture_margin_right = choice_texture_margin_right
 	sb5.texture_margin_top = choice_texture_margin_top
 	
+	sb2.expand_margin_bottom+=margin_thickness
+	sb2.expand_margin_left+=margin_thickness
+	sb2.expand_margin_right+=margin_thickness
+	sb2.expand_margin_top+=margin_thickness
 	if ResourceLoader.exists(boxes_stylebox_normal):
 		sb1.texture = load(boxes_stylebox_normal)
 		layer_theme.set_stylebox(&'normal', &'Button', sb1)
