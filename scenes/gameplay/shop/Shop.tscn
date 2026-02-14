@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d3bn1313bwwxt"]
+
+[ext_resource type="Script" uid="uid://5t0t77daxaft" path="res://scenes/gameplay/shop/shopShelf.gd" id="1_memna"]
+[ext_resource type="Script" uid="uid://dwilfrs128oax" path="res://scenes/gameplay/shop/Buy.gd" id="2_memna"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_memna"]
+bg_color = Color(0.6858032, 0.35283458, 0.20374787, 1)
+
+[node name="Shop" type="Node2D" unique_id=1040467004]
+
+[node name="shopBackground" type="PanelContainer" parent="." unique_id=1908406907]
+custom_minimum_size = Vector2(250, 400)
+offset_left = 108.0
+offset_top = 86.0
+offset_right = 358.0
+offset_bottom = 486.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_memna")
+
+[node name="shop" type="GridContainer" parent="shopBackground" unique_id=1662603492]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 3
+script = ExtResource("1_memna")
+
+[node name="Panel" type="Panel" parent="." unique_id=256517830]
+custom_minimum_size = Vector2(100, 100)
+offset_left = 652.0
+offset_top = 242.0
+offset_right = 752.0
+offset_bottom = 342.0
+script = ExtResource("2_memna")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1090232835]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 50.0
+text = "Buy"
+horizontal_alignment = 1
+vertical_alignment = 1

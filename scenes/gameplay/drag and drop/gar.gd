@@ -41,7 +41,7 @@ func _drop_data(_pos, data):
 		var droppedFood : FoodItem=data[1]
 		if data[0].name!="ShroomPantry":
 			data[0].RemoveItem()
-			Food.RemoveItem(droppedFood)
+			GlobalVar.RemoveFood(droppedFood)
 		taste+=droppedFood.taste
 		nourishment+=droppedFood.nourishment
 		soupPos-=6

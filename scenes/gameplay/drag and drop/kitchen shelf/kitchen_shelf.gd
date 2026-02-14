@@ -1,13 +1,12 @@
 extends GridContainer
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var i=0
 	for child in get_children():
-		if i<Food.FoodOwned.size():
-			child.start(Food.FoodOwned[i])
-			print(child.name, ", przypisany item: ", Food.FoodOwned[i])
+		if i<GlobalVar.eqFood.size():
+			child.start(GlobalVar.eqFood[i])
+			print(child.name, ", przypisany item: ", GlobalVar.eqFood[i])
 		else:
 			child.start(null)
 		i+=1

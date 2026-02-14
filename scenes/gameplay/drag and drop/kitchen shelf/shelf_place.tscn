@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cowac3vm041g6"]
+
+[ext_resource type="Script" uid="uid://ievpapvjfpl3" path="res://scenes/gameplay/drag and drop/kitchen shelf/shelf_place.gd" id="2_u0agt"]
+
+[node name="shelfPlace" type="TextureRect" unique_id=553415141]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+script = ExtResource("2_u0agt")
+
+[node name="Panel" type="Panel" parent="." unique_id=586515366]
+show_behind_parent = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="." unique_id=99653497]
+layout_mode = 0
+offset_right = 60.0
+offset_bottom = 60.0
+theme_override_constants/outline_size = 5
+text = "0zł"
+horizontal_alignment = 2
+vertical_alignment = 2

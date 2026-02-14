@@ -2,11 +2,20 @@ extends TextureRect
 
 var CurrentFood : FoodItem
 	
-func start(newFoodItem) -> void:
+func _ready() -> void:
+	print(name, "   testing ready child")
+	$Label.hide()
+	$Panel.hide()
+
+func start(newFoodItem:FoodItem, priceVisible:bool=false) -> void:
 	CurrentFood=newFoodItem
 	if CurrentFood!=null:
 		texture=CurrentFood.img
 		tooltip_text=CurrentFood.itemName
+		if priceVisible:
+			$Label.show()
+			$Panel.show()
+			$Label.text=str(CurrentFood.baseCost, "zł")
 	else:
 		RemoveItem()
  
@@ -29,3 +38,5 @@ func RemoveItem()->void:
 	CurrentFood=null
 	texture=null
 	tooltip_text=""
+	$Label.hide()
+	$Panel.hide()

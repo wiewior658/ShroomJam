@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ShroomJamGame"
-run/main_scene="uid://b6iq6hhvhyh62"
+run/main_scene="uid://d3bn1313bwwxt"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://cx4q7bkyge5te"
 
@@ -19,6 +19,7 @@ config/icon="uid://cx4q7bkyge5te"
 
 Food="*uid://fhysgsrdv0he"
 Dialogic="*uid://ds2q0uclmolvu"
+GlobalVar="*uid://j6w8ea0flq3t"
 
 [dialogic]
 
