@@ -1,21 +1,22 @@
 extends TextureRect
 
 var CurrentFood : FoodItem
+var Price:float=0
 	
 func _ready() -> void:
-	print(name, "   testing ready child")
 	$Label.hide()
 	$Panel.hide()
 
-func start(newFoodItem:FoodItem, priceVisible:bool=false) -> void:
+func start(newFoodItem:FoodItem, price:int=0) -> void:
 	CurrentFood=newFoodItem
 	if CurrentFood!=null:
 		texture=CurrentFood.img
 		tooltip_text=CurrentFood.itemName
-		if priceVisible:
+		if price>0:
 			$Label.show()
 			$Panel.show()
-			$Label.text=str(CurrentFood.baseCost, "zł")
+			Price=price
+			$Label.text=str(Price, "zł")
 	else:
 		RemoveItem()
  
@@ -31,7 +32,7 @@ func _get_drag_data(_at_position):
 	set_drag_preview(preview)	#attach item following mouse
 	
 	#setting dragged data
-	var DraggedData=[self,CurrentFood]
+	var DraggedData=[self,CurrentFood,self.get_parent().name,Price]
 	return DraggedData
 
 func RemoveItem()->void:

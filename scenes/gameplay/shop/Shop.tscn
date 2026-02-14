@@ -1,19 +1,47 @@
 [gd_scene format=3 uid="uid://d3bn1313bwwxt"]
 
 [ext_resource type="Script" uid="uid://5t0t77daxaft" path="res://scenes/gameplay/shop/shopShelf.gd" id="1_memna"]
+[ext_resource type="Script" uid="uid://di0k3k6vfc6sv" path="res://scenes/gameplay/shop/Sell.gd" id="2_hvpdt"]
 [ext_resource type="Script" uid="uid://dwilfrs128oax" path="res://scenes/gameplay/shop/Buy.gd" id="2_memna"]
+[ext_resource type="Script" uid="uid://bmxbxkcqk4ynn" path="res://scenes/gameplay/shop/player_items.gd" id="3_2mqf3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_memna"]
 bg_color = Color(0.6858032, 0.35283458, 0.20374787, 1)
 
 [node name="Shop" type="Node2D" unique_id=1040467004]
 
+[node name="ShopLbl" type="Label" parent="." unique_id=87968132]
+offset_left = 108.0
+offset_top = 123.0
+offset_right = 358.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 25
+text = "Shop"
+horizontal_alignment = 1
+
+[node name="MoneyLbl" type="Label" parent="." unique_id=849852405]
+offset_left = 774.0
+offset_top = 567.0
+offset_right = 936.0
+offset_bottom = 602.0
+theme_override_font_sizes/font_size = 25
+text = "Money: 0zł"
+
+[node name="eqLbl" type="Label" parent="." unique_id=422192101]
+offset_left = 771.0
+offset_top = 123.0
+offset_right = 1021.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 25
+text = "EQ:"
+horizontal_alignment = 1
+
 [node name="shopBackground" type="PanelContainer" parent="." unique_id=1908406907]
 custom_minimum_size = Vector2(250, 400)
 offset_left = 108.0
-offset_top = 86.0
+offset_top = 155.0
 offset_right = 358.0
-offset_bottom = 486.0
+offset_bottom = 555.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_memna")
 
 [node name="shop" type="GridContainer" parent="shopBackground" unique_id=1662603492]
@@ -24,19 +52,60 @@ size_flags_vertical = 4
 columns = 3
 script = ExtResource("1_memna")
 
-[node name="Panel" type="Panel" parent="." unique_id=256517830]
+[node name="playerItems" type="PanelContainer" parent="." unique_id=581569799]
+custom_minimum_size = Vector2(250, 400)
+offset_left = 771.0
+offset_top = 155.0
+offset_right = 1021.0
+offset_bottom = 555.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_memna")
+
+[node name="playerItems" type="GridContainer" parent="playerItems" unique_id=940650606]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 3
+script = ExtResource("3_2mqf3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=710426351]
+offset_left = 444.0
+offset_top = 279.0
+offset_right = 694.0
+offset_bottom = 379.0
+theme_override_constants/separation = 50
+
+[node name="BuyPanel" type="Panel" parent="HBoxContainer" unique_id=256517830]
 custom_minimum_size = Vector2(100, 100)
-offset_left = 652.0
-offset_top = 242.0
-offset_right = 752.0
-offset_bottom = 342.0
+layout_mode = 2
 script = ExtResource("2_memna")
 
-[node name="Label" type="Label" parent="Panel" unique_id=1090232835]
+[node name="Label" type="Label" parent="HBoxContainer/BuyPanel" unique_id=1090232835]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 0
 offset_right = 100.0
 offset_bottom = 50.0
+theme_override_font_sizes/font_size = 20
 text = "Buy"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="SellPanel" type="Panel" parent="HBoxContainer" unique_id=1161767658]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("2_hvpdt")
+
+[node name="Label" type="Label" parent="HBoxContainer/SellPanel" unique_id=1353388413]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 20
+text = "Sell"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="bought" from="HBoxContainer/BuyPanel" to="shopBackground/shop" method="_on_buy_panel_bought"]
+[connection signal="bought" from="HBoxContainer/BuyPanel" to="playerItems/playerItems" method="_on_buy_panel_bought"]
+[connection signal="sold" from="HBoxContainer/SellPanel" to="shopBackground/shop" method="_on_sell_panel_sold"]
+[connection signal="sold" from="HBoxContainer/SellPanel" to="playerItems/playerItems" method="_on_sell_panel_sold"]
