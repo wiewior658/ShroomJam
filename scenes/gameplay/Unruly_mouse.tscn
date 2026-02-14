@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://c4oveabqy4o5y"]
 
 [ext_resource type="Script" uid="uid://c4l1yrsfqhl60" path="res://scenes/gameplay/mouse.gd" id="1_8f81w"]
+[ext_resource type="Texture2D" uid="uid://5gs6r5tvurnv" path="res://DialogicStuff/smuglastor.png" id="2_h817y"]
 
-[node name="Unruly_mouse" type="Node2D" unique_id=1415645689]
-position = Vector2(597, 318)
+[node name="Unruly_mouse" type="Node2D" unique_id=1415645689 node_paths=PackedStringArray("target")]
 script = ExtResource("1_8f81w")
 tug_duration = 0.4
 tug_speed = 20.0
+random_direction_enabled = false
+target = NodePath("Node2D/Sprite2D")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=470782279]
+position = Vector2(691, 141)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=313377062]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_h817y")

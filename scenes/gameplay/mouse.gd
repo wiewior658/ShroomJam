@@ -7,6 +7,7 @@ extends DialogicBackground
 @export var tug_speed := 12.0      # higher = snappier
 @export var is_enabled := true #toggle script
 @export var random_direction_enabled := true #toggle randomness
+@export var target : Node2D
 
 var is_tugging := false
 var tug_target := Vector2.ZERO
@@ -32,14 +33,17 @@ func _mouse_noise() -> void:
 	var delay = randf_range(min_time, max_time)
 	await get_tree().create_timer(delay).timeout
 	var current_pos = get_window().get_mouse_position()
-	if random_direction_enabled:
-		var random_direction = Vector2((randi() % 3 -1)*distance_vector_2d.x, (randi()% 3 -1) * distance_vector_2d.y)
-		tug_target = current_pos + random_direction
-		is_tugging = true
+	if target != null:
+		tug_target = current_pos + (target.global_position - current_pos)
+			#Vector2(current_pos.x + target.transform.x, current_pos.y + target.transform.y)
 	else :
-		var random_direction = distance_vector_2d
-		tug_target = current_pos + 	random_direction
-		is_tugging = true
+		if random_direction_enabled:
+			var random_direction = Vector2((randi() % 3 -1)*distance_vector_2d.x, (randi()% 3 -1) * distance_vector_2d.y)
+			tug_target = current_pos + random_direction
+		else :
+			var random_direction = distance_vector_2d
+			tug_target = current_pos + 	random_direction
+	is_tugging = true
 	#this script is spooky with how hard it takes control of your mouse so I installed a kill switch when you hit escape, for when the values accidentally go too hard
 	#this shouldn't be in the final build
 func _input(event):
