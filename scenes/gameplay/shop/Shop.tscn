@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://di0k3k6vfc6sv" path="res://scenes/gameplay/shop/Sell.gd" id="2_hvpdt"]
 [ext_resource type="Script" uid="uid://dwilfrs128oax" path="res://scenes/gameplay/shop/Buy.gd" id="2_memna"]
 [ext_resource type="Script" uid="uid://bmxbxkcqk4ynn" path="res://scenes/gameplay/shop/player_items.gd" id="3_2mqf3"]
+[ext_resource type="Script" uid="uid://vjjlgsrfoev7" path="res://scenes/gameplay/shop/button.gd" id="5_r4kq7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_memna"]
 bg_color = Color(0.6858032, 0.35283458, 0.20374787, 1)
@@ -105,7 +106,16 @@ text = "Sell"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Button" type="Button" parent="." unique_id=228231517]
+offset_left = 504.0
+offset_top = 547.0
+offset_right = 611.0
+offset_bottom = 578.0
+text = "Spoilage test"
+script = ExtResource("5_r4kq7")
+
 [connection signal="bought" from="HBoxContainer/BuyPanel" to="shopBackground/shop" method="_on_buy_panel_bought"]
 [connection signal="bought" from="HBoxContainer/BuyPanel" to="playerItems/playerItems" method="_on_buy_panel_bought"]
 [connection signal="sold" from="HBoxContainer/SellPanel" to="shopBackground/shop" method="_on_sell_panel_sold"]
 [connection signal="sold" from="HBoxContainer/SellPanel" to="playerItems/playerItems" method="_on_sell_panel_sold"]
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]

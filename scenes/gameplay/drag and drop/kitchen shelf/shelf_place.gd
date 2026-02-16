@@ -5,7 +5,6 @@ var Price:float=0
 	
 func _ready() -> void:
 	$Label.hide()
-	$Panel.hide()
 
 func start(newFoodItem:FoodItem, price:int=0) -> void:
 	CurrentFood=newFoodItem
@@ -14,7 +13,6 @@ func start(newFoodItem:FoodItem, price:int=0) -> void:
 		tooltip_text=CurrentFood.itemName
 		if price>0:
 			$Label.show()
-			$Panel.show()
 			Price=price
 			$Label.text=str(Price, "zł")
 	else:
@@ -40,4 +38,3 @@ func RemoveItem()->void:
 	texture=null
 	tooltip_text=""
 	$Label.hide()
-	$Panel.hide()

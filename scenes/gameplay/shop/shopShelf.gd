@@ -9,7 +9,7 @@ func _ready() -> void:
 	randomize()
 	ProductCount=randi_range(5,15)
 	for i in ProductCount:
-		var newProduct=Food.ShopFoods[randi() % Food.ShopFoods.size()]
+		var newProduct=Food.ShopFoods[randi() % Food.ShopFoods.size()].duplicate()
 		ProductsDisplayed.push_back(newProduct)
 		add_child(shelf_place.instantiate())
 		get_child(i).start(newProduct,newProduct.baseCost)
