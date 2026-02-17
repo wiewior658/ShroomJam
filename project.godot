@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ShroomJamGame"
-run/main_scene="uid://d3bn1313bwwxt"
+run/main_scene="uid://c4oveabqy4o5y"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [autoload]
@@ -22,7 +22,9 @@ GlobalVar="*uid://j6w8ea0flq3t"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
+}
 directories/dtl_directory={
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "test_timeline": "res://scenes/gameplay/drag and drop/test_timeline.dtl"

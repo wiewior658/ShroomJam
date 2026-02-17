@@ -1,3 +1,6 @@
 [style name="New_style"]
-[background scene="res://scenes/gameplay/Unruly_mouse.tscn" fade="0.0"]
-Hit esc to break loop
+[background fade="0.0"]
+lionsmith: Hit esc to break loop
+- 1
+- 2
+- 3

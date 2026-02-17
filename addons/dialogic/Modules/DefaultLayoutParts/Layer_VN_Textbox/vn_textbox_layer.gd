@@ -47,7 +47,11 @@ enum AnimationsNewText {NONE, WIGGLE}
 @export_group("Box")
 
 @export_subgroup("Panel")
-@export_file("*.tres") var box_panel: String = this_folder.path_join("vn_textbox_default_panel.tres")
+@export_file("*.png") var box_panel: String = this_folder.path_join("vn_textbox_default_panel.png")
+@export var panel_texture_margin_bottom: int = 8
+@export var panel_texture_margin_left: int = 8
+@export var panel_texture_margin_right: int = 8
+@export var panel_texture_margin_top: int = 8
 
 @export_subgroup("Color")
 @export var box_color_use_global: bool = true
@@ -77,7 +81,11 @@ enum AnimationsNewText {NONE, WIGGLE}
 @export var name_label_custom_font_size: int = 15
 
 @export_subgroup('Box')
-@export_file("*.tres") var name_label_box_panel: String = this_folder.path_join("vn_textbox_name_label_panel.tres")
+@export_file("*.png") var name_label_box_panel: String = this_folder.path_join("vn_textbox_name_label_panel.png")
+@export var label_texture_margin_bottom: int = 8
+@export var label_texture_margin_left: int = 8
+@export var label_texture_margin_right: int = 8
+@export var label_texture_margin_top: int = 8
 @export var name_label_box_use_global_color: bool = true
 @export var name_label_box_modulate: Color = box_color_custom
 
@@ -151,7 +159,14 @@ func _apply_export_overrides() -> void:
 func _apply_box_settings() -> void:
 	var dialog_text_panel: PanelContainer = %DialogTextPanel
 	if ResourceLoader.exists(box_panel):
-		dialog_text_panel.add_theme_stylebox_override(&'panel', load(box_panel) as StyleBox)
+		var sb := StyleBoxTexture.new()
+		sb.texture = load(box_panel)
+		sb.texture_margin_bottom = panel_texture_margin_bottom
+		sb.texture_margin_left = panel_texture_margin_left
+		sb.texture_margin_right = panel_texture_margin_right
+		sb.texture_margin_top = panel_texture_margin_top
+		dialog_text_panel.add_theme_stylebox_override(&'panel', sb)
+		#sb.free()
 
 	if box_color_use_global:
 		dialog_text_panel.self_modulate = get_global_setting(&'bg_color', box_color_custom)
@@ -194,7 +209,13 @@ func _apply_name_label_settings() -> void:
 
 	var name_label_panel: PanelContainer = %NameLabelPanel
 	if ResourceLoader.exists(name_label_box_panel):
-		name_label_panel.add_theme_stylebox_override(&'panel', load(name_label_box_panel) as StyleBox)
+		var sb := StyleBoxTexture.new()
+		sb.texture = load(name_label_box_panel)
+		sb.texture_margin_bottom = label_texture_margin_bottom
+		sb.texture_margin_left = label_texture_margin_left
+		sb.texture_margin_right = label_texture_margin_right
+		sb.texture_margin_top = label_texture_margin_top
+		name_label_panel.add_theme_stylebox_override(&'panel', sb)
 	else:
 		name_label_panel.add_theme_stylebox_override(&'panel', load(this_folder.path_join("vn_textbox_name_label_panel.tres")) as StyleBox)
 
