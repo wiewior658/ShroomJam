@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vynx1sypbhhp"
-path="res://.godot/imported/soup.png-b8d535057c36ba9551b79c039df1f12a.ctex"
+uid="uid://cx4q7bkyge5te"
+path="res://.godot/imported/gar.png-ffbc32cc27b1338708ee022594099bf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/gameplay/drag and drop/pics/soup.png"
-dest_files=["res://.godot/imported/soup.png-b8d535057c36ba9551b79c039df1f12a.ctex"]
+source_file="res://Assets/pics/gar.png"
+dest_files=["res://.godot/imported/gar.png-ffbc32cc27b1338708ee022594099bf7.ctex"]
 
 [params]
 

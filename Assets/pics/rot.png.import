@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b18n7oou4ax2f"
-path="res://.godot/imported/carrot.png-6c110247f15ed14f1cbc06623b3e441a.ctex"
+uid="uid://bnmeok3f61yki"
+path="res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/gameplay/drag and drop/pics/carrot.png"
-dest_files=["res://.godot/imported/carrot.png-6c110247f15ed14f1cbc06623b3e441a.ctex"]
+source_file="res://Assets/pics/rot.png"
+dest_files=["res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"]
 
 [params]
 

@@ -37,11 +37,12 @@ func _can_drop_data(_pos, data):
 	return data is Array
  
 func _drop_data(_pos, data):
+#data structure from shelf_place: [self,CurrentFood,self.get_parent().name,Price]
 	if data[0].texture!=null and contents.size()<Capacity:
 		var droppedFood : FoodItem=data[1]
 		if data[0].name!="ShroomPantry":
 			data[0].RemoveItem()
-			Food.RemoveItem(droppedFood)
+			GlobalVar.RemoveFood(droppedFood)
 		taste+=droppedFood.taste
 		nourishment+=droppedFood.nourishment
 		soupPos-=6
