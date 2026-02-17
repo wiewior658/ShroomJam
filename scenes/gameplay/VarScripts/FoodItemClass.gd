@@ -33,3 +33,12 @@ func SpoilFood(list):
 				list[i].spoilsIn-=1
 			if list[i].spoilsIn==0:
 				list[i]=list[i].spoilsInto
+
+func Upgrade(plusNourishment:int, plusTaste: int, plusShroomness: int, newIcon:String="")->void:
+	self.nourishment+=plusNourishment
+	self.taste+=plusTaste
+	self.shroom+=plusShroomness
+	if newIcon!="":
+		self.img=load(newIcon)
+	
+	
