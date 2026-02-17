@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://74tdsu4dc4iy"
-path="res://.godot/imported/shroomPantry.png-42ce7172aa4ad8e9e1a5567f83543b49.ctex"
+uid="uid://d06vfushd14cw"
+path="res://.godot/imported/moldy_carrot.png-14d255570ea0d0fcfea03a3dbdc1b975.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/gameplay/drag and drop/pics/shroomPantry.png"
-dest_files=["res://.godot/imported/shroomPantry.png-42ce7172aa4ad8e9e1a5567f83543b49.ctex"]
+source_file="res://Assets/pics/moldy_carrot.png"
+dest_files=["res://.godot/imported/moldy_carrot.png-14d255570ea0d0fcfea03a3dbdc1b975.ctex"]
 
 [params]
 

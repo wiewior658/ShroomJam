@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs41drb5irfey"
-path="res://.godot/imported/blue.png-eb41e0f2a71948d701a5bdaec1ae239b.ctex"
+uid="uid://yci1k6yf5xr2"
+path="res://.godot/imported/shroom.png-82b4147660e57731a6abc54dc3b3996a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/gameplay/drag and drop/pics/blue.png"
-dest_files=["res://.godot/imported/blue.png-eb41e0f2a71948d701a5bdaec1ae239b.ctex"]
+source_file="res://Assets/pics/shroom.png"
+dest_files=["res://.godot/imported/shroom.png-82b4147660e57731a6abc54dc3b3996a.ctex"]
 
 [params]
 

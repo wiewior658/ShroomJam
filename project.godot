@@ -17,8 +17,9 @@ config/icon="uid://cx4q7bkyge5te"
 
 [autoload]
 
-Food="*uid://fhysgsrdv0he"
 Dialogic="*uid://ds2q0uclmolvu"
+Food="*uid://fhysgsrdv0he"
+GlobalVar="*uid://j6w8ea0flq3t"
 
 [dialogic]
 
@@ -26,8 +27,7 @@ directories/dch_directory={
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
-"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
-"test_timeline": "res://scenes/gameplay/drag and drop/test_timeline.dtl"
+"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
