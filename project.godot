@@ -13,7 +13,6 @@ config_version=5
 config/name="ShroomJamGame"
 run/main_scene="uid://d3bn1313bwwxt"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://cx4q7bkyge5te"
 
 [autoload]
 
@@ -25,7 +24,8 @@ GlobalVar="*uid://j6w8ea0flq3t"
 
 directories/dch_directory={}
 directories/dtl_directory={
-"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl"
+"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
+"test_timeline": "res://scenes/gameplay/drag and drop/test_timeline.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
