@@ -1,0 +1,5 @@
+join characterTesty (Default) center [extra_data="set Mood/blue"]
+characterTesty: papapapappa {TestyShroomness}
+characterTesty: teraz zmienię portret
+update characterTesty [extra_data="set Mood/brown"]
+characterTesty: tada

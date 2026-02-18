@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dsxdsmhx0aifv"]
+
+[ext_resource type="Script" uid="uid://bjgqhd2rirmxj" path="res://DialogicStuff/ChangeCharacterPortrait/proba_portrait.gd" id="1_sa6t4"]
+
+[node name="probaPortrait" type="Node2D" unique_id=162118195]
+script = ExtResource("1_sa6t4")
+
+[node name="Button" type="Button" parent="." unique_id=300507288]
+offset_left = 214.0
+offset_top = 151.0
+offset_right = 275.0
+offset_bottom = 182.0
+text = "button"
+
+[node name="Button1" type="Button" parent="." unique_id=135757057]
+offset_left = 215.0
+offset_top = 219.0
+offset_right = 276.0
+offset_bottom = 250.0
+text = "1"
+
+[node name="Button2" type="Button" parent="." unique_id=1554645206]
+offset_left = 216.0
+offset_top = 287.0
+offset_right = 277.0
+offset_bottom = 318.0
+text = "2"
+
+[node name="Button3" type="Button" parent="." unique_id=265367245]
+offset_left = 217.0
+offset_top = 355.0
+offset_right = 278.0
+offset_bottom = 386.0
+text = "3"
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Button1" to="." method="_on_button_1_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
