@@ -24,10 +24,12 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
+"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/characterTesty.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
-"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl"
+"mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
+"timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
@@ -36,7 +38,9 @@ layout/style_directory={
 glossary/default_case_sensitive=true
 layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
-variables={}
+variables={
+"TestyShroomness": 1
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
