@@ -3,6 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#var mychar = DialogicResourceUtil.get_character_resource("lionsmith")
+	#print(mychar.shroomness)
+
 	Dialogic.start("res://DialogicStuff/Timelines/mouse_test_timeline.dtl")
 	#pass
 

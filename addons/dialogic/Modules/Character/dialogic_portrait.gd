@@ -104,6 +104,7 @@ func apply_character_and_portrait(passed_character:DialogicCharacter, passed_por
 
 
 func apply_texture(node:Node, texture_path:String) -> void:
+	#print(texture_path)
 	if not character or not character.portraits.has(portrait):
 		return
 

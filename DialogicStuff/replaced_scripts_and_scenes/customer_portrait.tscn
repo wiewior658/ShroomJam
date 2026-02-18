@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://2y702malcu3o"]
+
+[ext_resource type="Script" uid="uid://dleexst3yah4w" path="res://DialogicStuff/replaced_scripts_and_scenes/customer_portrait.gd" id="1_a8cvi"]
+
+[node name="DefaultPortrait" type="Node2D" unique_id=1639251640]
+script = ExtResource("1_a8cvi")
+image = ""
+
+[node name="Portrait" type="Sprite2D" parent="." unique_id=1467279597]
+centered = false

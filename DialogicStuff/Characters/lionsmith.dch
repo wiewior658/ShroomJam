@@ -10,21 +10,39 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Lionsmith",
+&"default_portrait": "lionsmith_default_100",
 &"description": "",
 &"display_name": "Lionsmith",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Lionsmith": {
+"lionsmith_default_0": {
+"export_overrides": {
+"image": "\"res://DialogicStuff/smuglastor.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://DialogicStuff/replaced_scripts_and_scenes/customer_portrait.tscn"
+},
+"lionsmith_default_100": {
 "export_overrides": {
 "image": "\"res://DialogicStuff/Characters/lionsmith.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://DialogicStuff/replaced_scripts_and_scenes/customer_portrait.tscn"
+},
+"lionsmith_default_50": {
+"export_overrides": {
+"image": "\"res://DialogicStuff/gendarme.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://DialogicStuff/replaced_scripts_and_scenes/customer_portrait.tscn"
 }
 },
 &"scale": 1.0

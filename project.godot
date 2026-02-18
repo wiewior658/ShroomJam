@@ -19,6 +19,7 @@ config/icon="uid://cx4q7bkyge5te"
 
 Food="*uid://fhysgsrdv0he"
 Dialogic="*uid://ds2q0uclmolvu"
+CustomerList="*uid://df1pjje0xd7ay"
 
 [dialogic]
 
@@ -72,6 +73,7 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+portraits/default_portrait=""
 
 [dotnet]
 
