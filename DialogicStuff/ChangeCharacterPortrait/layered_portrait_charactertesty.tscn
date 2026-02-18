@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c1gk8xjac7pde"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/base.png" id="2_vh484"]
+[ext_resource type="Script" uid="uid://htfv2qx3la85" path="res://DialogicStuff/ChangeCharacterPortrait/mood.gd" id="4_vh484"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1242707130]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1357122410]
+texture = ExtResource("2_vh484")
+
+[node name="Mood" type="Node2D" parent="." unique_id=766429558]
+script = ExtResource("4_vh484")
+
+[node name="blue" type="Sprite2D" parent="Mood" unique_id=1638197078]
+
+[node name="brown" type="Sprite2D" parent="Mood" unique_id=1525981562]
