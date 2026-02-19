@@ -10,4 +10,3 @@ position = Vector2(561, 274)
 texture = ExtResource("1_b07fi")
 
 [node name="Unruly_mouse" parent="." unique_id=1415645689 instance=ExtResource("2_x6lt7")]
-random_direction_enabled = false
