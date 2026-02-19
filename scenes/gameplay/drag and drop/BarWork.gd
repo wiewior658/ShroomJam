@@ -13,10 +13,9 @@ func _process(delta)->void:
 		var new_pos = $Camera2D.position.lerp(Vector2(cameraXpos, cameraYpos), velocity * delta)
 		$Camera2D.position.x=new_pos.x
 	pass
-	
+
 func _on_go_right_btn_button_up() -> void:
 	cameraXpos=576.0
-
 
 func _on_go_left_btn_button_up() -> void:
 	cameraXpos=-576.0

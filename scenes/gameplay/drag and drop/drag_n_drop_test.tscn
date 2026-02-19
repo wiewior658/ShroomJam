@@ -87,18 +87,18 @@ texture = ExtResource("7_v10i0")
 script = ExtResource("8_gbcjh")
 
 [node name="GoLeftBtn" type="Button" parent="." unique_id=1157287133]
-offset_left = 23.0
-offset_top = 276.0
-offset_right = 60.0
-offset_bottom = 353.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 56.0
+offset_bottom = 643.0
 theme_override_font_sizes/font_size = 50
 text = "<"
 
 [node name="GoRightBtn" type="Button" parent="." unique_id=920768010]
-offset_left = -58.0
-offset_top = 276.0
-offset_right = -21.0
-offset_bottom = 353.0
+offset_left = -56.0
+offset_top = 3.0
+offset_right = -4.0
+offset_bottom = 643.0
 theme_override_font_sizes/font_size = 50
 text = ">
 "
@@ -113,4 +113,6 @@ text = "Hi. Gib soup."
 
 [connection signal="button_up" from="gar/Button" to="gar" method="_on_button_button_up"]
 [connection signal="button_up" from="GoLeftBtn" to="." method="_on_go_left_btn_button_up"]
+[connection signal="mouse_entered" from="GoLeftBtn" to="." method="_on_go_left_btn_button_up"]
 [connection signal="button_up" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]
+[connection signal="mouse_entered" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]

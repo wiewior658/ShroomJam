@@ -4,7 +4,6 @@ var Capacity=5
 var EmptyPotColor=Color.BLACK
 var EmptyPotPos=35.0
 
-
 var taste
 var nourishment
 var soupColor
