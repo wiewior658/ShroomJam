@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b6iq6hhvhyh62"]
 
 [ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/kitchen shelf/kitchen_shelf.gd" id="1_icbk6"]
+[ext_resource type="Script" uid="uid://jqcga4p5hce5" path="res://scenes/gameplay/drag and drop/BarWork.gd" id="1_v10i0"]
 [ext_resource type="Texture2D" uid="uid://cx4q7bkyge5te" path="res://Assets/pics/gar.png" id="4_m2xqb"]
 [ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
 [ext_resource type="Texture2D" uid="uid://vynx1sypbhhp" path="res://Assets/pics/soup.png" id="5_vbxp8"]
@@ -12,6 +13,10 @@ GridContainer/constants/h_separation = 1
 GridContainer/constants/v_separation = 9
 
 [node name="DragNDropTest" type="Node2D" unique_id=949569843]
+script = ExtResource("1_v10i0")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=152075155]
+position = Vector2(-576, 322)
 
 [node name="shelf" type="GridContainer" parent="." unique_id=1864656250]
 offset_left = 293.0
@@ -81,4 +86,31 @@ offset_bottom = 630.0
 texture = ExtResource("7_v10i0")
 script = ExtResource("8_gbcjh")
 
+[node name="GoLeftBtn" type="Button" parent="." unique_id=1157287133]
+offset_left = 23.0
+offset_top = 276.0
+offset_right = 60.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 50
+text = "<"
+
+[node name="GoRightBtn" type="Button" parent="." unique_id=920768010]
+offset_left = -58.0
+offset_top = 276.0
+offset_right = -21.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 50
+text = ">
+"
+
+[node name="Label" type="Label" parent="." unique_id=1758568118]
+offset_left = -886.0
+offset_top = 159.0
+offset_right = -751.0
+offset_bottom = 190.0
+theme_override_font_sizes/font_size = 22
+text = "Hi. Gib soup."
+
 [connection signal="button_up" from="gar/Button" to="gar" method="_on_button_button_up"]
+[connection signal="button_up" from="GoLeftBtn" to="." method="_on_go_left_btn_button_up"]
+[connection signal="button_up" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]

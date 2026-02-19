@@ -10,9 +10,11 @@ var nourishment
 var soupColor
 var soupPos
 var contents=[]
+var CurrentCustomer: Customer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	CurrentCustomer=Food.testClient
 	newSoup()
 
 func newSoup()->void:
@@ -43,7 +45,7 @@ func _drop_data(_pos, data):
 		if data[0].name!="ShroomPantry":
 			data[0].RemoveItem()
 			GlobalVar.RemoveFood(droppedFood)
-		taste+=droppedFood.taste
+		taste+=droppedFood.taste*CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
 		soupPos-=6
 		contents.push_back(droppedFood)
@@ -58,6 +60,6 @@ func _drop_data(_pos, data):
 		updateInfo()
 	print("itemNumber: ", contents.size(),", taste: ",taste,", nourishment: ",nourishment)
 
+
 func _on_button_button_up() -> void:
 	newSoup()
-	Dialogic.start("test_timeline")
