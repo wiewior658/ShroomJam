@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx4q7bkyge5te"
-path="res://.godot/imported/gar.png-300e0c4ff0d7445a4cbfe171a6a327c4.ctex"
+uid="uid://cww4djx41ugv5"
+path="res://.godot/imported/Bezi_default.png-47c16e31f4e11e88d19419ce2f092714.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pics/gar.png"
-dest_files=["res://.godot/imported/gar.png-300e0c4ff0d7445a4cbfe171a6a327c4.ctex"]
+source_file="res://assets/art/characters/Bezi_default.png"
+dest_files=["res://.godot/imported/Bezi_default.png-47c16e31f4e11e88d19419ce2f092714.ctex"]
 
 [params]
 
