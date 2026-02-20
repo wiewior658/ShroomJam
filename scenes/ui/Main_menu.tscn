@@ -1,12 +1,125 @@
 [gd_scene format=3 uid="uid://ckh7ohu0m8fev"]
 
-[ext_resource type="Texture2D" uid="uid://dujb2hjf3lntm" path="res://icon.svg" id="1_b07fi"]
-[ext_resource type="PackedScene" uid="uid://c4oveabqy4o5y" path="res://scenes/gameplay/Unruly_mouse.tscn" id="2_x6lt7"]
+[ext_resource type="Script" uid="uid://rqgy50ulytkl" path="res://scenes/ui/Main_menu.gd" id="1_gkwmd"]
+[ext_resource type="Texture2D" uid="uid://5gs6r5tvurnv" path="res://DialogicStuff/smuglastor.png" id="1_gqnrb"]
+[ext_resource type="FontFile" uid="uid://b5c0p00x6g6u5" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Italic.ttf" id="3_2i3o1"]
 
-[node name="Node2D" type="Node2D" unique_id=1723596613]
+[node name="Control" type="Control" unique_id=1546105740]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gkwmd")
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=494426177]
-position = Vector2(561, 274)
-texture = ExtResource("1_b07fi")
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1462312494]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gqnrb")
+stretch_mode = 6
 
-[node name="Unruly_mouse" parent="." unique_id=1415645689 instance=ExtResource("2_x6lt7")]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=200084872]
+
+[node name="Panel" type="Panel" parent="." unique_id=478033551]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=778560099]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=1595728811]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2i3o1")
+text = "Awesome Title"
+uppercase = true
+
+[node name="New_game_button" type="Button" parent="Panel/VBoxContainer" unique_id=943147450]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_bottom = NodePath("../Continue_button")
+text = "New Game"
+
+[node name="Continue_button" type="Button" parent="Panel/VBoxContainer" unique_id=2069781392]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_top = NodePath("../New_game_button")
+focus_neighbor_bottom = NodePath("../Options_button")
+text = "Continue"
+
+[node name="Options_button" type="Button" parent="Panel/VBoxContainer" unique_id=323902184]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_top = NodePath("../Continue_button")
+focus_neighbor_bottom = NodePath("../Exit_button")
+text = "Options"
+
+[node name="Exit_button" type="Button" parent="Panel/VBoxContainer" unique_id=1950414398]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+focus_neighbor_top = NodePath("../Options_button")
+text = "Exit"
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer/Exit_button" unique_id=1388651293]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -100.0
+offset_right = 50.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel" unique_id=1985671535]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer" unique_id=1825007566]
+layout_mode = 2
+text = "U sure?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer" unique_id=1445488406]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Yes_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer/HBoxContainer" unique_id=1015536656]
+layout_mode = 2
+text = "Yes"
+
+[node name="No_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer/HBoxContainer" unique_id=220012606]
+layout_mode = 2
+text = "No"
