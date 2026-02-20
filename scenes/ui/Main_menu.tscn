@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://rqgy50ulytkl" path="res://scenes/ui/Main_menu.gd" id="1_gkwmd"]
 [ext_resource type="Texture2D" uid="uid://5gs6r5tvurnv" path="res://DialogicStuff/smuglastor.png" id="1_gqnrb"]
-[ext_resource type="FontFile" uid="uid://b5c0p00x6g6u5" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Italic.ttf" id="3_2i3o1"]
+[ext_resource type="Texture2D" uid="uid://b3q77x1fdmgwq" path="res://assets/art/ui/close-button-png-26.png" id="3_2i3o1"]
+[ext_resource type="AudioStream" uid="uid://l7etikva0ewl" path="res://assets/audio/Vox dei scene _ Hazbin hotel season 2.mp3" id="3_hqref"]
+[ext_resource type="Texture2D" uid="uid://cml1823swc4em" path="res://assets/art/ui/close_button_1_7138522895.png" id="4_oo74q"]
 
 [node name="Control" type="Control" unique_id=1546105740]
 layout_mode = 3
@@ -24,6 +26,9 @@ texture = ExtResource("1_gqnrb")
 stretch_mode = 6
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=200084872]
+stream = ExtResource("3_hqref")
+autoplay = true
+parameters/looping = true
 
 [node name="Panel" type="Panel" parent="." unique_id=478033551]
 layout_mode = 1
@@ -47,7 +52,6 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=1595728811]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_2i3o1")
 text = "Awesome Title"
 uppercase = true
 
@@ -64,6 +68,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 focus_neighbor_top = NodePath("../New_game_button")
 focus_neighbor_bottom = NodePath("../Options_button")
+disabled = true
 text = "Continue"
 
 [node name="Options_button" type="Button" parent="Panel/VBoxContainer" unique_id=323902184]
@@ -74,6 +79,71 @@ focus_neighbor_top = NodePath("../Continue_button")
 focus_neighbor_bottom = NodePath("../Exit_button")
 text = "Options"
 
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer/Options_button" unique_id=941197585]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_right = 75.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="Panel/VBoxContainer/Options_button/Panel" unique_id=15174758]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -80.0
+offset_right = 100.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9196473, 0.5405649, 0.3873378, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/Options_button/Panel/ColorRect" unique_id=2093741752]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 104.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer" unique_id=641514054]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer/HBoxContainer" unique_id=1189545552]
+layout_mode = 2
+text = "Volume                   "
+
+[node name="X_button" type="TextureButton" parent="Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer/HBoxContainer" unique_id=1274227977]
+custom_minimum_size = Vector2(22, 22)
+layout_mode = 2
+size_flags_horizontal = 8
+texture_normal = ExtResource("3_2i3o1")
+texture_hover = ExtResource("4_oo74q")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Music_volume_slider" type="HSlider" parent="Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer" unique_id=167141256]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+max_value = 1.0
+step = 0.01
+value = 0.8
+
 [node name="Exit_button" type="Button" parent="Panel/VBoxContainer" unique_id=1950414398]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
@@ -83,6 +153,7 @@ text = "Exit"
 
 [node name="Panel" type="Panel" parent="Panel/VBoxContainer/Exit_button" unique_id=1388651293]
 visible = false
+z_index = 1
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 1
 anchors_preset = 7
@@ -96,30 +167,52 @@ offset_right = 50.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel" unique_id=1985671535]
+[node name="ColorRect" type="ColorRect" parent="Panel/VBoxContainer/Exit_button/Panel" unique_id=1388035867]
+custom_minimum_size = Vector2(160, 160)
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
+anchor_bottom = 0.5
 offset_left = -50.0
+offset_top = -50.0
 offset_right = 50.0
 offset_bottom = 50.0
 grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.41215247, 0.41215247, 0.41215247, 1)
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer" unique_id=1825007566]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel/ColorRect" unique_id=1985671535]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -38.5
+offset_right = 50.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Exit_button/Panel/ColorRect/VBoxContainer" unique_id=1825007566]
 layout_mode = 2
 text = "U sure?"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer" unique_id=1445488406]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Exit_button/Panel/ColorRect/VBoxContainer" unique_id=1445488406]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
 alignment = 1
 
-[node name="Yes_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer/HBoxContainer" unique_id=1015536656]
+[node name="Yes_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/ColorRect/VBoxContainer/HBoxContainer" unique_id=1015536656]
 layout_mode = 2
 text = "Yes"
 
-[node name="No_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/VBoxContainer/HBoxContainer" unique_id=220012606]
+[node name="No_button" type="Button" parent="Panel/VBoxContainer/Exit_button/Panel/ColorRect/VBoxContainer/HBoxContainer" unique_id=220012606]
 layout_mode = 2
 text = "No"
+
+[connection signal="drag_ended" from="Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer/Music_volume_slider" to="." method="_on_music_volume_slider_drag_ended"]

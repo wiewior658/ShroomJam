@@ -9,7 +9,7 @@ Bezi: [i]At least the air is fresher here. No sign of old gasoline burning my no
 Bezi: [i]And people actually look at each other here. They care. Not like back in the city when I needed someone to just…. No, better not think about it.[/i]
 You spot someone waving at you from a distance.
 join Marianna (Smiling) rightmost
-Bezi: [i]Is that… Marianna?[s]Damn, she looks good.[/s][/i]
+Bezi: [i]Is that… Marianna? [s]Damn, she looks good.[/s][/i]
 audio "res://assets/audio/soundhunterin-female-voices-crowds-chatting-talking-women-on-fair-frauenstimmen-140260.mp3"
 audio music "res://assets/audio/Wind Sound FX.mp3"
 update Marianna center [animation="Shake X" fade="Fade Cross"]
