@@ -1,5 +1,17 @@
 join characterTesty (Default) center [extra_data="set Mood/blue"]
-characterTesty: papapapappa {TestyShroomness}
-characterTesty: teraz zmienię portret
+characterTesty: portret niebieski, shroomness {Testy.Shroomness}
 update characterTesty [extra_data="set Mood/brown"]
-characterTesty: tada
+characterTesty: portret brązowy, shroomness {Testy.Shroomness}\
+Zmienić shroomenss?
+- 1
+	set {Testy.Shroomness} = 1.0
+- 2
+	set {Testy.Shroomness} = 2.0
+- 3
+	set {Testy.Shroomness} = 3.0
+- 4
+	set {Testy.Shroomness} = 4.0
+[signal arg="ShroomnessChanged"]
+characterTesty: portret brązowy, shroomness {Testy.Shroomness}
+update characterTesty [extra_data="set Mood/blue"]
+characterTesty: portret niebieski, shroomness {Testy.Shroomness}

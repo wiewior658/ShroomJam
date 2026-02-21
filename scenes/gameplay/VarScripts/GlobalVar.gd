@@ -1,6 +1,6 @@
 extends Node
 
-var eqFood=[Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.MoldyCarrot.duplicate(), Food.Shroom.duplicate(), Food.Rot.duplicate()]
+var eqFood=[Food.Carrot.duplicate(),Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.MoldyCarrot.duplicate(), Food.Shroom.duplicate(),Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.MoldyCarrot.duplicate(), Food.Shroom.duplicate(), Food.Rot.duplicate()]
 var eqOther=[]
 var money:float=20.0
 

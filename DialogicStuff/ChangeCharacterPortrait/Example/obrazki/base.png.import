@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lvfiuo1c7jov"
-path="res://.godot/imported/brown2.png-aa3ed16ec2d82e6f966e3f8eaef1531b.ctex"
+uid="uid://c1a0cr5qh0tra"
+path="res://.godot/imported/base.png-f85b36e90939f314830fbcdbbc107d01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DialogicStuff/ChangeCharacterPortrait/brown2.png"
-dest_files=["res://.godot/imported/brown2.png-aa3ed16ec2d82e6f966e3f8eaef1531b.ctex"]
+source_file="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png"
+dest_files=["res://.godot/imported/base.png-f85b36e90939f314830fbcdbbc107d01.ctex"]
 
 [params]
 

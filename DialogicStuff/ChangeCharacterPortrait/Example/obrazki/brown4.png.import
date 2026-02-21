@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7us26ave3lx"
-path="res://.godot/imported/brown4.png-ed927f32f764b09786b3d2d6394c5976.ctex"
+path="res://.godot/imported/brown4.png-360054cbd42d2cb22807de6207b75708.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DialogicStuff/ChangeCharacterPortrait/brown4.png"
-dest_files=["res://.godot/imported/brown4.png-ed927f32f764b09786b3d2d6394c5976.ctex"]
+source_file="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/brown4.png"
+dest_files=["res://.godot/imported/brown4.png-360054cbd42d2cb22807de6207b75708.ctex"]
 
 [params]
 

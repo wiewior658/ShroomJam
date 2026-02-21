@@ -12,7 +12,7 @@ class_name FoodItem
 @export var spoilsInto: FoodItem
 
 static func create(item_name : String, nourish: int, tastiness : int, shroomness : int, 
-baseVal : float,col : Color, image : Texture2D, spoilage:FoodItem=null, freshness:int=1):
+baseVal : float,col : Color, image : String, spoilage:FoodItem=null, freshness:int=1):
 	var newItem
 	newItem=FoodItem.new()
 	newItem.itemName=item_name
@@ -21,7 +21,7 @@ baseVal : float,col : Color, image : Texture2D, spoilage:FoodItem=null, freshnes
 	newItem.shroom=shroomness
 	newItem.baseCost=baseVal
 	newItem.color=col
-	newItem.img=image
+	newItem.img=load(image)
 	newItem.spoilsInto=spoilage
 	newItem.spoilsIn=freshness
 	return newItem
