@@ -1,0 +1,60 @@
+audio "res://assets/audio/freesound_community-engine-start-86242.mp3"
+[background arg="res://assets/art/environments/village_square_sketch.png" fade="1.0" transition="Simple Fade"]
+You step off the bus, and watch it leave the small village of Hubanka - place you once called home, before turning around to see the village square. At this hour there's few people, either smoking or walking somewhere.
+join Bezi leftmost
+Bezi: [i]This place hasn’t changed a bit after all these years. \
+[/i]
+Bezi: [i]Same buildings, same people, same familiar smell of cigarettes. I think Ms. Lipova’s cows are somewhere close too…*Ugh*[/i]
+Bezi: [i]At least the air is fresher here. No sign of old gasoline burning my nose, and no more industrial sounds piercing into my head.  [/i]
+Bezi: [i]And people actually look at each other here. They care. Not like back in the city when I needed someone to just…. No, better not think about it.[/i]
+You spot someone waving at you from a distance.
+join Marianna (Smiling) rightmost
+Bezi: [i]Is that… Marianna? [s]Damn, she looks good.[/s][/i]
+audio "res://assets/audio/soundhunterin-female-voices-crowds-chatting-talking-women-on-fair-frauenstimmen-140260.mp3"
+audio music "res://assets/audio/Wind Sound FX.mp3"
+update Marianna center [animation="Shake X" fade="Fade Cross"]
+Marianna: Heey! How are you? It’s been too long! *Kisses you on cheek*
+update Marianna right [animation="Shake X" fade="Fade Cross"]
+Bezi: Hey there, good to see you too! Damn, the place hasn’t changed a bit. Even the flower memorial is still here after all those years.
+update Marianna (Default) [animation="Shake Y"]
+Marianna: Only the weather’s somehow gotten worse. Come I’ll show you around the diner.
+audio "res://assets/audio/sspsurvival-footsteps-on-the-leaves-autumn-city-park-248352.mp3"
+update Bezi [animation="Shake Y" length="1.5" repeat_forever="true"]
+update Marianna [animation="Shake Y" length="1.5" repeat_forever="true"]
+Bezi: How’s uncle Wojtek? You mentioned in your letters he’s been sick? I hope it’s nothing serious?
+Marianna (Pensive): He’s uhh… He’s not doing so well.
+- Comfort her
+	Bezi: Hey, it’s gonna be alright. He’s a fighter. *Hugs her*
+	Marianna: I’m not so sure… But thanks… Anyway, we’re here.
+- Ask details
+	Bezi: Oh god, how serious is it? Has he been to the hospital? What’s ailing him anyway?
+	Marianna: *voice trembling* No, you know, dad never really trusted doctors… not after mom’s death. But he’s been… absent lately.
+	Bezi: Oh, I’m so sorry to hear that, I…
+	Marianna: Anyway…! We’re here.
+- Stay silent
+	Marianna: As you know, Dad turned the old flower shop into a diner, after mom was gone… He’s poured so much time and effort into it. It’s kinda sad to see it go to waste. But, hey! Now you’re here.
+update Bezi [animation="Bounce"]
+update Marianna [animation="Bounce"]
+Marianna: Both of you arrive at the diner. Marianna fidgets with some keys for a short while. once inside she flips the light switch
+[background arg="res://assets/art/environments/9k.png" fade="0.0"]
+audio music - [fade="1.0"]
+Marianna (Default): Here we are!
+The inside of the diner is rather dusty and decrepid. Some floorboards even have holes in them.
+Bezi: This is… wow… How long ago did you say uncle fell ill?
+Marianna (Pensive): Oh, I’m so sorry… I suppose I should have cleaned it beforehand. If you’re having second thoughts, I’ll understand…
+Bezi: Nah, don’t worry about it. Nothing a little elbow grease can’t fix.
+Marianna (Smiling): Wow, thanks. You’re a real lifesaver here, lately dad’s been pushing for me to take over.
+Bezi: And you’re sure you don’t want to? We could run it together. With uncle ill, you’ll have to take care…
+Marianna (Pensive): No no, it’s not that I don’t want to, I just can’t…
+*awkward silence*
+Bezi: So… kitchen’s that way?
+Marianna (Default): Yep. Why don’t you make yourself at home? There should still  be some cured meats in the pantry, and dad’s pots and pans are all here.
+Bezi: Sure, maybe I can fix us something to eat then, I’m starving.
+Marianna: Sure just… how much experience do you have in the kitchen? I mean in a restaurant kitchen, I’m sure your cooking is very good and…
+- I think I'll manage(skip tutorial)
+	Marianna: Ok, I trust you.
+	Marianna grabs a duster from somewhere and makes herself busy.
+- Uh...
+	Marianna: I see… not to worry, I did pick something up from dad before he… uh… fell ill. Let me show you the ropes.
+[background arg="res://assets/art/environments/6057b801015284aa784bd67961d71867.jpg" fade="0.0"]
+Tutorial placeholder
