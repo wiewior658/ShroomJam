@@ -39,7 +39,7 @@ layout/style_directory={
 "New_style": "res://DialogicStuff/New_style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://DialogicStuff/New_style.tres"]
+layout/style_list=["res://DialogicStuff/New_style.tres", "res://DialogicStuff/testing_history.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "TestyShroomness": 1
@@ -79,6 +79,13 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+history/simple_history_enabled=true
+history/simple_history_save=true
+history/full_history_enabled=false
+history/full_history_save=false
+history/visited_event_history_enabled=false
+history/save_on_autosave=false
+history/save_on_save=false
 
 [dotnet]
 
