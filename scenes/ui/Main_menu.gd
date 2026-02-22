@@ -8,7 +8,7 @@ extends Control
 @onready var n_btn: Button = $Panel/VBoxContainer/Exit_button/Panel/ColorRect/VBoxContainer/HBoxContainer/No_button
 @onready var x_btn: TextureButton = $Panel/VBoxContainer/Options_button/Panel/ColorRect/VBoxContainer/HBoxContainer/X_button
 
-const FIRST_SCENE := "res://scenes/levels/Prologue1.tscn"
+const FIRST_SCENE := "res://scenes/levels/prologue1.tscn"
 const OPTIONS_SCENE := "res://scenes/ui/options_menu.tscn"
 var volume_index := AudioServer.get_bus_index("Master")
 
