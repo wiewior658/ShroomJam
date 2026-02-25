@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ShroomJamGame"
-run/main_scene="uid://c4oveabqy4o5y"
+run/main_scene="uid://ckh7ohu0m8fev"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://cx4q7bkyge5te"
 
@@ -24,10 +24,17 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
+<<<<<<< HEAD
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
+=======
+"Bezi": "res://DialogicStuff/Characters/Bezi.dch",
+"Marianna": "res://DialogicStuff/Characters/Marianna.dch",
+"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/characterTesty.dch",
+>>>>>>> main
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
+"Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
