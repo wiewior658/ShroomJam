@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://wsx0qwaconef"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_b3w2l"]
+[ext_resource type="Script" uid="uid://c1dg75crenuk5" path="res://DialogicStuff/ChangeCharacterPortrait/Marianna/mood.gd" id="3_b3w2l"]
+[ext_resource type="Texture2D" uid="uid://bavtfgatqary5" path="res://DialogicStuff/ChangeCharacterPortrait/Marianna/default0.png" id="4_71qcs"]
+[ext_resource type="Texture2D" uid="uid://b7fmuxlb38exa" path="res://DialogicStuff/ChangeCharacterPortrait/Marianna/happy0.png" id="5_q2m2e"]
+[ext_resource type="Texture2D" uid="uid://cexen2l5lvchm" path="res://DialogicStuff/ChangeCharacterPortrait/Marianna/pensive0.png" id="6_fogty"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1806202730]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1811486086]
+texture = ExtResource("2_b3w2l")
+
+[node name="Mood" type="Node2D" parent="." unique_id=665108560]
+script = ExtResource("3_b3w2l")
+
+[node name="default" type="Sprite2D" parent="Mood" unique_id=2024806988]
+texture = ExtResource("4_71qcs")
+
+[node name="happy" type="Sprite2D" parent="Mood" unique_id=959347083]
+texture = ExtResource("5_q2m2e")
+
+[node name="pensive" type="Sprite2D" parent="Mood" unique_id=1442306221]
+texture = ExtResource("6_fogty")

@@ -13,3 +13,4 @@ var NoSell=[Rot]
 
 #kolejność: Name, expected_nourishment, expected_taste, money, likes:Array, dislikes:Array, happiness, shroomness
 var testClient=Customer.create("Testy",5,5,10,[Carrot],[Shroom])
+var Marianna=Customer.create("Marianna",3,5,10)

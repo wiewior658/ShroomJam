@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yci1k6yf5xr2"
-path="res://.godot/imported/shroom.png-08608a9ed55f840b478c53420afd0154.ctex"
+path="res://.godot/imported/shroom.png-82b4147660e57731a6abc54dc3b3996a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pics/shroom.png"
-dest_files=["res://.godot/imported/shroom.png-08608a9ed55f840b478c53420afd0154.ctex"]
+source_file="res://Assets/pics/shroom.png"
+dest_files=["res://.godot/imported/shroom.png-82b4147660e57731a6abc54dc3b3996a.ctex"]
 
 [params]
 

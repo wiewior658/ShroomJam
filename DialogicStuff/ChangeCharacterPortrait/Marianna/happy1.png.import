@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnmeok3f61yki"
-path="res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"
+uid="uid://dylovqd8j1egd"
+path="res://.godot/imported/happy1.png-186f55ec4b6f34aa12f21139ea24c968.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/rot.png"
-dest_files=["res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"]
+source_file="res://DialogicStuff/ChangeCharacterPortrait/Marianna/happy1.png"
+dest_files=["res://.godot/imported/happy1.png-186f55ec4b6f34aa12f21139ea24c968.ctex"]
 
 [params]
 

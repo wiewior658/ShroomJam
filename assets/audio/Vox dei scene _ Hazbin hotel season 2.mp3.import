@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://l7etikva0ewl"
-path="res://.godot/imported/Vox dei scene _ Hazbin hotel season 2.mp3-3081d814b4d0ae28be76256e8dc919a1.mp3str"
+path="res://.godot/imported/Vox dei scene _ Hazbin hotel season 2.mp3-66d42211d4a951a9e496932968c6f7bb.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/Vox dei scene _ Hazbin hotel season 2.mp3"
-dest_files=["res://.godot/imported/Vox dei scene _ Hazbin hotel season 2.mp3-3081d814b4d0ae28be76256e8dc919a1.mp3str"]
+source_file="res://Assets/audio/Vox dei scene _ Hazbin hotel season 2.mp3"
+dest_files=["res://.godot/imported/Vox dei scene _ Hazbin hotel season 2.mp3-66d42211d4a951a9e496932968c6f7bb.mp3str"]
 
 [params]
 

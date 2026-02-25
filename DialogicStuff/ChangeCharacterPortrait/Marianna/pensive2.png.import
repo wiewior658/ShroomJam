@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnmeok3f61yki"
-path="res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"
+uid="uid://djvrqob5usyk3"
+path="res://.godot/imported/pensive2.png-8941015e07b33040258986e8fedca1c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/rot.png"
-dest_files=["res://.godot/imported/rot.png-d27e1252886899583fa8356f4c61ec03.ctex"]
+source_file="res://DialogicStuff/ChangeCharacterPortrait/Marianna/pensive2.png"
+dest_files=["res://.godot/imported/pensive2.png-8941015e07b33040258986e8fedca1c2.ctex"]
 
 [params]
 
