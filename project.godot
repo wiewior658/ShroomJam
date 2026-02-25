@@ -24,13 +24,9 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
-<<<<<<< HEAD
-"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
-=======
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
 "Marianna": "res://DialogicStuff/Characters/Marianna.dch",
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/characterTesty.dch",
->>>>>>> main
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
