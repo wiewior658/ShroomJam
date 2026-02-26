@@ -22,7 +22,7 @@ func _ShroomedPortrait() -> void: #wywołuje się za każdym razem jak Dialogic 
 		while i>-1:
 			var newPortrait=str(characterAssets,mood.name,i,".png")
 			if ResourceLoader.exists(newPortrait):
-				mood.texture=load(newPortrait)
+				mood.find_child("TextureRect").texture=load(newPortrait)
 				break
 			i-=1
 	print("Marianna shroomness portrait")
