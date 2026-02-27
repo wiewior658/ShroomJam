@@ -16,3 +16,4 @@ var testClient=Customer.create("Testy",5,5,10,[Carrot],[Shroom])
 
 var Protagonist=Customer.create("Bezi",0,0,20)
 var Marianna=Customer.create("Marianna",3,5,10)
+var Wojciech=Customer.create("Wojciech",6,4,4,[Shroom])
