@@ -25,8 +25,8 @@ GlobalVar="*uid://j6w8ea0flq3t"
 
 directories/dch_directory={
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
-"Example/characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
 "Marianna": "res://DialogicStuff/Characters/Marianna.dch",
+"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf5fsyfwrl7u0"
-path="res://.godot/imported/spr wojciech happy.png-aafe42f54d1d4402d77c06f723ddec16.ctex"
+path="res://.godot/imported/spr wojciech happy.png-a9f09c7517cec05b04f7842f10ce204c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/spr wojciech happy.png"
-dest_files=["res://.godot/imported/spr wojciech happy.png-aafe42f54d1d4402d77c06f723ddec16.ctex"]
+source_file="res://Assets/art/characters/spr wojciech happy.png"
+dest_files=["res://.godot/imported/spr wojciech happy.png-a9f09c7517cec05b04f7842f10ce204c.ctex"]
 
 [params]
 

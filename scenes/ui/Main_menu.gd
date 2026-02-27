@@ -12,6 +12,9 @@ const FIRST_SCENE := "res://scenes/levels/prologue1.tscn"
 const OPTIONS_SCENE := "res://scenes/ui/options_menu.tscn"
 var volume_index := AudioServer.get_bus_index("Master")
 
+var _save : SaveStats
+var _globalstats: GlobalStats
+
 func _ready() -> void:
 	new_btn.pressed.connect(_on_new_game)
 	cont_btn.pressed.connect(_on_continue)
@@ -32,8 +35,28 @@ func _on_new_game() -> void:
 	
 	#SaveSystem.new_game(FIRST_SCENE)
 	get_tree().change_scene_to_file(FIRST_SCENE)
+	_globalstats = GlobalStats.new()
+	_globalstats.ShowStats()
+	_globalstats.ChangeStats("coins",100)
+	_save = SaveStats.new()
+	_globalstats.ShowStats()
+	_save.printStats()
+	_save.globalstats = _globalstats
+	_save.printStats()
+	_save.write_SaveGame()
+
 	
 func _on_continue() -> void:
+	if SaveStats.save_exists():
+		_save = SaveStats.load_SavedGame() as SaveStats
+	else:
+		print("ERROR Nie ma sava ktorego ladujesz AAAAAAAAAAAAAAAAAAAAA")
+	_globalstats = _save.globalstats
+	_globalstats.ShowStats()
+	get_tree().change_scene_to_file(OPTIONS_SCENE)
+	
+	
+
 	#if not SaveSystem.has_save():
 	#	_refresh_continue_state()
 	#	return
@@ -44,7 +67,7 @@ func _on_continue() -> void:
 		
 	#	cont_btn.disabled = true
 	#	return
-	pass
+	#pass
 	#get_tree().change_scene_to_file(scene_path)
 
 func _on_options() -> void:
