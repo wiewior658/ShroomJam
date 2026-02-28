@@ -1,8 +1,8 @@
 extends Node
 
-var eqFood=[Food.Carrot.duplicate(),Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.MoldyCarrot.duplicate(), Food.Shroom.duplicate(),Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.MoldyCarrot.duplicate(), Food.Shroom.duplicate(), Food.Rot.duplicate()]
+var eqFood=[Food.Carrot.duplicate(),Food.Carrot.duplicate(), Food.Carrot.duplicate(), Food.Carrot.duplicate()]
 var eqOther=[]
-var money:float=20.0
+var money:float=50.0
 
 func RemoveFood(item)->void:
 	if eqFood.rfind(item)>=0:

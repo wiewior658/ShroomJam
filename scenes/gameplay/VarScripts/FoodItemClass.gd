@@ -32,7 +32,7 @@ func SpoilFood(list):
 			if list[i].spoilsIn>0:
 				list[i].spoilsIn-=1
 			if list[i].spoilsIn==0:
-				list[i]=list[i].spoilsInto
+				list[i]=list[i].spoilsInto.duplicate()
 
 func Upgrade(plusNourishment:int, plusTaste: int, plusShroomness: int, newIcon:String="")->void:
 	self.nourishment+=plusNourishment

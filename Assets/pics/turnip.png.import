@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06vfushd14cw"
-path="res://.godot/imported/moldy_carrot.png-14d255570ea0d0fcfea03a3dbdc1b975.ctex"
+uid="uid://d273u1vby4qr1"
+path="res://.godot/imported/turnip.png-3a35cd0ea2d9c62743c26a5dd534b895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/moldy_carrot.png"
-dest_files=["res://.godot/imported/moldy_carrot.png-14d255570ea0d0fcfea03a3dbdc1b975.ctex"]
+source_file="res://Assets/pics/turnip.png"
+dest_files=["res://.godot/imported/turnip.png-3a35cd0ea2d9c62743c26a5dd534b895.ctex"]
 
 [params]
 
