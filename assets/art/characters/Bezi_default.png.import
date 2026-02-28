@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cww4djx41ugv5"
-path="res://.godot/imported/Bezi_default.png-47c16e31f4e11e88d19419ce2f092714.ctex"
+path="res://.godot/imported/Bezi_default.png-ce40c7524b1e4f41fa90076802743707.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/Bezi_default.png"
-dest_files=["res://.godot/imported/Bezi_default.png-47c16e31f4e11e88d19419ce2f092714.ctex"]
+source_file="res://Assets/art/characters/Bezi_default.png"
+dest_files=["res://.godot/imported/Bezi_default.png-ce40c7524b1e4f41fa90076802743707.ctex"]
 
 [params]
 

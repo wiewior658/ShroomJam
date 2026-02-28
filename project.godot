@@ -27,6 +27,7 @@ directories/dch_directory={
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
 "Example/characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
 "Marianna": "res://DialogicStuff/Characters/Marianna.dch",
+"Marianna/Marianna": "res://DialogicStuff/ChangeCharacterPortrait/Marianna/Marianna.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
@@ -42,6 +43,9 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
+"Marianna": {
+"Shroomness": 3
+},
 "Testy": {
 "Shroomness": 1
 }
@@ -81,6 +85,10 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+
+[display]
+
+window/stretch/mode="viewport"
 
 [dotnet]
 

@@ -30,9 +30,9 @@ func check_likes(item:FoodItem):#checks Customer likes and dislikes. Returns 2 i
 	for i in self.Likes:
 		if item.itemName==i.itemName:
 			print(self.Name," likes it")
-			return 2
+			return 4
 	for i in self.Dislikes:
 		if item.itemName==i.itemName:
 			print(self.Name," hates it")
-			return -1
+			return -4
 	return 1

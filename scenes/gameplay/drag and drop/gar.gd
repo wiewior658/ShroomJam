@@ -44,7 +44,7 @@ func _drop_data(_pos, data):
 		if data[0].name!="ShroomPantry":
 			data[0].RemoveItem()
 			GlobalVar.RemoveFood(droppedFood)
-		taste+=droppedFood.taste*CurrentCustomer.check_likes(droppedFood)
+		taste+=droppedFood.taste+CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
 		soupPos-=6
 		contents.push_back(droppedFood)

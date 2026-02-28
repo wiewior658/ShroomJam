@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://wsx0qwaconef"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_b3w2l"]
+[ext_resource type="Script" uid="uid://c1dg75crenuk5" path="res://DialogicStuff/ChangeCharacterPortrait/Marianna/mood.gd" id="3_b3w2l"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1806202730]
+script = ExtResource("1_uubi5")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1811486086]
+texture = ExtResource("2_b3w2l")
+
+[node name="Mood" type="Node2D" parent="." unique_id=665108560]
+script = ExtResource("3_b3w2l")
+
+[node name="default" type="Sprite2D" parent="Mood" unique_id=2024806988]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/default" unique_id=922123960]
+offset_left = -76.0
+offset_top = -99.0
+offset_right = 76.0
+offset_bottom = 100.0
+expand_mode = 5
+
+[node name="happy" type="Sprite2D" parent="Mood" unique_id=959347083]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/happy" unique_id=28023513]
+offset_left = -76.0
+offset_top = -99.0
+offset_right = 76.0
+offset_bottom = 100.0
+expand_mode = 5
+
+[node name="pensive" type="Sprite2D" parent="Mood" unique_id=1442306221]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/pensive" unique_id=1794368616]
+offset_left = -76.0
+offset_top = -99.0
+offset_right = 76.0
+offset_bottom = 100.0
+expand_mode = 5

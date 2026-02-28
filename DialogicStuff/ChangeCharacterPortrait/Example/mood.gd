@@ -27,5 +27,5 @@ func _ShroomedPortrait() -> void: #wywołuje się za każdym razem jak Dialogic 
 
 func _on_dialogic_signal(argument:String)->void:
 	if argument=="ShroomnessChanged":
-		character.Shroomness=int(Dialogic.VAR.get('Testy').get('Shroomness')) #niestety, w timeline nie można zmienić innych zmiennych niż te dialogicowe więc musi być przepisywane tutaj
+		character.Shroomness=int(Dialogic.VAR.get(character.Name).get('Shroomness')) #niestety, w timeline nie można zmienić innych zmiennych niż te dialogicowe więc musi być przepisywane tutaj
 		_ShroomedPortrait()

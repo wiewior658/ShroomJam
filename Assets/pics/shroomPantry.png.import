@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://74tdsu4dc4iy"
-path="res://.godot/imported/shroomPantry.png-2ae40a29395e6cb4a50b4c659e3b2544.ctex"
+path="res://.godot/imported/shroomPantry.png-0794672c6f2ec9cae847bdf3472828f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pics/shroomPantry.png"
-dest_files=["res://.godot/imported/shroomPantry.png-2ae40a29395e6cb4a50b4c659e3b2544.ctex"]
+source_file="res://Assets/pics/shroomPantry.png"
+dest_files=["res://.godot/imported/shroomPantry.png-0794672c6f2ec9cae847bdf3472828f6.ctex"]
 
 [params]
 
