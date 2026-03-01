@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ijltl3k60ap"
-path="res://.godot/imported/spr wojciech.png-3ae5915ecd50e181ca21d3c9b24deebc.ctex"
+path="res://.godot/imported/spr wojciech.png-b8b08ed3a56b9a9a2017873473eadcdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/spr wojciech.png"
-dest_files=["res://.godot/imported/spr wojciech.png-3ae5915ecd50e181ca21d3c9b24deebc.ctex"]
+source_file="res://Assets/art/characters/spr wojciech.png"
+dest_files=["res://.godot/imported/spr wojciech.png-b8b08ed3a56b9a9a2017873473eadcdc.ctex"]
 
 [params]
 

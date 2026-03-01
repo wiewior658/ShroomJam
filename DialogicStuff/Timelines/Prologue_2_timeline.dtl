@@ -1,0 +1,119 @@
+[background arg="village_square_sketch.png" fade="0.0"]
+After the cooking is finished both of them eat the dish that was made.
+join Marianna rightmost
+Characters/Marianna (Smiling): Well this was delicious.  I shouldn’t have doubted you.
+join Bezi leftmost
+Bezi: Thank you. Although if you keep this up, I might think you have no faith in me.
+Characters/Marianna (Pensive): Oh, what? No! Not at all, I… I would never!
+Bezi: Hehehe
+Characters/Marianna (Smiling): Oh my gosh. Hahaha… You got me good.
+Characters/Marianna (Default): Welp, it’s getting late. Better to close up here and head home.
+Bezi: Are you sure it’s okay if I stay at your place? I can find some other place until you leave…
+Characters/Marianna: No, no I insist! Besides, where else would you go?
+Bezi: Thanks.
+Characters/Marianna: Just up these stairs here…
+audio "stairs"
+[background arg="village_square_sketch.png" fade="0.0"]
+Characters/Marianna (Default): Here, I’ve prepared fresh linen for you, please make yourself at home. I need to get something, I’ll return shortly.
+While waiting for her {PLAYER NAME} takes in the surroundings.
+Bezi: (thoughts)\
+Huh. This room is surprisingly spacious for a guest room, and it’s got a double bed. Perhaps uncle couldn’t stand their old master bedroom after auntie’s passing and repurposed it?
+Bezi: (thoughts)\
+Come to think of it, I still haven’t met him. Is he that bedridden? Even though we already planned for Marianna to leave home in our letters I really hope she doesn’t plan to leave me alone with a sick person to take care of…
+Marianna returns holding a stack of papers.
+Characters/Marianna (Default): Hey, if it’s not a problem could we sign the diner ownership papers now?
+Bezi: Oh? What’s the rush? You’re not thinking about leaving that quickly, are you?
+Characters/Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a long time…
+- [QUESTION HER MOTIVE]
+	Bezi: Actually… I know that you want to go to the city to finally have a chance to be yourself but…
+	Bezi: You’ve never really mentioned in your letters about why you want to leave so suddenly?
+	Characters/Marianna (Pensive): Oh… I just feel like now is the time to do that you know? Recently the air here became just so… suffocating.
+	Bezi: And uncle really is ok with you leaving?
+	Characters/Marianna (Default): We’ve… discussed it. He didn’t really have much to say…
+	Bezi: Oh? That doesn’t sound like him.
+	Characters/Marianna: I think… he wants what’s best for me, even if we don't necessarily agree on what’s best for me.
+	Marianna’s eyes don’t quite meet {their/her/his} eyes when she says that.
+- THANK HER PROFUSELY
+	Bezi: I’ve always wanted to run my own restaurant. Shame it didn’t work out in the city, maybe if it did then we… Anyway, I really can’t thank you enough for this.
+	Marianna reaches out and squeezes {their/his/her} hand.
+	Characters/Marianna (Pensive): I also sometimes think back on how if I maybe noticed things sooner I could have helped so it wouldn’t have happened to you two. Alas, we could have wished on a thousand stars  but the past cannot be changed.
+	{PLAYER NAME} sighs and gives Marianna a slight smile. {They/He/She} squeeze/s her hand back and let go.
+	Bezi: Yeah, I’ll try to remember that. Thanks. Anyway, I was wondering, since you’ve offered it to me so generously, what can I do for you in return?
+	Characters/Marianna (Default): Oh, just take good care of it, I guess? I would feel better knowing it's in good hands.
+	There’s a look of surprise on her face. She probably didn’t expect {them/him/her} to be so grateful for her help.
+	Bezi: Well what about uncle, though? You’re not gonna ask me to take care of him all alone, right?
+	Characters/Marianna: Oh yeah, I did arrange for the nurse Alina to help you if you need it but she has her own work so… please?
+	Bezi: Right. It’s kind of a big commitment, I just wish you had told me this earlier. Can I at least see what condition he’s in?
+	Characters/Marianna: N-no! He’s resting, we really shouldn’t disturb him… Honestly, that’s all he does these days. Don’t worry, he won’t be a burden at all.
+	There is something dishonest about Marianna's words, but {they/he/she} doubt/s that {they/he/she}’ll get more information out of her. She doesn’t seem to be willing to say more on this matter.
+- ASK ABOUT UNCLE
+	Bezi: I know that but uncle had different plans for you, no? And with him becoming ill…
+	Characters/Marianna (Pensive): Yeah… It happened so suddenly too.
+	Bezi: His sickness?
+	Characters/Marianna (Default): His uhm… what? What do you mean?
+	Bezi: Like he suddenly became ill?
+	Characters/Marianna: What? No, he uhm… suddenly wanted me to take over the diner. The illness came later actually.
+	Characters/Marianna (Pensive): I hope it wasn’t my refusal that triggered it.
+	Bezi: Huh? How would that even work?
+	Characters/Marianna (Default): I don’t know! But after that argument he stormed off. And when we talked again the next day, he seemed… different.
+	Characters/Marianna: Ugh… I don’t really want to talk about it…
+update Bezi
+update Characters/Marianna
+- DISCOURAGE HER FROM CITY LIFE
+	Bezi: Ok, listen to me first though… The city life isn’t all that great, you know? People care only about themself and without money you’re screwed.
+	Bezi: I will never regret leaving, otherwise I would've never met…
+	{PLAYER NAME} seems to be unable to finish that sentence {their/his/her} face heartbroken. Marianna looks at {them/him/her} worried but {they/he/she} quickly pull/s {themself/himself/herself} together.
+	Bezi: At the same time the city took what it gave way too quickly.
+	Bezi: I’d hate for you to have to go through the same.
+	Characters/Marianna: You don’t have to worry about me so much. I know it won’t be easy but I’d rather struggle in a life I chose than be comfortable with no agency.
+- EXAMINE PAPERS
+	Bezi: Let me see… uncle’s already signed it? Wait. You crossed out yours and put in my name? What’s going on? Does he know about this?
+	Characters/Marianna (Pensive): No he does… he just… doesn’t approve… so I have to go behind his back. Please understand!
+	Bezi: Is this even legal if he doesn’t agree to it? What if he gets better and kicks me out?
+	Characters/Marianna (Default): He won’t.
+	Bezi: You can’t know that! Is the situation really so bad to go behind his back like that? He loves you! Surely you could’ve talked it through?
+	Characters/Marianna: You haven’t seen him… you wouldn’t understand…
+	Bezi: Then show me!
+	Characters/Marianna: I wish I could…
+	Bezi: Then why won’t you?!
+	Characters/Marianna: Because he’s not around, okay!
+	Bezi: What?
+	Characters/Marianna (Pensive): He leaves the house, I never know when or if he’ll come back…
+	Characters/Marianna: Half the time he doesn’t even remember me…
+	Marianna starts sobbing, clearly distressed by the situation.
+	Bezi: Wait, wait, please don’t cry. I didn’t mean to distress you so.
+	{PLAYER NAME} visibly panics and pulls Marianna into a hug trying to calm her down. They start rocking back and forth. After a while of this Marianna starts calming down.
+	Bezi: Are you feeling a bit better now?
+	Characters/Marianna: Yeah… sorry about that and thanks.
+	if {Marianna.Shroomness} == 0.0:
+		Bezi: I’m glad to hear that but there’s something I must ask. You said earlier that uncle’s resting. Now you contradicted yourself. What gives?
+		Characters/Marianna (Default): Wha…?
+		Bezi: You said “That he rests all day”, but now you claim he’s… what? Hiking? Marianna, please stop lying to me. I thought we were friends. What’s going on?
+		Characters/Marianna: I- you’re right. I shouldn’t have tried to hide it from you.
+		update Characters/Marianna (Pensive)
+		Marianna sighs heavily and starts fidgeting nervously with her hands.
+		Characters/Marianna: It started a while ago when he brought some plants from the forest and started growing them in the diner’s basement. That new hobby of his completely consumed him.
+		Characters/Marianna: He even abandoned the diner. Closed sign and everything. It was really concerning because since mother’s death he became a workaholic. And then suddenly he what? Abandoned the diner that was his everything? No, that didn’t make any sense.
+		Characters/Marianna: Maybe it was poisonous or was diseased or… something. I don’t know. All I know is that it wasn't normal.
+		Characters/Marianna: And then he became very insistent on putting it in EVERY dish. There was no way I would eat some weird plant and combine this with him suddenly wanting for me to take over the diner, we… started fighting.
+		Characters/Marianna: And then he started hiking in the forest, and rarely coming back, and… and…
+		Characters/Marianna: It’s been a week since I last saw him.
+		Characters/Marianna: I’m just… scared, {PLAYER NAME}. I can’t be here anymore.
+		Bezi: (thoughts)\
+		Oh shit. Didn’t I put that in the dish I made for us earlier? Maybe I should tell-
+		audio "STATIC NOISE, STATICY EFFECT ON SCREEN"
+		Bezi: (thoughts)\
+		No, I’m sure it’s going to be fine. That plant looked totally normal after all. It probably wasn’t the same one that she told me about.
+Bezi: (thoughts)\
+Maybe it’s better to move on from that. I should probably finally sign those papers.
+{They/He/She} take/s the pen and sign/s the papers.
+Bezi: Ok then… That’s it.
+Marianna takes the signed papers from {them/him/her}.
+Characters/Marianna (Smiling): Yay, thank you so much!
+Bezi: So when do you plan on leaving?
+Characters/Marianna: Probably in a few days. I should probably at least help you acclimate yourself, right?
+Characters/Marianna (Pensive): Althought, I have to get ready for the journey first…
+Bezi: Are you hungry? I could make us a late night snack.
+Characters/Marianna: No, thanks. I’ll just uhh… head to bed and we’ll talk again tomorrow, okay?
+After she leaves {PLAYER NAME} also heads to bed and the day ends.
+[end_timeline]
