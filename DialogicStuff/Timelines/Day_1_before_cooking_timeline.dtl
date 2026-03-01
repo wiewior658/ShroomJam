@@ -1,0 +1,192 @@
+audio "SILENCE, FADE-OUT TO OUR ROOM/DINNER:"
+[background arg="EARLY MORNING ROOM/DINER" fade="0.0"]
+The nights were never easy for {them/him/her}. The memories of the city, its nauseating smells and images are hard to forget, even now as {they’re/he’s/she’s} surrounded by silence.
+audio "SOUND CHANGES TO BIRDS CHIRPING"
+A single bird starts chirping outside the window.
+Bezi: (thoughts)\
+*sigh* …My body feels stiff. As always. And my brain hurts from dreaming.
+Bezi: (thoughts)\
+I have to get up. Marianna didn’t give me the diner for it to rot away, right? Speaking of Marianna, I wonder if she’s ready to go. I should bid her farewell.
+{PLAYER NAME} gets all {their/his/her} strength to stand up and put on clean clothes. The new {person/guy/gal} in the village has to make the right impression.
+{They/He/She} head/s to the diner.
+[background arg="DINER - MORNING (BG: DINER" fade="0.0"]
+audio "SOUNDS - CREAKING WOODEN FLOOR"
+Bezi: (thoughts)\
+I was right about the creaking floor yesterday evening, but now that it’s brighter I can see how worn out they really are.
+Bezi: (thoughts)\
+I should ask the lumberjack and get them replaced. The pantry might need a bit of supplying too. After all, I have to feed the entire village. I could ask around the square for some fresh produce.
+Bezi: (thoughts)\
+It’s still early enough. I don’t expect any clients so early in the morning.
+- GO TO THE LUMBER
+	Hubanka borders a huge forest from the south. {PLAYER’S NAME} would often play there with other children when {they/he/she} were/was young, despite the adults telling them it’s easy to get lost there. A fellow lumberjack would nag them for losing their way, but was always kind enough to walk them to the market square safely.
+	The lumberjack was old, but it’s possible one of his sons took over the business.
+	{PLAYER’S NAME} looks around and notices a trail in the moss by the path.
+	Bezi: (thoughts)\
+	Looks like someone’s already been picking mushrooms today. Had to be someone experienced - Mushrooms are easy to miss under the moss, and if you’re not aware they’re there, then how are you going to pick them?
+	Bezi: My parents taught me some tricks to distinguish which mushrooms are edible. Maybe I’ll spot some on the way to the lumber… If there are any left, that is…
+	Bezi: Hm?
+	What’s that sound?
+	audio "A WHISTLING TUNE"
+	A quiet tune wanders in the morning wind. {PLAYER’S NAME} goes slowly in the direction of the sound and sees a man sitting under the tree, fiddling with something in his fingers.
+	He looks old, but he doesn’t resemble any of the senior folks we used to know. Perhaps that’s the mushroom connoisseur.
+	The man’s face is not clearly visible because of his ginormous red moustache and beard. His clothes are shabby, but what piques {PLAYER’S NAME}’s interest is a necklace with a symbol - a peace sign. Some youngsters in the city wore a similar one.
+	He seemed to notice us staring and waves at us slowly.
+	Hippie: Welcome, stranger! What brings you to this haven?
+	Are you a traveller? Came to see the village? I don’t think I’ve seen you around before…
+	His calm and intriguingly monotone voice immediately sparks a memory - This is Richard, the boy who spent all days reading books he got from Mrs. Barbara. He never really got along with other kids his age.
+	No wonder he prefers the sylvan solitude than the village square. Why does he look so much older though?
+	Richard takes a second to huff some smoke from his blunt. The smell makes {PLAYER’S NAME} dizzy. No wonder {they/he/she} didn’t recognize him - That smoke could change a newborn into a grown adult in seconds.
+	Bezi: Um, hi! You might not remember me, but I’m {PLAYER’S NAME}, Marianna’s cousin… You- you know Marianna, right? Wojciech’s daughter?
+	Richard is staring at you blankly for a mere second.
+	Hippie: No.
+	A straightforward answer.
+	Bezi: The guy who owned a diner.
+	Hippie: Ooooh, you should’ve said that sooner! I loved that diner! They served the best mushroom alfredo in the area! I love mushrooms, so I often come here to pick them. Look.
+	Richard reaches for a wicker basket from behind his back and shows {PLAYER’S NAME} his collection.
+	He really knows his mushrooms. Specimens like these would easily land on a plate in a 5-star city restaurant.
+	Hippie: Too bad the diner’s been closed for a while now… They could make something tasty with these.
+	Bezi: Actually, I’m the new owner. I was going to the lumber for new planks, but saw you instead-
+	Hippie: Take these then.
+	Richard shoves a basket into {PLAYER’S NAME}’s hands without hesitation. He’s a VERY straightforward guy. But he’s also right - {PLAYER’S NAME} could make something delicious from them. It’s a tempting offer.
+	- ACCEPT (+30 mushrooms)
+		Bezi: Well… Thank you, Richard. I should be back at the diner in a few hours. If you have time, do come by. I’ll think of something we could do with these.
+		Richard smiles warmly. It’s clear he’s excited to try the new dish.
+	- DENY (+15 mushrooms)
+		Bezi: W-what?! No, I can’t take them, I’m sorry. You probably took your sweet time to pick all of this. You should have some for yourself, Richard.
+		Hippie: Take at least half of them. What am I supposed to do with all this?
+		Eating so many mushrooms would definitely kill his liver faster than the blunts would. As there’s no point arguing with him, {PLAYER’S NAME} takes half of the mushrooms and shoves them into {their/his/her} pockets.
+	Hippie: By the way, you should call me Richie. That’s what everyone calls me.
+	If you ever need advice on mushroom-hunting in the future, find me. I can show you so many of them - sweet, bitter, brown or blue!
+	Hippie: I also saw a very strange one down the path by the lake. But I’m not sure if it’s edible. I’ve only seen such a mushroom in one book.
+	Hippie: Though, it was a science-fiction novel from the 20s… It was a brain-eating mushroom who controlled people to make it reproduce and take over the whole universe. *chuckle*
+	Hippie: But there’s no mushroom like that. I would know about it.
+	A brain-eating mushroom. That’s an interesting concept for a story.
+	There is an awkward silence between the two. While Richie surely doesn’t believe in such monstrosities, {PLAYER’S NAME}’s mind is intrigued. To say the least.
+	With a smile, Richie waves {them/him/her} goodbye as {PLAYER’S NAME} leaves for the lumber.
+- GO TO THE SQUARE MARKET
+	The square, as in every village, is the heart of the community.
+	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PLAYER’S NAME} to buy supplies.
+	The vendors come and go all the time, but one gentleman stays in Hubanka no matter the weather - Mr. Kabanos, with his freshly-picked vegetables and fruit.
+	Bezi: Hello, Sir. I’m {PLAYER’S NAME}, new owner of the diner. Since it’s gonna be open again, I wanted to buy some necessities.
+	characterTesty: Aye, welcome! Pick whichever you need. Picked everything straight from the farmers. You won’t find fresher produce in the area, I’ll tell ya that.
+	label MARKET TUTORIAL (-x coins)
+	Bezi: Thanks a lot! You should come by the diner sometime, once you’re off work that is. I’ll try to do these products justice- \
+	*Ugh*
+	{PLAYER’S NAME} suddenly feels a putrid stench behind {their/his/her} back. Alcohol mixed with… God knows what other substance.
+	Zdzichu: ‘Ello, Boss! You got a coin by any chance?
+	characterTesty: Go away, old drunkie.
+	Zdzichu: I ain’t talking to you, meathead.
+	The old man appears to be talking to {PLAYER’S NAME}, as {they’re/he’s/she’s} the only one at the stall except Mr. Kabanos.
+	The man’s most likely homeless, by the look of his clothes and, well… smell.
+	Times are hard, and {PLAYER’S NAME} knows this too well. The city’s misery seems to be moving to the nearby villages.
+	{They/He/She} could help him. One coin is not a fortune, but one can never be sure what it will be really spent on.
+	- YES (-1 coin)
+		Bezi: Here you go, sir.
+		Zdzichu: Ohohoho, cheers, Boss.
+		Zdzichu: Do say - Would you like an old man to tell ya a story?
+		- SURE, WHY NOT?
+			Zdzichu: Well, sit your bottocks down, ‘cause this is gonna get interesting.
+			Zdzichu: *clears throat* LONG AGO… In this very place, which we now call Hubanka, used to live an old witch.
+			<Empty Text Event>
+			<Empty Text Event>
+			<Empty Text Event>
+			<Empty Text Event>
+			Zdzichu: In the forest, I mean, not here, ‘cause people didn’t like her much. Anyway.
+			Zdzichu: She had a lush garden growing behind her cottage. Just as lush as her other garden. Don’t ask how I know, I just do.
+			<Empty Text Event>
+			Zdzichu: And in that garden there grew different plants - From nettle to peonies to mushrooms of all kinds.
+			Zdzichu: But, one day, one of the mushrooms grew out of control. It grew so big that it ATE her cottage with the witch inside.
+			Zdzichu: I guess the witch wasn’t dead enough, ‘cause some time after the dinner, the mushroom started talking with her.
+			Zdzichu: It grew a brain smart enough to think on its own. The two became friends, which is stupid if you ask me. I’d be pretty mad at it. I wouldn’t say a word to that greedy shit.
+			Zdzichu: And here they were - A witch feared by everyone, and a shitty overgrown mushroom who could talk. As if the world wasn’t fucked up enough.
+			Zdzichu: They had a plan. To take revenge on everyone who ever doubted the witch. And…
+			Zdzichu: They infected everyone with the mushroom’s spores! Lads started acting like zombies. The mushroom was IN CONTROL OF THEM.
+			Zdzichu: IT MADE AN ARMY OF MINDLESS SHROOMS. GET IT? HAHAHAHA
+			…Seems like that coin will be well spent on more alcohol, as if there wasn’t enough in his brain to think of that story.
+			Zdzichu: My advice for you, Boss - Keep. Away. From. Mushrooms.
+			Zdzichu: You’ll thank me for it.
+		- NO, THANKS. I’M RATHER BUSY.
+			Zdzichu: You don’t know what you’re missing, kid.
+			Zdzichu: Lemme just tell ya - The mushrooms are coming.
+			Zdzichu: Better watch out for yourself, hm?
+		The old man walks away looking behind at {PLAYER’S NAME} every few steps.
+		If {PLAYER’S NAME} ever sees him at the diner, {they’ll/he’ll/she’ll} remember not to put mushrooms in his dishes.
+		This might be the beginning of a rather interesting day.
+	- NO
+		Zdzichu: Ah, poop. Wanna hear a story, then?
+		Zdzichu: For one coin.
+		- OKAY, WHY NOT (-1 coin)
+			Zdzichu: So you do have a coin. *murmurs* Asshole…
+			Zdzichu: Here I go then. And sit your bottocks down, ‘cause this is gonna get interesting.
+			Zdzichu: *clears throat* LONG AGO… In this very place, which we now call Hubanka, used to live an old witch.
+			Zdzichu: In the forest, I mean, not here, ‘cause people didn’t like her much. Anyway.
+			Zdzichu: She had a lush garden growing behind her cottage. Just as lush as her other garden. Don’t ask how I know, I just do.
+			Zdzichu: And in that garden there grew different plants - From nettle to peonies to mushrooms of all kinds.
+			Zdzichu: But, one day, one of the mushrooms grew out of control. It grew so big that it ATE her cottage with the witch inside.
+			Zdzichu: I guess the witch wasn’t dead enough, ‘cause some time after the dinner, the mushroom started talking with her.
+			Zdzichu: It grew a brain smart enough to think on its own. The two became friends, which is stupid if you ask me. I’d be pretty mad at it. I wouldn’t say a word to that greedy shit.
+			Zdzichu: And here they were - A witch feared by everyone, and a shitty overgrown mushroom who could talk. As if the world wasn’t fucked up enough.
+			Zdzichu: They had a plan. To take revenge on everyone who ever doubted the witch. And…
+			Zdzichu: They infected everyone with the mushroom’s spores! Lads started acting like zombies. The mushroom was IN CONTROL OF THEM.
+			Zdzichu: IT MADE AN ARMY OF MINDLESS SHROOMS. GET IT? HAHAHAHA
+		- NO, LEAVE ME ALONE
+			Zdzichu: You don’t know what you’re missing, kid.
+			Zdzichu: Lemme just tell ya - The mushrooms are coming.
+			Zdzichu: Better watch out for yourself, hm?
+			The old man walks away looking behind at {PLAYER’S NAME} every few steps.
+			If {PLAYER’S NAME} ever sees him at the diner, {they’ll/he’ll/she’ll} remember not to put mushrooms in his dishes.
+			This might be the beginning of a rather interesting day.
+[background arg="SCENE BACKGROUND - DINER, BRIEF SOUNDS OF HAMMERING?" fade="0.0"]
+audio "SOUNDS OF HAMMERING?"
+You spend the whole morning busy with repairs. Finally you step back to examine your handiwork.
+Bezi: Well… hah… that looks much better… hah.
+Bezi: Where was that sign? *sounds of rummaging*
+Bezi: I swear I saw it here earlier… aha!
+You brandish the open sign triumphantly, and hammer it into the ground in front of the diner. It’s then that your tummy rumbles. You had completely forgotten about breakfast.
+Bezi: (thoughts)\
+Whoops! Thankfully I got some ingredients earlier… Let’s just make something small.
+Bezi: *Humming while cooking*
+characterTesty: [STRANGE WHISPER] Taaaas… Ty… Shhhh…
+Bezi: Huh? Is someone there?
+join Barbara rightmost
+join Alina right
+Alina: Look Ma! The diner’s open, I knew I smelled something tasty this way.
+Barbara: Why, this wasn’t here before. This was uhm… it was a…
+Alina: Flower shop?
+Barbara: Yes! That’s the one. You’re saying it’s open again? Good, this place was glum without flowers.
+Alina: No Ma, the flower shop closed years ago. This is the diner… Oh, hello!
+Bezi: Ah! Hello, I’ll be with you in just a moment!
+Barbara: My Henryk would like this place. He always said Hubanka needed something decent.
+Alina (Pensive): I’m sure he would…
+- Hi! what can I get you?
+	label Work in progres: TRANSITION TO COOKING FOR ALINA, THEN BARBARA
+	Work in progres\: TRANSITION TO COOKING FOR ALINA, THEN BARBARA
+- What’s the matter?
+	Alina: Nothing… it’s just that dad…
+	Barbara: …will be back before supper!
+	Alina (Pensive): For sure! *quietly sighing* He died at war, but Ma believes otherwise…
+	Bezi: Oh I’m so sorry to hear, but uhm… aren’t you Alina? I’m [Player_name]. Remember me?
+	Alina (Smiling): Wow I totally didn’t recognise you! I heard you left for the city! It’s been years. What are you doing here?
+	Bezi: Yeah, I’ve come back home I guess, and now I’m running the diner. The city was… too stressful.
+	Alina (Default): Really? Huh… I thought for sure Marianna would be taking over the diner.
+	Bezi: She was supposed to, but she asked me to run it in her stead. The city calls out to her as it once did to me.
+	Bezi: Have you seen her today by any chance?
+	Alina: No… I can’t say that I have… Shouldn’t she be… well… here?
+	Bezi: We spoke just yesterday… She must have gone out early in the morning… but where to?
+	Bezi: I hope she didn’t hop on the 1st bus that came this way without saying goodbye.
+	Alina (Scared): That… would be pretty mean.
+	Alina (Default): So… what do you serve here anyway?
+	Bezi: Oh… yeah the menu is uhm… limited for now, I’m still getting things ready. But I can make you any of these\:…
+	label SWITCH TO COOKING MINIGAME
+- Ma’am! Please leave the potted plants alone
+	Alina (Scared): Hey… don’t yell at her… look you startled her!
+	Barbara: Hrmpf, where are your manners young one! If Henryk were here he wouldn’t stand for such behaviour!
+	Bezi: I’m so sorry, it’s just those plants were barely holding on when I got here and…
+	Alina: Wait… you seem familiar… [Player_name]?
+	Bezi: Yeah, actually. And you’re Alina right?
+	Alina: Well it’s been a while. Why are you here? I expected Marianna or Wojciech, since they like… own this place?
+	Bezi: Oh… no no they gave it to me just yesterday when I…
+	Barbara: Listen here young one, the state of these plants is unacceptable for a flower shop, how can you…
+	Alina (Default): No, Ma… I told you this is the diner…
+	Alina: Here let’s order… What would you like?
+	label COOKING MINIGAME (switch so that BARBARA orders 1st)

@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/kitchen shelf/kitchen_shelf.gd" id="1_icbk6"]
 [ext_resource type="Script" uid="uid://jqcga4p5hce5" path="res://scenes/gameplay/drag and drop/BarWork.gd" id="1_v10i0"]
-[ext_resource type="Texture2D" uid="uid://cx4q7bkyge5te" path="res://Assets/pics/gar.png" id="4_m2xqb"]
+[ext_resource type="Texture2D" uid="uid://cx4q7bkyge5te" path="res://assets/pics/gar.png" id="4_m2xqb"]
 [ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
-[ext_resource type="Texture2D" uid="uid://vynx1sypbhhp" path="res://Assets/pics/soup.png" id="5_vbxp8"]
-[ext_resource type="Texture2D" uid="uid://74tdsu4dc4iy" path="res://Assets/pics/shroomPantry.png" id="7_v10i0"]
+[ext_resource type="Texture2D" uid="uid://vynx1sypbhhp" path="res://assets/pics/soup.png" id="5_vbxp8"]
+[ext_resource type="Texture2D" uid="uid://74tdsu4dc4iy" path="res://assets/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
 
 [sub_resource type="Theme" id="Theme_gbcjh"]

@@ -1,0 +1,200 @@
+After both ladies have had their meal, there’s a brief pause, during which you could initiate a conversation. One thought in particular has been nagging you.
+Bezi: (thoughts)\
+While I recognise Alina, I have no clue who the old lady is. I can only recall her dad
+- ASK
+	Bezi: Thank you for coming!
+	Bezi: Hey… uhm… Alina, may I have a word?
+	Alina (Scared): Uh… sure…? What is it?
+	label BARBARA PORTRAIT FADES
+	Bezi: Uhh… how do I put it… uhm did your father remarry?
+	Alina: Huh???
+	Bezi: It’s just… I remember your dad right - Bartosz?
+	Bezi: And his friend Henryk, right? So who’s… *pointing towards door*
+	Alina (Smiling): Oh! I get it now! Haha You’ve really been away for a while.
+	Alina (Sorrow): Yeah that’s… my dad alright. He’s old age has caught up to him - he’s got Alzheimer's. Frankly it’s like he’s forgotten who he is.
+	Bezi: Oh! I am so sorry to hear that.
+	Alina (Default): Yeah, don’t be. It’s a cruel twist of fate, really.
+	Bezi: Oh?
+	Alina: Yeah, since I’m a nurse - I knew I would need to take care of her… uh him…  but this is… Yeah you really should have been here when it started. The neighbors wouldn’t stop talking about it…
+	Bezi: Ah, I see.
+	Bezi: Well uh… drop by anytime, and sorry about…
+	Alina: It’s fine. It was nice meeting you.
+- DROP IT
+	You decide to let them leave, but as soon as they do you hear a commotion outside.
+	audio "*CATCALL NOISE*"
+	join Zdzichu (Visibly drunk) center
+	Zdzichu (Visibly drunk): Ooo, Hubanka’sss finest out for inshpection!
+	The drunken man stumbles past them.
+	Barbara (Smiling Kindly):  He still remembers me!
+	Alina (Sorrow):  Uhg… He remembers everyone after three bottles. He should really lay them off.
+	Barbara: Well what joy would he have left in life? Cabbage and eggs? Like his wife used to make…
+	Alina (Scared): Why… How do you remember that, Ma?
+	Barbara: Hm? Remember what?
+	audio "FOOTSTEPS LEAVING"
+label NWM CZY TUTAJ POWINIEN BYĆ KONIEC CHOISÓW BO WYDAJE MI SIĘ ŻE COŚ JEST NIE TAK W DOKUMENCIE
+The diner got quiet. It’s this time of day where one shouldn't expect much commotion.
+Bezi: (thoughts)\
+*sigh* This is just the beginning, isn’t it?
+Bezi: Well, with no customers in sight for now, I think I should think of some new dishes. Can’t keep going in circles with the menu.
+Bezi: Let’s see what we have here. Some carrots and potatoes would make a nice stew. Add meat, and we have a goulash.
+Bezi: What else? Alcohol, cheese, sugar… I’ve heard of a foreign desert like that once, but I’m not sure how to make it yet.
+{PLAYER’S NAME}’s focus shifts when a strange rummaging reverberates nearby.
+Like someone knocking on hard wood. But there are no customers by the door yet.
+characterTesty: STRANGE WHISPER\
+Me…Meaat. Fufuf…
+Bezi: (thoughts)\
+I knew this would happen one day or another.
+Bezi: Rats. Probably…
+Bezi: They’d never miss a chance to grab the supplies for themselves.
+Bezi: I need to find their nest or whatever way they got into the diner.
+- CHECK THE OTHER CABINETS
+	{PLAYER’S NAME} checks all the cabinets in the kitchen to make sure no rodents step their little feet in there.
+	The only thing {they/he/she} notice/s are some patches of mold growing on the wood. It’s slightly wet and gooey.
+	Disgusting sight, to say the least.
+	Bezi: (thoughts)\
+	*Eugh* I thought I cleaned them all right…
+	(thoughts)\
+	Where did this stuff come from?
+	Aside from the obvious, there are no little locators in any of the cabinets.
+- CHECK THE BASEMENT
+	{PLAYER’S NAME} steps into the basement. It’s rather dark down there, but {they/he/she} don’t spot any rodents. Thankfully.
+	There’s only some spots of mold growing on the walls. The basement is rather humid, so no wonder it picked this place to grow.
+	However, {they/he/she} notice/s a small mushroom growing just beneath the wall.
+	It’s a champignon.
+	Bezi: Heh. Hello, little guy.
+	Bezi: Now, this is a much nicer sight to see.
+	Bezi: I should let it grow more. I’ll take care of the mold soon, so it doesn’t bother you.
+The whispering seemed to disappear.
+Bezi: (thoughts)\
+…There’s nothing here. Hmm. Maybe it was the wind.
+Bezi: Heh. Or maybe it’s the mold. I heard it’s not very healthy to breathe it in.
+Bezi: I need to get rid of it or I might lose my mind. *snicker* What am I saying…
+audio "DOOR OPENING SOUND"
+Suddenly, {they/he/she} hear/s the diner door open. {They/He/She} go/es to the counter.
+A young lady in overalls comes in. {PLAYER’S NAME} recognizes her - This is the moonshiner Katerina.
+Originally from Czechoslovakia, she settled in our village because she heard the alcohol market in the area is great.
+{PLAYER’S NAME} and her go a long way back, when {they/he/she} were/was still living in the city.
+Katerina used to deliver Marianna’s messages to {PLAYER’S NAME} as some sort of favour. {PLAYER’S NAME} never got to know what the truth was, though.
+Katerina (Default): Hiya, {PLAYER’S NAME}! You here. Good. Me hungry.
+The language barrier between the two is clearly visible. At least she got some basics down.
+And if {PLAYER’S NAME} doesn’t understand, she’s ready to march into the kitchen herself and serve whatever she needs.
+Katerina: You have uuh… cheese and meat, yes? No? I want this.
+Bezi: I was just thinking about new dishes, but this mix didn’t come to my head yet.
+Bezi: I’ll think of something tasty.
+Katerina is visibly content and excited for her piece of well-done meaty delight.
+{PLAYER’S NAME} hears a faint meowing from behind the counter.
+This must be her new companion, Larry, Marianna mentioned once.
+He was an Italian stray, but its charm worked on Katerina from the start and she decided to take care of him.
+Bezi: *chuckle* And something for the gentleman too, I suppose?
+lionsmith: LARRY\
+Meow.
+label GAMEPLAY
+The quickly made-up recipe worked better than {PLAYER’S NAME} thought. Now it’s Katerina’s turn to judge it.
+The lady takes the plate and digs right in.
+Katerina: Mhm. This? Good!
+Katerina: But… No money. Sorry… Give next time.
+Katerina: BUT! Have this.
+She puts a bottle of clear liquid on the counter.
+Katerina: Good?
+Alcohol from the best brewer in the area seems like a good deal instead of money. But… {PLAYER’S NAME} can’t buy produce or pay rent with vodka alone.
+The times are hard, and at least she didn’t come empty handed.
+The thought alone counts.
+- ACCEPT (+booze)
+	Bezi: Well… I haven’t cooked anything with alcohol yet. Some clients would love to try some of your delicacies on their own too.
+	Bezi: When I make a new dish with this, you’ll be the first to try it.
+	Bezi: It’s a deal?
+	{PLAYER’S NAME} takes the bottle behind the counter.
+	Katerina is happy with {their/his/her} response and Larry purrs in agreement.
+- DEMAND MONEY (+booze either way)
+	Bezi: What? No, Katka, I’m sorry but money is important here. You’ll have to pay as soon as you get the money.
+	Katerina is upset, but her mercantile nature speaks up for her.
+	Katerina: WAIT. Please, take. I go to Italy for it. Good stuff. Good mushrooms inside. And- and plants! Sweet. And spicy. But good. Best in Europe!
+	The Italian mushroom seems like a truffle. And by plants she most likely means the herbs. The Mediterranean countries are flooded with good spices and herbs after all.
+	Her story makes {PLAYER’S NAME} feel bad, yet at the same time Katerina is known for flashy stories and adventures.
+	Who knows if the story is true.
+	On the other hand, the booze does sound luxurious. And if other clients hear what delicacy it is, they might just come from the city itself to try it.
+	{PLAYER’S NAME}’s seen what upset Katerina can do. Even to a friend.
+	Perhaps taking the booze is the best option here. The money the diner will get for it will be more or less equal to Katerina's dish.
+	{PLAYER’S NAME} takes the bottle behind the counter and Katerina sighs with relief. Larry is watching you closely.
+The moonshiner keeps munching on her food and telling stories in between each bite.
+It’s incredible how many places she’s visited in such a short time.
+She managed to get ingredients from nearly every country in Europe. No wonder her brews sell so good.
+{PLAYER’S NAME} is not much of a drinker, but even {they/he/she} can tell a good booze from a standard one.
+audio "DOOR OPENING SOUND"
+The talk gets interrupted by a man standing in the doorway holding a package. Perhaps a courier.
+characterTesty: THE MAN\
+Package for {Mx./Mr./Ms.} {PLAYER’S NAME}.
+Bezi: Hm? I didn’t order anything.
+characterTesty: THE MAN\
+Not my problem. Sign here please.
+The package is not very big, but it’s definitely heavy. And a tad wet.
+The courier goes away.
+Katerina: Hm? Smell… *sniff* meat.
+{PLAYER’S NAME} takes a whiff of the package’s smell and nods in agreement. The package is full of fresh, red meat.
+{PLAYER’S NAME}’s seen chickens, beef, or even mutton meat, but this one doesn’t resemble any one of them.
+Could it be something better? Venison sounds tasty…
+{PLAYER’S NAME}’s mouth starts to salivate from the thought alone.
+{They/He/She} should ask the butcher when {they/he/she} get/s a chance. This could just be a nice welcoming gift from him.
+label Time passes chyba? …
+As the hours go by, more customers start flooding into the diner.
+Time to get to work.
+label MORE GAMEPLAY. shadow customers. not important. 
+label TIMESKIP - END OF THE SHIFT, LATE EVENING
+Bezi: (thoughts)\
+*Sigh* I’m exhausted. Can’t believe uncle Wojciech used to do this for so many years.
+Bezi: (thoughts)\
+Perhaps I’ll get used to it. One day. Or week… Year?
+Bezi: (thoughts)\
+At least I got some money to start with. This should be enough to cover another batch of products.
+Bezi: (thoughts)\
+I’ve seen so many old faces today. It makes me feel a little nostalgic, I must admit.
+Bezi: (thoughts)\
+The village keeps changing. Some people go, some people come, and some stay the same for years.
+Bezi: (thoughts)\
+I hope things will get better here. For me, and for others too…
+{PLAYER’S NAME} smiles at {themselves/himself/herself}. This was a good day indeed.
+But to keep the good spirits up, {they/he/she} have/has to take good care of the diner.
+Bezi: (thoughts)\
+Let’s start by cleaning the tables and the counters. Then the plates and glasses.
+Bezi: (thoughts)\
+I’ll leave the floor and kitchen for the last.
+While cleaning, something gets {their/his/her} attention.
+Someone is staring at the {PLAYER’S NAME} through the window.
+{PLAYER’S NAME} focuses {their/his/her} eyes on the person - It’s a lady in a trenchcoat. Very elegant one.
+She is observing {them/him/her} closely, almost like a predator watching its prey.
+Bezi: (thoughts)\
+I wonder… Does she want to come in?
+Bezi: (thoughts)\
+It’s nearly closing time, though.
+Bezi: (thoughts)\
+What if she just finished her job? She might be hungry.
+- LEAVE THE MATTER
+	Bezi: (thoughts)\
+	If she wanted to come in, then why isn’t she?
+	Bezi: (thoughts)\
+	Well, I’m not the one to force her in, I guess.
+	The lady notices {PLAYER’S NAME} staring at her. She leaves immediately in the direction of the square.
+- GO TO HER
+	Bezi: I should offer her some food. That’s the least I can do.
+	As soon as {PLAYER’S NAME} gets from behind the counter, the lady notices. {They/He/She} don’t/doesn’t have time to even open the door, as she leaves immediately and starts walking in the direction of the square.
+label Tu coś powinno być?
+Bezi: (thoughts)\
+Strange… Was she looking for something?
+Bezi: (thoughts)\
+Or maybe I scared her off…
+Bezi: (thoughts)\
+I don’t think I recognize her, but it’s also too dark to spot any more details.
+Bezi: (thoughts)\
+What if she’s not from here? What if she got lost?
+Bezi: (thoughts)\
+I should ask others when I get the chance. They might know if anyone like that lives here.
+{PLAYER’S NAME} looks back at the diner and sees the leftover mess on the floor.
+Bezi: (thoughts)\
+*Sigh* Alright, don’t get distracted. There is still a lot to do about this place.
+Bezi: (thoughts)\
+I have to bring it back to its former glory.
+Bezi: (thoughts)\
+For Marianna’s sake. Perhaps…
+The diner starts looking fresh again.
+{PLAYER’S NAME} puts the CLOSED sign on the door and turns the key in the lock.
+It is time for {their/his/her} long awaited break. In the bed.
