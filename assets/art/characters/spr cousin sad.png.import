@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj71kq1utiy8v"
-path="res://.godot/imported/spr cousin sad.png-b3f3b00c22b8514228f66be367d1f47a.ctex"
+path="res://.godot/imported/spr cousin sad.png-960fbfce9e7c29e8428527afdc1dcdbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/spr cousin sad.png"
-dest_files=["res://.godot/imported/spr cousin sad.png-b3f3b00c22b8514228f66be367d1f47a.ctex"]
+source_file="res://Assets/art/characters/spr cousin sad.png"
+dest_files=["res://.godot/imported/spr cousin sad.png-960fbfce9e7c29e8428527afdc1dcdbb.ctex"]
 
 [params]
 

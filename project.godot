@@ -24,14 +24,24 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
+"Alina": "res://DialogicStuff/Characters/Alina.dch",
+"Barbara": "res://DialogicStuff/Characters/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
-"Example/characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
-"Marianna": "res://DialogicStuff/Characters/Marianna.dch",
-"Marianna/Marianna": "res://DialogicStuff/ChangeCharacterPortrait/Marianna/Marianna.dch",
+"Characters/Marianna": "res://DialogicStuff/Characters/Marianna.dch",
+"Danuta": "res://DialogicStuff/Characters/Danuta.dch",
+"Hippie": "res://DialogicStuff/Characters/Hippie.dch",
+"Katerina": "res://DialogicStuff/Characters/Katerina.dch",
+"Marianna": "res://DialogicStuff/ChangeCharacterPortrait/Marianna/Marianna.dch",
+"Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
+"Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
+"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
+"Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",
+"Day_1_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
+"Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
