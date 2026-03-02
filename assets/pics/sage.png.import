@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm6hahh1vsr33"
-path="res://.godot/imported/sage.png-3a17e1048379a4da79c6363c95d3292d.ctex"
+uid="uid://dmrqmqi8qyaqd"
+path="res://.godot/imported/sage.png-737b1dd9cbb8b7d56181911327efe738.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/sage.png"
-dest_files=["res://.godot/imported/sage.png-3a17e1048379a4da79c6363c95d3292d.ctex"]
+source_file="res://assets/pics/sage.png"
+dest_files=["res://.godot/imported/sage.png-737b1dd9cbb8b7d56181911327efe738.ctex"]
 
 [params]
 

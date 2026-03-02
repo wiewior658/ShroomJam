@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c58yr60e13wcc"
-path="res://.godot/imported/spoiledmeat.png-27bd9eed5e636804e0d7d2ccd8fd0a91.ctex"
+uid="uid://ja1pv5w0m227"
+path="res://.godot/imported/spoiledmeat.png-48b1b91598d5426d42ada3d6ea47dacf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/spoiledmeat.png"
-dest_files=["res://.godot/imported/spoiledmeat.png-27bd9eed5e636804e0d7d2ccd8fd0a91.ctex"]
+source_file="res://assets/pics/spoiledmeat.png"
+dest_files=["res://.godot/imported/spoiledmeat.png-48b1b91598d5426d42ada3d6ea47dacf.ctex"]
 
 [params]
 

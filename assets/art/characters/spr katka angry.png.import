@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2tfny10mlqwo"
-path="res://.godot/imported/spr katka angry.png-af0ed4dfa3c06e17138ac8868b98f0c3.ctex"
+uid="uid://dkhtyw1kqai7n"
+path="res://.godot/imported/spr katka angry.png-56b228bc0fd389ddcad2f007ff1b77a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr katka angry.png"
-dest_files=["res://.godot/imported/spr katka angry.png-af0ed4dfa3c06e17138ac8868b98f0c3.ctex"]
+source_file="res://assets/art/characters/spr katka angry.png"
+dest_files=["res://.godot/imported/spr katka angry.png-56b228bc0fd389ddcad2f007ff1b77a8.ctex"]
 
 [params]
 

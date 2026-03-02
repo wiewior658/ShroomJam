@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db3khdld8rf7p"
-path="res://.godot/imported/spoiledapple.png-21b475068d83481a34128b482cc49459.ctex"
+uid="uid://qi5dpe6qf5jv"
+path="res://.godot/imported/spoiledapple.png-2c8f93f4d318d27b88d5b50f02013026.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/spoiledapple.png"
-dest_files=["res://.godot/imported/spoiledapple.png-21b475068d83481a34128b482cc49459.ctex"]
+source_file="res://assets/pics/spoiledapple.png"
+dest_files=["res://.godot/imported/spoiledapple.png-2c8f93f4d318d27b88d5b50f02013026.ctex"]
 
 [params]
 
