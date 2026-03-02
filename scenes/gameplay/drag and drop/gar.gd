@@ -11,9 +11,11 @@ var soupPos
 var contents=[]
 var CurrentCustomer: Customer
 
+signal splash
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	CurrentCustomer=Food.testClient
+	CurrentCustomer=Food.Marianna
 	newSoup()
 
 func newSoup()->void:
@@ -57,8 +59,7 @@ func _drop_data(_pos, data):
 							(soupColor.b*(contents.size()-1)+droppedFood.color.b)/contents.size())
 			
 		updateInfo()
-	print("itemNumber: ", contents.size(),", taste: ",taste,", nourishment: ",nourishment)
-
+	splash.emit(-30)
 
 func _on_button_button_up() -> void:
 	newSoup()

@@ -33,7 +33,7 @@ var NoSell=[Rot, RottenCarrot, RottenMeat, RottenTurnip, RottenBread, RottenAppl
 #kolejność: Name, expected_nourishment, expected_taste, money, likes:Array, dislikes:Array, happiness, shroomness
 var testClient=Customer.create("Testy",5,5,10,[Carrot],[Shroom])
 
-var Marianna=Customer.create("Marianna",7,8,250,,)
+var Marianna=Customer.create("Marianna",7,8,250)
 var Wojciech=Customer.create("Wojciech",5,8,280,[Shroom, Chicken, Sausage, Potato, Cabbage],[Bark, Dandelion, Nettle])
 var Zdzichu=Customer.create("Zdzichu",8,8,200,[Wodka,Egg,Potato, Cabbage],[Bark, Dandelion, Nettle,Bread])
 var Richie=Customer.create("Richie",7,6,60,[Shroom, Carrot, Apple, Bark, Cabbage, Dandelion, Nettle, Potato, Turnip],[Chicken, Egg, Sausage, Wodka, Milk, Cheese])
