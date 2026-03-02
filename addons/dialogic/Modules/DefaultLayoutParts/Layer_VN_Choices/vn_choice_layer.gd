@@ -112,6 +112,27 @@ func _apply_export_overrides() -> void:
 	sb5.texture_margin_right = choice_texture_margin_right
 	sb5.texture_margin_top = choice_texture_margin_top
 	
+	sb1.expand_margin_bottom = choice_texture_margin_bottom
+	sb1.expand_margin_left = choice_texture_margin_left
+	sb1.expand_margin_right = choice_texture_margin_right
+	sb1.expand_margin_top = choice_texture_margin_top
+	sb2.expand_margin_bottom = choice_texture_margin_bottom
+	sb2.expand_margin_left = choice_texture_margin_left
+	sb2.expand_margin_right = choice_texture_margin_right
+	sb2.expand_margin_top = choice_texture_margin_top
+	sb3.expand_margin_bottom = choice_texture_margin_bottom
+	sb3.expand_margin_left = choice_texture_margin_left
+	sb3.expand_margin_right = choice_texture_margin_right
+	sb3.expand_margin_top = choice_texture_margin_top
+	sb4.expand_margin_bottom = choice_texture_margin_bottom
+	sb4.expand_margin_left = choice_texture_margin_left
+	sb4.expand_margin_right = choice_texture_margin_right
+	sb4.expand_margin_top = choice_texture_margin_top
+	sb5.expand_margin_bottom = choice_texture_margin_bottom
+	sb5.expand_margin_left = choice_texture_margin_left
+	sb5.expand_margin_right = choice_texture_margin_right
+	sb5.expand_margin_top = choice_texture_margin_top
+	
 	sb2.expand_margin_bottom+=margin_thickness
 	sb2.expand_margin_left+=margin_thickness
 	sb2.expand_margin_right+=margin_thickness

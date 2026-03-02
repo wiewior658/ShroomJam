@@ -16,7 +16,7 @@
 script = ExtResource("2_ryarb")
 scene = ExtResource("1_6a2ko")
 overrides = {
-"global_bg_color": "Color(1, 1, 1, 0.6313726)",
+"global_bg_color": "Color(1, 1, 1, 1)",
 "global_font_color": "Color(0, 0, 0, 1)"
 }
 
@@ -36,8 +36,17 @@ scene = ExtResource("5_vi2bg")
 script = ExtResource("2_ryarb")
 scene = ExtResource("6_24qv2")
 overrides = {
-"box_panel": "\"res://DialogicStuff/gendarme.png\"",
-"name_label_box_panel": "\"res://DialogicStuff/smuglastor.png\""
+"box_panel": "\"res://assets/dialoguebox.png\"",
+"label_texture_margin_bottom": "10.0",
+"label_texture_margin_left": "25.0",
+"label_texture_margin_right": "10.0",
+"label_texture_margin_top": "10.0",
+"name_label_box_offset": "Vector2(-100, 0)",
+"name_label_box_panel": "\"res://assets/namebox.png\"",
+"panel_texture_margin_bottom": "36.0",
+"panel_texture_margin_left": "100.0",
+"panel_texture_margin_right": "17.0",
+"panel_texture_margin_top": "25.0"
 }
 
 [sub_resource type="Resource" id="Resource_hu3fd"]
@@ -48,11 +57,14 @@ scene = ExtResource("7_jqtq8")
 script = ExtResource("2_ryarb")
 scene = ExtResource("8_p8nr1")
 overrides = {
-"boxes_stylebox_disabled": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/preview.png\"",
-"boxes_stylebox_focused": "\"res://DialogicStuff/smuglastor.png\"",
-"boxes_stylebox_hovered": "\"res://DialogicStuff/smuglastor.png\"",
-"boxes_stylebox_normal": "\"res://DialogicStuff/gendarme.png\"",
-"boxes_stylebox_pressed": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/preview.png\"",
+"boxes_stylebox_focused": "\"res://assets/3choice.png\"",
+"boxes_stylebox_hovered": "\"res://assets/2choice.png\"",
+"boxes_stylebox_normal": "\"res://assets/choiceboxregular.png\"",
+"boxes_stylebox_pressed": "\"res://assets/1choice.png\"",
+"choice_texture_margin_bottom": "10.0",
+"choice_texture_margin_left": "30.0",
+"choice_texture_margin_right": "30.0",
+"choice_texture_margin_top": "10.0",
 "margin_thickness": "2.0"
 }
 

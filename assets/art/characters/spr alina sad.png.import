@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwk4sn7gvfldo"
-path="res://.godot/imported/spr alina sad.png-0ddf74b52063578ebf4d4f97c017ae20.ctex"
+uid="uid://b2r4cwwst2cgy"
+path="res://.godot/imported/spr alina sad.png-30b6c9bae9f3e208a16061823a3b2d2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr alina sad.png"
-dest_files=["res://.godot/imported/spr alina sad.png-0ddf74b52063578ebf4d4f97c017ae20.ctex"]
+source_file="res://assets/art/characters/spr alina sad.png"
+dest_files=["res://.godot/imported/spr alina sad.png-30b6c9bae9f3e208a16061823a3b2d2b.ctex"]
 
 [params]
 

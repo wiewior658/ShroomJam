@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cchixhvm54h5c"
-path="res://.godot/imported/spr zdzich asleep.png-4887f174b31949f60e806e090c590120.ctex"
+uid="uid://be6wafiacaeax"
+path="res://.godot/imported/spr zdzich asleep.png-b76e855d7846770c56e5bd4c47a33575.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr zdzich asleep.png"
-dest_files=["res://.godot/imported/spr zdzich asleep.png-4887f174b31949f60e806e090c590120.ctex"]
+source_file="res://assets/art/characters/spr zdzich asleep.png"
+dest_files=["res://.godot/imported/spr zdzich asleep.png-b76e855d7846770c56e5bd4c47a33575.ctex"]
 
 [params]
 
