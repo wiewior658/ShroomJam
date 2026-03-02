@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bouk02cw2a3ff"
-path="res://.godot/imported/Wind Sound FX.mp3-fa7910f920014d14530b623b7344281f.mp3str"
+path="res://.godot/imported/Wind Sound FX.mp3-643aa52f6547cc7346951bcfff26c7cb.mp3str"
 
 [deps]
 
-source_file="res://assets/audio/Wind Sound FX.mp3"
-dest_files=["res://.godot/imported/Wind Sound FX.mp3-fa7910f920014d14530b623b7344281f.mp3str"]
+source_file="res://Assets/audio/Wind Sound FX.mp3"
+dest_files=["res://.godot/imported/Wind Sound FX.mp3-643aa52f6547cc7346951bcfff26c7cb.mp3str"]
 
 [params]
 

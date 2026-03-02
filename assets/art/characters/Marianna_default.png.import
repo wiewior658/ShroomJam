@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu587gmyhuxn8"
-path="res://.godot/imported/Marianna_default.png-0aae4509bfd287de57c53cffc4b083a7.ctex"
+path="res://.godot/imported/Marianna_default.png-5fff6b6f48456792a8512586b5290f94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/Marianna_default.png"
-dest_files=["res://.godot/imported/Marianna_default.png-0aae4509bfd287de57c53cffc4b083a7.ctex"]
+source_file="res://Assets/art/characters/Marianna_default.png"
+dest_files=["res://.godot/imported/Marianna_default.png-5fff6b6f48456792a8512586b5290f94.ctex"]
 
 [params]
 

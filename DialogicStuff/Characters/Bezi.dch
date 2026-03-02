@@ -12,7 +12,7 @@
 },
 &"default_portrait": "Bezi Default",
 &"description": "",
-&"display_name": "Bezi",
+&"display_name": "{PlayerName}",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, -50),

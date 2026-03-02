@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="ShroomJamGame"
+config/name="Mycelium"
 run/main_scene="uid://ckh7ohu0m8fev"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="uid://cx4q7bkyge5te"
@@ -24,13 +24,22 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
+"Alina": "res://DialogicStuff/Characters/Alina.dch",
+"Barbara": "res://DialogicStuff/Characters/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
+"Danuta": "res://DialogicStuff/Characters/Danuta.dch",
+"Hippie": "res://DialogicStuff/Characters/Hippie.dch",
+"Katerina": "res://DialogicStuff/Characters/Katerina.dch",
 "Marianna": "res://DialogicStuff/Characters/Marianna.dch",
+"Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
+"Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/characterTesty.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
+"Day_1_before_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
+"Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
@@ -39,9 +48,12 @@ layout/style_directory={
 "New_style": "res://DialogicStuff/New_style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://DialogicStuff/New_style.tres", "res://DialogicStuff/testing_history.tres"]
+layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
+"Choices": 0.0,
+"PlayerName": "Bezi",
+"Pronouns": "",
 "TestyShroomness": 1
 }
 text/letter_speed=0.01

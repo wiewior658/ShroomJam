@@ -36,8 +36,9 @@ scene = ExtResource("5_vi2bg")
 script = ExtResource("2_ryarb")
 scene = ExtResource("6_24qv2")
 overrides = {
-"box_panel": "\"res://DialogicStuff/gendarme.png\"",
-"name_label_box_panel": "\"res://DialogicStuff/smuglastor.png\""
+"box_panel": "\"res://Assets/dialoguebox.png\"",
+"box_size": "Vector2(650, 200)",
+"name_label_box_panel": "\"res://Assets/namebox.png\""
 }
 
 [sub_resource type="Resource" id="Resource_hu3fd"]
@@ -48,11 +49,11 @@ scene = ExtResource("7_jqtq8")
 script = ExtResource("2_ryarb")
 scene = ExtResource("8_p8nr1")
 overrides = {
-"boxes_stylebox_disabled": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/preview.png\"",
-"boxes_stylebox_focused": "\"res://DialogicStuff/smuglastor.png\"",
-"boxes_stylebox_hovered": "\"res://DialogicStuff/smuglastor.png\"",
-"boxes_stylebox_normal": "\"res://DialogicStuff/gendarme.png\"",
-"boxes_stylebox_pressed": "\"res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/preview.png\"",
+"boxes_min_size": "Vector2(200, 50)",
+"boxes_stylebox_focused": "\"res://Assets/2choice.png\"",
+"boxes_stylebox_hovered": "\"res://Assets/1choice.png\"",
+"boxes_stylebox_normal": "\"res://Assets/choiceboxregular.png\"",
+"boxes_stylebox_pressed": "\"res://Assets/3choice.png\"",
 "margin_thickness": "2.0"
 }
 

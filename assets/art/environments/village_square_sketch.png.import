@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clea3oyn2qdhx"
-path="res://.godot/imported/village_square_sketch.png-28b3bd78e068aacff2941785ed02c028.ctex"
+path="res://.godot/imported/village_square_sketch.png-db4b9b5173056770b5a2ebff8e54d9ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/environments/village_square_sketch.png"
-dest_files=["res://.godot/imported/village_square_sketch.png-28b3bd78e068aacff2941785ed02c028.ctex"]
+source_file="res://Assets/art/environments/village_square_sketch.png"
+dest_files=["res://.godot/imported/village_square_sketch.png-db4b9b5173056770b5a2ebff8e54d9ed.ctex"]
 
 [params]
 
