@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06vfushd14cw"
-path="res://.godot/imported/moldycarrot.png-dc448099b778de6dbc6853397f9d985f.ctex"
+uid="uid://kth1xakh2n0v"
+path="res://.godot/imported/moldycarrot.png-b0370ffee59990e3bd43b0c1806b3dee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/moldycarrot.png"
-dest_files=["res://.godot/imported/moldycarrot.png-dc448099b778de6dbc6853397f9d985f.ctex"]
+source_file="res://assets/pics/moldycarrot.png"
+dest_files=["res://.godot/imported/moldycarrot.png-b0370ffee59990e3bd43b0c1806b3dee.ctex"]
 
 [params]
 

@@ -16,6 +16,7 @@ func _process(delta)->void:
 
 func _on_go_right_btn_button_up() -> void:
 	cameraXpos=576.0
+	
 
 func _on_go_left_btn_button_up() -> void:
 	cameraXpos=-576.0

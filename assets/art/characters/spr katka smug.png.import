@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8tw3mybwn0sc"
-path="res://.godot/imported/spr katka smug.png-bbdb580a1763c5e2b8ddbdb25fca23ce.ctex"
+uid="uid://bm1svh1epka3h"
+path="res://.godot/imported/spr katka smug.png-c3d1b176ce68b8affd73e4eb2845ebfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr katka smug.png"
-dest_files=["res://.godot/imported/spr katka smug.png-bbdb580a1763c5e2b8ddbdb25fca23ce.ctex"]
+source_file="res://assets/art/characters/spr katka smug.png"
+dest_files=["res://.godot/imported/spr katka smug.png-c3d1b176ce68b8affd73e4eb2845ebfb.ctex"]
 
 [params]
 

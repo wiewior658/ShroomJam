@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcqgpxtccehmy"
-path="res://.godot/imported/moldyturnip.png-1f15ec49ce1f17e874978591237d3ec0.ctex"
+uid="uid://c41ku0ct6fx7f"
+path="res://.godot/imported/moldyturnip.png-1fead40576461bb37be768831f868e55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/moldyturnip.png"
-dest_files=["res://.godot/imported/moldyturnip.png-1f15ec49ce1f17e874978591237d3ec0.ctex"]
+source_file="res://assets/pics/moldyturnip.png"
+dest_files=["res://.godot/imported/moldyturnip.png-1fead40576461bb37be768831f868e55.ctex"]
 
 [params]
 

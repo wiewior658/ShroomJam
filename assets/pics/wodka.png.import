@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djla3qcg6x8qa"
-path="res://.godot/imported/wodka.png-f9fbdd9507d275f61ddb1153fbdf8f23.ctex"
+uid="uid://xr0pohs0t7dy"
+path="res://.godot/imported/wodka.png-1fe131d9666702eeec14306112ef7a96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pics/wodka.png"
-dest_files=["res://.godot/imported/wodka.png-f9fbdd9507d275f61ddb1153fbdf8f23.ctex"]
+source_file="res://assets/pics/wodka.png"
+dest_files=["res://.godot/imported/wodka.png-1fe131d9666702eeec14306112ef7a96.ctex"]
 
 [params]
 

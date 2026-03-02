@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c35uhib8jc1jt"
-path="res://.godot/imported/spr danuta.png-3f6a66974e3e077e5ba4b44f10d61e6e.ctex"
+uid="uid://d1evoirrbncyb"
+path="res://.godot/imported/spr danuta.png-97b1d0b04862d55343581eccc8ee99ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr danuta.png"
-dest_files=["res://.godot/imported/spr danuta.png-3f6a66974e3e077e5ba4b44f10d61e6e.ctex"]
+source_file="res://assets/art/characters/spr danuta.png"
+dest_files=["res://.godot/imported/spr danuta.png-97b1d0b04862d55343581eccc8ee99ff.ctex"]
 
 [params]
 

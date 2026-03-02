@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0lma7bccqxhc"
-path="res://.godot/imported/spr cousin.png-cf0f1178fa75a21c43aea34db99e361f.ctex"
+uid="uid://dx0vfs05x3plu"
+path="res://.godot/imported/spr cousin.png-132ecd71d0d8bf989ba416dcc9166d39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr cousin.png"
-dest_files=["res://.godot/imported/spr cousin.png-cf0f1178fa75a21c43aea34db99e361f.ctex"]
+source_file="res://assets/art/characters/spr cousin.png"
+dest_files=["res://.godot/imported/spr cousin.png-132ecd71d0d8bf989ba416dcc9166d39.ctex"]
 
 [params]
 

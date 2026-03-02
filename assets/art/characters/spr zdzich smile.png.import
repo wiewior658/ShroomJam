@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv1apw78sb45n"
-path="res://.godot/imported/spr zdzich smile.png-6efaeab81e9c9d9c06903811202fbc4f.ctex"
+uid="uid://clb3i6ix2i1d7"
+path="res://.godot/imported/spr zdzich smile.png-b810d5dd72d0518a55b57b1fc14cb71e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr zdzich smile.png"
-dest_files=["res://.godot/imported/spr zdzich smile.png-6efaeab81e9c9d9c06903811202fbc4f.ctex"]
+source_file="res://assets/art/characters/spr zdzich smile.png"
+dest_files=["res://.godot/imported/spr zdzich smile.png-b810d5dd72d0518a55b57b1fc14cb71e.ctex"]
 
 [params]
 
