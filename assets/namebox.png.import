@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi6bhggrvop15"
-path="res://.godot/imported/namebox.png-14f150ff3ab3fde7d9c301804add616e.ctex"
+path="res://.godot/imported/namebox.png-adf046ddafd0eac83045fe6f25ec6571.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/namebox.png"
-dest_files=["res://.godot/imported/namebox.png-14f150ff3ab3fde7d9c301804add616e.ctex"]
+source_file="res://Assets/namebox.png"
+dest_files=["res://.godot/imported/namebox.png-adf046ddafd0eac83045fe6f25ec6571.ctex"]
 
 [params]
 

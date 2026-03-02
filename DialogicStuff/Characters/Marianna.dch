@@ -19,7 +19,7 @@
 &"portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://assets/art/characters/Marianna_default.png\""
+"image": "\"res://assets/art/characters/spr cousin.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -28,7 +28,7 @@
 },
 "Pensive": {
 "export_overrides": {
-"image": "\"res://assets/art/characters/Marianna_pensive.png\""
+"image": "\"res://assets/art/characters/spr cousin sad.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -37,7 +37,7 @@
 },
 "Smiling": {
 "export_overrides": {
-"image": "\"res://assets/art/characters/Marianna_smiling.png\""
+"image": "\"res://assets/art/characters/spr cousin happy.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
