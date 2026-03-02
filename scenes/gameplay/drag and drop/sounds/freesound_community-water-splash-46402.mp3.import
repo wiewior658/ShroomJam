@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vjvdjy5s7yir"
+path="res://.godot/imported/freesound_community-water-splash-46402.mp3-01738885e5da9e3ee6d388889924e680.mp3str"
+
+[deps]
+
+source_file="res://scenes/gameplay/drag and drop/sounds/freesound_community-water-splash-46402.mp3"
+dest_files=["res://.godot/imported/freesound_community-water-splash-46402.mp3-01738885e5da9e3ee6d388889924e680.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

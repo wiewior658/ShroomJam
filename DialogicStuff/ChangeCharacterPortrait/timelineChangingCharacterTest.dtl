@@ -1,6 +1,6 @@
-join Marianna/Marianna (Default) center [extra_data="set Mood/default"]
+join  center [extra_data="set Mood/default"]
 Marianna/Marianna: Marianna default, shroomness {Marianna.Shroomness}
-update Marianna/Marianna [extra_data="set Mood/happy"]
+update  [extra_data="set Mood/happy"]
 Marianna/Marianna: Marianna happy, shroomness {Marianna.Shroomness}\
 Zmienić shroomenss?
 - 0
@@ -15,5 +15,5 @@ Zmienić shroomenss?
 	set {Marianna.Shroomness} = 4.0
 [signal arg="ShroomnessChanged"]
 Marianna/Marianna: Marianna happy, shroomness {Marianna.Shroomness}
-update Marianna/Marianna [extra_data="set Mood/pensive"]
+update  [extra_data="set Mood/pensive"]
 Marianna/Marianna: Marianna pensive, shroomness {Marianna.Shroomness}

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyv67146xprc4"
-path="res://.godot/imported/spr hippie scared.png-41eb5d540be6c8533e087345f10744d4.ctex"
+uid="uid://2xafr0endtbc"
+path="res://.godot/imported/spr hippie scared.png-29e38485de3fc6440851f3318bda296d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/art/characters/spr hippie scared.png"
-dest_files=["res://.godot/imported/spr hippie scared.png-41eb5d540be6c8533e087345f10744d4.ctex"]
+source_file="res://assets/art/characters/spr hippie scared.png"
+dest_files=["res://.godot/imported/spr hippie scared.png-29e38485de3fc6440851f3318bda296d.ctex"]
 
 [params]
 
