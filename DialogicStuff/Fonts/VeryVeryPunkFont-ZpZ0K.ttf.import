@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://djlx5weslc8cj"
-path="res://.godot/imported/HomeVideo-BLG6G.ttf-46292377a33d7d6046e1e02d6aa5e434.fontdata"
+uid="uid://b818af1ai2vfx"
+path="res://.godot/imported/VeryVeryPunkFont-ZpZ0K.ttf-ac91eb85ce9ae6abd4ad1f3f9f4c9af6.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/HomeVideo-BLG6G.ttf"
-dest_files=["res://.godot/imported/HomeVideo-BLG6G.ttf-46292377a33d7d6046e1e02d6aa5e434.fontdata"]
+source_file="res://DialogicStuff/Fonts/VeryVeryPunkFont-ZpZ0K.ttf"
+dest_files=["res://.godot/imported/VeryVeryPunkFont-ZpZ0K.ttf-ac91eb85ce9ae6abd4ad1f3f9f4c9af6.fontdata"]
 
 [params]
 

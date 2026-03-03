@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b818af1ai2vfx"
-path="res://.godot/imported/VeryVeryPunkFont-ZpZ0K.ttf-a568f34a62a1b42859a19483ce6e7d37.fontdata"
+uid="uid://t7p8p43bu5nc"
+path="res://.godot/imported/SuperPencil-ARGw7.ttf-38ce0554899ba99e4df7bc9e70a22b49.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/VeryVeryPunkFont-ZpZ0K.ttf"
-dest_files=["res://.godot/imported/VeryVeryPunkFont-ZpZ0K.ttf-a568f34a62a1b42859a19483ce6e7d37.fontdata"]
+source_file="res://DialogicStuff/Fonts/SuperPencil-ARGw7.ttf"
+dest_files=["res://.godot/imported/SuperPencil-ARGw7.ttf-38ce0554899ba99e4df7bc9e70a22b49.fontdata"]
 
 [params]
 

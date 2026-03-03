@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://t7p8p43bu5nc"
-path="res://.godot/imported/SuperPencil-ARGw7.ttf-3839bf9bab76865409c579e3cda24590.fontdata"
+uid="uid://c2qjdkw36gnps"
+path="res://.godot/imported/Moogalator-yYJr3.ttf-713e4778af06914f9f8ad6801c1eeaa3.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/SuperPencil-ARGw7.ttf"
-dest_files=["res://.godot/imported/SuperPencil-ARGw7.ttf-3839bf9bab76865409c579e3cda24590.fontdata"]
+source_file="res://DialogicStuff/Fonts/Moogalator-yYJr3.ttf"
+dest_files=["res://.godot/imported/Moogalator-yYJr3.ttf-713e4778af06914f9f8ad6801c1eeaa3.fontdata"]
 
 [params]
 

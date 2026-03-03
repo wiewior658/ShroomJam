@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b5c0p00x6g6u5"
-path="res://.godot/imported/Roboto-Italic.ttf-844485a0171d6031f98f4829003a881a.fontdata"
+uid="uid://ddudawqfcv01h"
+path="res://.godot/imported/SuperMystery-BLG4x.ttf-71dfb2ff6aa11bcd3ebdd95521bc0192.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/Roboto-Italic.ttf"
-dest_files=["res://.godot/imported/Roboto-Italic.ttf-844485a0171d6031f98f4829003a881a.fontdata"]
+source_file="res://DialogicStuff/Fonts/SuperMystery-BLG4x.ttf"
+dest_files=["res://.godot/imported/SuperMystery-BLG4x.ttf-71dfb2ff6aa11bcd3ebdd95521bc0192.fontdata"]
 
 [params]
 
@@ -23,7 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

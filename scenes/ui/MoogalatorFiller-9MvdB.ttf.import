@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dtvnmkq0s1al2"
-path="res://.godot/imported/SuperRugged-4nBy9.ttf-086db8f2e3a80d0c079132d95d1ec140.fontdata"
+uid="uid://pgywea8k7tmf"
+path="res://.godot/imported/MoogalatorFiller-9MvdB.ttf-ce68b693ffa481ac78fb1dcdde6f8144.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/SuperRugged-4nBy9.ttf"
-dest_files=["res://.godot/imported/SuperRugged-4nBy9.ttf-086db8f2e3a80d0c079132d95d1ec140.fontdata"]
+source_file="res://scenes/ui/MoogalatorFiller-9MvdB.ttf"
+dest_files=["res://.godot/imported/MoogalatorFiller-9MvdB.ttf-ce68b693ffa481ac78fb1dcdde6f8144.fontdata"]
 
 [params]
 
