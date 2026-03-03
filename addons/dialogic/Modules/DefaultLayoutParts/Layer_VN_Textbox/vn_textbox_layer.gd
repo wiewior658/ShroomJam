@@ -165,6 +165,10 @@ func _apply_box_settings() -> void:
 		sb.texture_margin_left = panel_texture_margin_left
 		sb.texture_margin_right = panel_texture_margin_right
 		sb.texture_margin_top = panel_texture_margin_top
+		sb.expand_margin_bottom = panel_texture_margin_bottom
+		sb.expand_margin_left = panel_texture_margin_left
+		sb.expand_margin_right = panel_texture_margin_right
+		sb.expand_margin_top = panel_texture_margin_top
 		dialog_text_panel.add_theme_stylebox_override(&'panel', sb)
 		#sb.free()
 
@@ -215,6 +219,10 @@ func _apply_name_label_settings() -> void:
 		sb.texture_margin_left = label_texture_margin_left
 		sb.texture_margin_right = label_texture_margin_right
 		sb.texture_margin_top = label_texture_margin_top
+		sb.expand_margin_bottom = label_texture_margin_bottom
+		sb.expand_margin_left = label_texture_margin_left
+		sb.expand_margin_right = label_texture_margin_right
+		sb.expand_margin_top = label_texture_margin_top
 		name_label_panel.add_theme_stylebox_override(&'panel', sb)
 	else:
 		name_label_panel.add_theme_stylebox_override(&'panel', load(this_folder.path_join("vn_textbox_name_label_panel.tres")) as StyleBox)
