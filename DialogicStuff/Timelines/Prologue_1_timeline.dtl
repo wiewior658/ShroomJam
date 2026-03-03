@@ -2,8 +2,9 @@
 # Put some pixelated art here. Not game location. We are in the void of making a decision before the game starts
 [background arg="res://" fade="0.0"]
 Tell us your name.
-[text_input text="Name:" var="PlayerName" default="Bezi"]
+[text_input text="Name:" var="PlayerName" placeholder="Bezi" default="Bezi"]
 Now pick your pronouns.
+[signal arg=""yespls""]
 - He/Him
 	set {Pronouns} = "He/Him"
 - They/Them
@@ -40,11 +41,11 @@ elif {Pronouns} == "She/Her":
 	She spots someone waving at her from a distance.
 elif {Pronouns} == "He/Him":
 	He spots someone waving at him from a distance.
-join Marianna/Marianna (Smiling) center
+join  center
 Bezi: [i]Is that… Marianna? Wow, she has changed a lot since the last time I saw her. Damn, she looks good.\
 [/i]
 audio LongSFXaddition "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Wind_Calm_Loop_Stereo.wav" [volume="0.0" bus="" loop="true"]
-update Marianna/Marianna center [animation="Shake X" fade="Fade Cross"]
+update  [animation="Shake X" fade="Fade Cross"]
 Marianna: Heey! How are you? It’s been too long!
 if {} == "They/Them":
 	She leans in and kisses them lightly on the cheek.
@@ -52,13 +53,13 @@ elif {} == "She/Her":
 	She leans in and kisses her lightly on the cheek.
 elif {} == "He/Him":
 	She leans in and kisses him lightly on the cheek.
-update Marianna/Marianna right [animation="Shake X" fade="Fade Cross"]
+update  [animation="Shake X" fade="Fade Cross"]
 Bezi: Hey there, good to see you too! Damn, the place hasn’t changed a bit. Even the flower memorial is still here after all those years.
 Marianna/Marianna (Default): Only the weather’s somehow gotten worse. Come on, I’ll show you around the diner.
 Marianna locks arms with {PlayerName} and they start walking towards the diner.
 audio "res://DialogicStuff/CopyrightFreeAudio/freesound-two-people-walking-along-a-gravel-road.mp3" [volume="6.0" bus=""]
 update Bezi [animation="Shake Y" length="1.5" repeat_forever="true"]
-update Marianna/Marianna [animation="Shake Y" length="1.5" repeat_forever="true"]
+update  Y" length="1.5" repeat_forever="true"]
 Bezi: How’s uncle Wojtek? You mentioned in your letters he’s been sick? I hope it’s nothing serious?
 {PlayerName} sees that Marianna’s gaze drops at the mention of her father.
 Marianna/Marianna (Pensive): He’s uhh… He’s not doing so well.
@@ -81,7 +82,7 @@ Marianna/Marianna (Pensive): He’s uhh… He’s not doing so well.
 	Bezi: .....
 	Marianna/Marianna (Default): Anyway! We’re here.
 Marianna/Marianna: As you know, Dad turned the old flower shop into a diner, after mom was gone… He’s poured so much time and effort into it. It’s kinda sad to see it go to waste. But, hey! Now you’re here.
-update Marianna/Marianna [animation="Bounce"]
+update 
 The pair arrives at the diner. Marianna fidgets with the keys for a short while. Once inside she flips on the light switch.
 [background arg="res://assets/art/environments/diner_dusk.jpg" fade="0.0"]
 audio LongSFXaddition -
