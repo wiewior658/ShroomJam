@@ -32,6 +32,7 @@ directories/dch_directory={
 "Katerina": "res://DialogicStuff/Characters/Katerina.dch",
 "Marianna": "res://DialogicStuff/Marianna.dch",
 "Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
+"Shroom": "res://DialogicStuff/Characters/Shroom.dch",
 "Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
 "Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch"
@@ -42,6 +43,7 @@ directories/dtl_directory={
 "Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
+"Resistance1": "res://DialogicStuff/Timelines/Resistance1.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
 layout/style_directory={
