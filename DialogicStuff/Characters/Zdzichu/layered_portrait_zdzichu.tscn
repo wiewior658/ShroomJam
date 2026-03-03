@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dbutox0afwt0w"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_8lfm0"]
+[ext_resource type="Script" uid="uid://cuatbgys7j3ah" path="res://DialogicStuff/Characters/Zdzichu/ZdzichuMood.gd" id="3_h0rnu"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=196549937]
+script = ExtResource("1_uubi5")
+
+[node name="def" type="Sprite2D" parent="." unique_id=334385179]
+texture = ExtResource("2_8lfm0")
+
+[node name="Mood" type="Node2D" parent="." unique_id=1501286330]
+script = ExtResource("3_h0rnu")
+
+[node name="Base" type="Sprite2D" parent="Mood" unique_id=1312234714]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Base" unique_id=1797144060]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Asleep" type="Sprite2D" parent="Mood" unique_id=1963581265]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Asleep" unique_id=259991974]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Happy" type="Sprite2D" parent="Mood" unique_id=1299857077]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Happy" unique_id=422865868]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Drunk" type="Sprite2D" parent="Mood" unique_id=571473944]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Drunk" unique_id=1411865737]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true

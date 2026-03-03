@@ -19,12 +19,12 @@
 &"portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Assets/art/characters/spr cousin.png\""
+"image": "\"res://assets/art/characters/spr zdzich.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": "res://DialogicStuff/Characters/Marianna/layered_portrait_marianna.tscn"
+"scene": "res://DialogicStuff/Characters/Zdzichu/layered_portrait_zdzichu.tscn"
 }
 },
 &"scale": 0.9

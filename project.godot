@@ -25,17 +25,16 @@ Stats="*uid://b66ixvt6wu3qm"
 [dialogic]
 
 directories/dch_directory={
-"Alina": "res://DialogicStuff/Characters/Alina.dch",
-"Barbara": "res://DialogicStuff/Characters/Barbara.dch",
+"Alina": "res://DialogicStuff/Characters/Alina/Alina.dch",
+"Barbara": "res://DialogicStuff/Characters/Barbara/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
-"Danuta": "res://DialogicStuff/Characters/Danuta.dch",
-"DialogicStuff/Marianna": "res://DialogicStuff/Marianna.dch",
-"Hippie": "res://DialogicStuff/Characters/Hippie.dch",
-"Katerina": "res://DialogicStuff/Characters/Katerina.dch",
-"Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
-"Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
-"Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
-"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
+"Danuta": "res://DialogicStuff/Characters/Danuta/Danuta.dch",
+"Hippie": "res://DialogicStuff/Characters/Richie/Hippie.dch",
+"Katerina": "res://DialogicStuff/Characters/Katerina/Katerina.dch",
+"Marianna": "res://DialogicStuff/Marianna.dch",
+"Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
+"Wojciech": "res://DialogicStuff/Characters/Wojciech/Wojciech.dch",
+"Zdzichu": "res://DialogicStuff/Characters/Zdzichu/Zdzichu.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
@@ -56,21 +55,9 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
-"Player": {
-"PlayerName": "Bezi",
-"Pronouns": "nb"
-},
-"Shroomnes": {
-"Barbara": 3,
-"Bezi": 0,
-"Danuta": 0,
-"Katerina": 0,
-"Marianna": 2,
-"Richie": 0,
-"Wojciech": 0,
-"Zdzichu": 0,
-"entity": 0
-}
+"PlayerName": "",
+"Pronouns": "",
+"Shroomness": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

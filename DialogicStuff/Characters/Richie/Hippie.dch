@@ -12,19 +12,19 @@
 },
 &"default_portrait": "Default",
 &"description": "",
-&"display_name": "Marianna",
+&"display_name": "Richie",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Hippie"],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Assets/art/characters/spr cousin.png\""
+"image": "\"res://assets/art/characters/spr hippie.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": "res://DialogicStuff/Characters/Marianna/layered_portrait_marianna.tscn"
+"scene": "res://DialogicStuff/Characters/Richie/layered_portrait_richie.tscn"
 }
 },
 &"scale": 0.9

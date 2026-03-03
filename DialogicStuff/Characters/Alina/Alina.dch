@@ -12,19 +12,19 @@
 },
 &"default_portrait": "Default",
 &"description": "",
-&"display_name": "Marianna",
+&"display_name": "Alina",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Assets/art/characters/spr cousin.png\""
+"image": "\"res://assets/art/characters/spr alina.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": "res://DialogicStuff/Characters/Marianna/layered_portrait_marianna.tscn"
+"scene": "res://DialogicStuff/Characters/Alina/layered_portrait_alina.tscn"
 }
 },
 &"scale": 0.9
