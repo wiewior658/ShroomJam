@@ -20,6 +20,7 @@ config/icon="uid://cx4q7bkyge5te"
 Dialogic="*uid://ds2q0uclmolvu"
 Food="*uid://fhysgsrdv0he"
 GlobalVar="*uid://j6w8ea0flq3t"
+Stats="*uid://b66ixvt6wu3qm"
 
 [dialogic]
 
