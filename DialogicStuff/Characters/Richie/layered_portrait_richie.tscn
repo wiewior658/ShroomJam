@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://m3665nq11llt"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_ebejn"]
+[ext_resource type="Script" uid="uid://bjuplpcgufm5d" path="res://DialogicStuff/Characters/Richie/RichieMood.gd" id="3_ebejn"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=44841400]
+script = ExtResource("1_uubi5")
+
+[node name="def" type="Sprite2D" parent="." unique_id=170997204]
+texture = ExtResource("2_ebejn")
+
+[node name="Mood" type="Node2D" parent="." unique_id=1923405579]
+script = ExtResource("3_ebejn")
+
+[node name="Base" type="Sprite2D" parent="Mood" unique_id=2017173884]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Base" unique_id=1926476789]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Pensive" type="Sprite2D" parent="Mood" unique_id=716370777]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Pensive" unique_id=711981037]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Happy" type="Sprite2D" parent="Mood" unique_id=520707141]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Happy" unique_id=292059142]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Scared" type="Sprite2D" parent="Mood" unique_id=1364044338]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Scared" unique_id=992912896]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true

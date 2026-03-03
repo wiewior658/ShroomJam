@@ -24,17 +24,16 @@ GlobalVar="*uid://j6w8ea0flq3t"
 [dialogic]
 
 directories/dch_directory={
-"Alina": "res://DialogicStuff/Characters/Alina.dch",
-"Barbara": "res://DialogicStuff/Characters/Barbara.dch",
+"Alina": "res://DialogicStuff/Characters/Alina/Alina.dch",
+"Barbara": "res://DialogicStuff/Characters/Barbara/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
-"Danuta": "res://DialogicStuff/Characters/Danuta.dch",
-"Hippie": "res://DialogicStuff/Characters/Hippie.dch",
-"Katerina": "res://DialogicStuff/Characters/Katerina.dch",
+"Danuta": "res://DialogicStuff/Characters/Danuta/Danuta.dch",
+"Hippie": "res://DialogicStuff/Characters/Richie/Hippie.dch",
+"Katerina": "res://DialogicStuff/Characters/Katerina/Katerina.dch",
 "Marianna": "res://DialogicStuff/Marianna.dch",
 "Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
-"Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
-"Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
-"characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
+"Wojciech": "res://DialogicStuff/Characters/Wojciech/Wojciech.dch",
+"Zdzichu": "res://DialogicStuff/Characters/Zdzichu/Zdzichu.dch",
 "lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
 }
 directories/dtl_directory={
@@ -55,14 +54,9 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
-"Marianna": {
-"Shroomness": 3
-},
 "PlayerName": "",
 "Pronouns": "",
-"Testy": {
-"Shroomness": 1
-}
+"Shroomness": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
