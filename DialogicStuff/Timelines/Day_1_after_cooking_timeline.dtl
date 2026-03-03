@@ -1,10 +1,15 @@
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3"
+join Barbara (Default) left [animation="Fade In"]
+join Alina (Default) leftmost [animation="Fade In"]
 After both ladies have had their meal, there’s a brief pause, during which you could initiate a conversation. One thought in particular has been nagging you.
 Bezi: [i]While I recognise Alina, I have no clue who the old lady is. I can only recall her dad.[/i]
 - ASK
 	Bezi: Thank you for coming!
 	Bezi: Hey… uhm… Alina, may I have a word?
-	Alina (Scared): Uh… sure…? What is it?
-	label BARBARA PORTRAIT FADES
+	update Alina (Sorrow) center [move_time="1.0"]
+	leave Barbara [animation="Fade Out"]
+	Alina (Sorrow): Uh… sure…? What is it?
 	Bezi: Uhh… how do I put it… uhm did your father remarry?
 	Alina: Huh???
 	Bezi: It’s just… I remember your dad right - Bartosz?
@@ -20,16 +25,23 @@ Bezi: [i]While I recognise Alina, I have no clue who the old lady is. I can only
 	Alina: It’s fine. It was nice meeting you.
 - DROP IT
 	You decide to let them leave, but as soon as they do you hear a commotion outside.
-	audio "*CATCALL NOISE*"
-	join Zdzichu (Visibly drunk) center
+	audio "res://DialogicStuff/CopyrightFreeAudio/catcall.mp3"
+	join Barbara (Default) left [animation="Slide From Left"]
+	update Alina leftmost [move_time="0.5"]
+	join Zdzichu (Visibly drunk) center [animation="Fade In"]
 	Zdzichu (Visibly drunk): Ooo, Hubanka’sss finest out for inshpection!
 	The drunken man stumbles past them.
-	Barbara (Smiling Kindly): He still remembers me!
+	leave Zdzichu [animation="Slide To Right"]
+	update Barbara center [move_time="1.2"]
+	update Alina left [move_time="1.2"]
+	Barbara (Default): He still remembers me!
 	Alina (Sorrow): Uhg… He remembers everyone after three bottles. He should really lay them off.
 	Barbara: Well what joy would he have left in life? Cabbage and eggs? Like his wife used to make…
-	Alina (Scared): Why… How do you remember that, Ma?
+	Alina (Sorrow): Why… How do you remember that, Ma?
 	Barbara: Hm? Remember what?
-	audio "FOOTSTEPS LEAVING"
+	audio "res://DialogicStuff/CopyrightFreeAudio/parquet-floor-footsteps.wav"
+leave Barbara [animation="Fade Out"]
+leave Alina [animation="Fade Out"]
 The diner got quiet. It’s this time of day where one shouldn't expect much commotion.
 Bezi: [i]*sigh* This is just the beginning, isn’t it?[/i]
 Bezi: Well, with no customers in sight for now, I think I should think of some new dishes. Can’t keep going in circles with the menu.
@@ -37,6 +49,7 @@ Bezi: Let’s see what we have here. Some carrots and potatoes would make a nice
 Bezi: What else? Alcohol, cheese, sugar… I’ve heard of a foreign desert like that once, but I’m not sure how to make it yet.
 {PlayerName}’s focus shifts when a strange rummaging reverberates nearby.
 Like someone knocking on hard wood. But there are no customers by the door yet.
+audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3" [loop="true"]
 characterTesty: STRANGE WHISPER\
 Me…Meaat. Fufuf…
 Bezi: [i]I knew this would happen one day or another.[/i]
@@ -72,11 +85,13 @@ Bezi: I need to find their nest or whatever way they got into the diner.
 	Bezi: Heh. Hello, little guy.
 	Bezi: Now, this is a much nicer sight to see.
 	Bezi: I should let it grow more. I’ll take care of the mold soon, so it doesn’t bother you.
+audio LongSFX -
 The whispering seemed to disappear.
 Bezi: [i]…There’s nothing here. Hmm. Maybe it was the wind.[/i]
 Bezi: [i]Heh. Or maybe it’s the mold. I heard it’s not very healthy to breathe it in.[/i]
 Bezi: [i]I need to get rid of it or I might lose my mind. *snicker* What am I saying…[/i]
-audio "DOOR OPENING SOUND"
+audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/opening-door.mp3" [loop="false"]
+audio "res://DialogicStuff/CopyrightFreeAudio/bell 2.wav"
 if {Pronouns} == "They/Them":
 	Suddenly, they hear the diner door open. They go to the counter.
 elif {Pronouns} == "She/Her":
@@ -103,6 +118,7 @@ Katerina is visibly content and excited for her piece of well-done meaty delight
 This must be her new companion, Larry, Marianna mentioned once.
 He was an Italian stray, but its charm worked on Katerina from the start and she decided to take care of him.
 Bezi: *chuckle* And something for the gentleman too, I suppose?
+audio "res://DialogicStuff/CopyrightFreeAudio/cat-meow-1.mp3"
 lionsmith: LARRY\
 Meow.
 label GAMEPLAY
@@ -147,7 +163,8 @@ elif {Pronouns} == "She/Her":
 	{PlayerName} is not much of a drinker, but even she can tell a good booze from a standard one.
 elif {Pronouns} == "He/Him":
 	{PlayerName} is not much of a drinker, but even he can tell a good booze from a standard one.
-audio "DOOR OPENING SOUND"
+audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/opening-door.mp3" [loop="false"]
+audio "res://DialogicStuff/CopyrightFreeAudio/bell 2.wav"
 The talk gets interrupted by a man standing in the doorway holding a package. Perhaps a courier.
 if {Pronouns} == "They/Them":
 	characterTesty: THE MAN\
@@ -179,12 +196,13 @@ As the hours go by, more customers start flooding into the diner.
 Time to get to work.
 label MORE GAMEPLAY. shadow customers. not important.
 label TIMESKIP - END OF THE SHIFT, LATE EVENING
+[background arg="res://assets/art/environments/diner_evening.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/after-a-long-night-out-1930s-smooth-jazz.mp3"
 Bezi: [i]*Sigh* I’m exhausted. Can’t believe uncle Wojciech used to do this for so many years.[/i]
 Bezi: [i]Perhaps I’ll get used to it. One day. Or week… Year?[/i]
 Bezi: [i]At least I got some money to start with. This should be enough to cover another batch of products.[/i]
 Bezi: [i]I’ve seen so many old faces today. It makes me feel a little nostalgic, I must admit.[/i]
-Bezi: (thoughts)\
-The village keeps changing. Some people go, some people come, and some stay the same for years.
+Bezi: [i]The village keeps changing. Some people go, some people come, and some stay the same for years.[/i]
 Bezi: [i]I hope things will get better here. For me, and for others too…[/i]
 if {Pronouns} == "He/Him":
 	{PlayerName} smiles at himself. This was a good day indeed.
@@ -227,7 +245,7 @@ Bezi: [i]What if she just finished her job? She might be hungry.[/i]
 		As soon as {PlayerName} gets from behind the counter, the lady notices. She doesn’t have time to even open the door, as she leaves immediately and starts walking in the direction of the square.
 	elif {Pronouns} == "He/Him":
 		As soon as {PlayerName} gets from behind the counter, the lady notices. He doesn’t have time to even open the door, as she leaves immediately and starts walking in the direction of the square.
-label Tu coś powinno być? Don't think so(Shay)
+label Tu coś powinno być? Don't think so (Shay)
 Bezi: [i]Strange… Was she looking for something?[/i]
 Bezi: [i]Or maybe I scared her off…[/i]
 Bezi: [i]I don’t think I recognize her, but it’s also too dark to spot any more details.[/i]
@@ -238,6 +256,7 @@ Bezi: [i]*Sigh* Alright, don’t get distracted. There is still a lot to do abou
 Bezi: [i]I have to bring it back to its former glory.[/i]
 Bezi: [i]For Marianna’s sake. Perhaps…[/i]
 The diner starts looking fresh again.
+audio "res://DialogicStuff/CopyrightFreeAudio/lock-the-door-sound.mp3"
 {PlayerName} puts the CLOSED sign on the door and turns the key in the lock.
 if {Pronouns} == "They/Them":
 	It is time for their long awaited break. In the bed.

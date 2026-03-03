@@ -1,0 +1,123 @@
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+With the diner cramped more than ever, you've created a fest fit for kings today, thanks to the shrooms' abundance.
+Everyone is looking full and beautiful.
+join Hippie (Happy) center [animation="Fade In"]
+Richie gets up and starts dancing to the tune that soon after you call can hear.
+update Hippie [animation="Shake X" length="2.0" repeat_forever="true" mirrored="true"]
+label Some creepy but dancing tune
+audio Music -
+Hippie (Happy): If you're going to San Francisco~
+update Hippie [animation="Shake X" length="2.0" repeat_forever="true" mirrored="false"]
+Hippie: Be sure to wear some flowers in your hair~
+update Hippie [animation="Shake X" length="2.0" repeat_forever="true" mirrored="true"]
+Hippie: If you're going to San Francisco~
+update Hippie [animation="Shake X" length="2.0" repeat_forever="true" mirrored="false"]
+Hippie: You're gonna meet some gentle people there~
+update Hippie [animation="Shake X" length="2.0" repeat_forever="true" mirrored="true"]
+update Hippie right [move_time="0.5"]
+update Hippie [animation="Bounce" length="0.0" mirrored="false"]
+join Barbara (Default) center [animation="Fade In" length="1.0"]
+Barbara: Richie… or should I say Rysio? Yes… I remember, not so long ago you were just a child. Gather round everyone… let me see you… It’s good to see the youth having fun…
+leave Hippie [animation="Fade Out"]
+join Alina (Default) left [animation="Fade In"]
+Alina: Mom? How are you feeling? You seem better…
+Barbara: Yes… I feel like a fog has lifted… oh Alina my sweet baby girl, please call me dad… like you used to.
+Barbara: Oh and Henryk… how I miss him… he isn’t coming back is he?
+Barbara: All of you knew didn’t you? I forgive you, my dears. All of you. For the whispers. For the sidelong glances.
+Barbara: And now… I know. He died in the war. I feel it as clearly as the day he left. There is no more waiting. Only remembering.
+Barbara: But do not look so sad. We had love. Even if it was hidden, it was ours. Not everyone is given that.
+Barbara: I forget many things now. Sometimes I look at you and have to search for your names like lost buttons in a drawer. But I remember the warmth of his hand.
+Barbara: I remember the sound of laughter drifting over fields at sunset. I remember what it is to belong to this village and to each other.
+join Katerina (Angry) right [animation="Fade In"]
+Barbara: Katerina? What has you so cross? Though you’re not from here, you’ve always been one of us.
+leave Barbara [animation="Fade Out"]
+leave Alina [animation="Fade Out"]
+update Katerina center [move_time="1.0"]
+Katerina: *twitching* One of you? No… you people are horrible! How could you? Marianna…
+Katerina: *Abject horror* She was so pure… so innocent… who did this?
+Katerina: I…? I did this? How? I can’t… Kurva!
+audio "res://DialogicStuff/CopyrightFreeAudio/cat-meow-2.mp3"
+She sits down hard, her cat shimmying up to her.
+Katerina (Default): Mary… mary…
+She strokes the kitty while sobbing gently.
+join Danuta (Disgusted) right [animation="Fade In" length="1.0"]
+Danuta: No… she’s right! This… is all so wrong. What have they done! What have we done…?
+leave Katerina [animation="Slide Out Down"]
+update Danuta center [move_time="1.0"]
+Danuta: Had I known… things would go like this… I would have… I should have put a stop to those experiments… those madmen!
+Danuta: The audacity… they think themselves gods?! The one true god is us! I… we… will take revenge! Yes! We have the numbers, they can’t kill us all.
+She pulls out a map of the area.
+Danuta (Default): If we attack from here and there at the same time… yes, we’ll move by night, take them by surprise… break through the barricades and spread…!
+update Danuta left [move_time="0.5"]
+join Wojciech (Smiling) center [animation="Bounce In"]
+Wojciech: Ho ho ho! What a merry gathering on this merry day! You’re all looking oh so beautiful, my children!
+Wojciech: You’re very much right. This is the dawn of a new beginning! But first we must have unity amongst ourselves!
+leave Danuta [animation="Fade Out"]
+Wojciech: Luckily I found this bum sleeping in the forest…
+join Zdzichu (Asleep) leftmost [animation="Fade In"]
+Wojciech (Default): Most curious this one… despite your best efforts {PlayerName}, he refuses us… we will have to study him. Bring him downstairs my loyal children!
+[background arg="res://assets/art/environments/basement_day.jpg" fade="0.0"]
+update Zdzichu rightmost [move_time="0.5"]
+Zdzichu is cocooned in sticky shroom webbing.
+Wojciech: The subject demonstrates surprising resistance… cause unknown…
+Wojciech: We must study this phenomenon.
+Wojciech: One of us is proficient in human anatomy. Come.
+join Alina (Smiling) left [animation="Fade In"]
+Alina: How’s Zdzichu?
+Wojciech: Wellbeing of subject irrelevant. We should cut him open for study.
+Alina (Sorrow): No! That would hurt him, he’s not just a subject, he’s a person!
+Wojciech: Explain\: person?
+Alina (Default): Uhh… it’s an individual?
+Wojciech: That’s a bad thing.
+Alina: Uhh… I guess? Please don’t hurt him.
+Wojciech: Why?
+Alina: Out of kindness? We should help him.
+Wojciech: Explain\: kindness?
+Alina: That’s being good to others…
+Wojciech: That seems… counterproductive to us.
+Alina: But… if you’re good to others they’ll be good to you in return.
+Alina: But… if you’re good to others they’ll be good to you in return.
+Wojciech: Oh? Past experience suggests otherwise…
+Zdzichu wakes up.
+update Zdzichu (Visibly drunk)
+Zdzichu: Ughhhh… Wha-where am I…?
+Wojciech: “Kindness” huh…? You are in the diner basement, currently being examined. Will you assist with determining the cause of your resistance?
+Zdzichu: What the fuck? Speak slower… Also what’s this stuff around me… Ugh… I’m never drinking again…
+Wojciech: I am already speaking slowly by human standards. You will assist with determining the cause of your resistance.
+Zdzichu: Ugh… shut up man. And let me down from here.
+Wojciech: “Kindness” proves to be wasted effort.
+Alina: Uhm… he’s just drunk.
+Zdzichu: No I’m not!
+Wojciech: Explain drunk.
+Alina: It’s uh… alcohol poisoning. But his body will metabolise it over time…
+Wojciech: Could the poison be interfering with the process?
+Alina: Uhh… maybe? You could check once he’s sober?
+Wojciech: Very well. How long until it can be done?
+Alina: With the amount that he’s normally drinking? Maybe tomoroow?
+Wojciech: So the experiment must wait. Let us proceed then to planning the attack.
+join Danuta (Default) leftmost [animation="Fade In"]
+Danuta: Finally the revenge’s in our reach!
+leave Danuta [animation="Fade Out"]
+leave Wojciech [animation="Fade Out"]
+leave Alina [animation="Fade Out"]
+leave Zdzichu [animation="Fade Out"]
+With that established they create a plan of attack. They also send scouts to make sure of the enemy's positions. It takes them a whole day.
+When the night comes upon them they move to the village’s square.
+[background arg="res://assets/art/environments/village_square_night.jpg" fade="0.0"]
+Bezi: Let us remember we need to be sneaky. The element of surprise is to our advantage.
+Bezi: Let us try to avoid unnecessary slaughter. The enemy can be converted to our side, boosting our numbers.
+Bezi: But they’re not more important than you. If you must, don’t hesitate to end their lives.
+join Wojciech (Smiling) right
+Wojciech: Well spoken.
+leave Wojciech
+No more needs to be said. The surprise attack is launched on an unsuspecting foe. Their coordination and knowledge of their positions is a huge boon.
+It is an overwhelming victory with only a few casualties on the enemy’s side.
+join Wojciech (Smiling) center [move_time="0.5"]
+Wojciech: Well done my children. The village is ours. No one can stop us now.
+leave Wojciech
+Bezi: [i]Finally the unity is here. No more selfishness, no more putting yourself above the others.[/i]
+Bezi: [i]We are one and we won’t hunger any more.[/i]
+Bezi: [i]No more starvation. This is for the best.[/i]
+The future is shaping up bright for the people remaining. This [i]is[/i] what you’ve wanted, right?
+This is the path your actions led you to. Enjoy it, our dear spectator.
+YOU REACHED THE SHROOMED ENDING

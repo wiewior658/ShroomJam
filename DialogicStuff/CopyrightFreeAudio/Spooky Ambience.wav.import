@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://de4j5rp8c67go"
+path="res://.godot/imported/Spooky Ambience.wav-5265e5f2474aadc9d892e6633ff674c0.sample"
+
+[deps]
+
+source_file="res://DialogicStuff/CopyrightFreeAudio/Spooky Ambience.wav"
+dest_files=["res://.godot/imported/Spooky Ambience.wav-5265e5f2474aadc9d892e6633ff674c0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,35 +1,34 @@
-[background arg="village_square_sketch.png" fade="0.0"]
+[background arg="res://assets/art/environments/diner_evening.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/after-a-long-night-out-1930s-smooth-jazz.mp3" [volume="-10.0" bus="" loop="true"]
 After the cooking is finished both of them eat the dish that was made.
-join Marianna rightmost
-Marianna (Smiling): Well this was delicious. I shouldn’t have doubted you.
-join Bezi leftmost
+join Marianna/Marianna (Smiling) center
+Marianna/Marianna: Well this was delicious. I shouldn’t have doubted you.
 Bezi: Thank you. Although if you keep this up, I might think you have no faith in me.
-Marianna (Pensive): Oh, what? No! Not at all, I… I would never!
+Marianna/Marianna (Pensive): Oh, what? No! Not at all, I… I would never!
 Bezi: Hehehe
-Marianna (Smiling): Oh my gosh. Hahaha… You got me good.
-Marianna (Default): Welp, it’s getting late. Better to close up here and head home.
+Marianna/Marianna (Smiling): Oh my gosh. Hahaha… You got me good.
+Marianna/Marianna (Default): Welp, it’s getting late. Better to close up here and head home.
 Bezi: Are you sure it’s okay if I stay at your place? I can find some other place until you leave…
-Marianna: No, no I insist! Besides, where else would you go?
+Marianna/Marianna: No, no I insist! Besides, where else would you go?
 Bezi: Thanks.
-Marianna: Just up these stairs here…
-audio "stairs"
-[background arg="village_square_sketch.png" fade="0.0"]
-Marianna (Default): Here, I’ve prepared fresh linen for you, please make yourself at home. I need to get something, I’ll return shortly.
+Marianna/Marianna: Just up these stairs here…
+audio "res://DialogicStuff/CopyrightFreeAudio/walking up creaking stairs (1).mp3"
+Marianna/Marianna (Default): Here, I’ve prepared fresh linen for you, please make yourself at home. I need to get something, I’ll return shortly.
 While waiting for her {PlayerName} takes in the surroundings.
 Bezi: [i]Huh. This room is surprisingly spacious for a guest room, and it’s got a double bed. Perhaps uncle couldn’t stand their old master bedroom after auntie’s passing and repurposed it?[/i]
 Bezi: [i]Come to think of it, I still haven’t met him. Is he that bedridden? Even though we already planned for Marianna to leave home in our letters I really hope she doesn’t plan to leave me alone with a sick person to take care of…[/i]
 Marianna returns holding a stack of papers.
-Marianna (Default): Hey, if it’s not a problem could we sign the diner ownership papers now?
+Marianna/Marianna (Default): Hey, if it’s not a problem could we sign the diner ownership papers now?
 Bezi: Oh? What’s the rush? You’re not thinking about leaving that quickly, are you?
-Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a long time…
+Marianna/Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a long time…
 - Question her motive
 	Bezi: Actually… I know that you want to go to the city to finally have a chance to be yourself but…
 	Bezi: You’ve never really mentioned in your letters about why you want to leave so suddenly?
-	Marianna (Pensive): Oh… I just feel like now is the time to do that you know? Recently the air here became just so… suffocating.
+	Marianna/Marianna (Pensive): Oh… I just feel like now is the time to do that you know? Recently the air here became just so… suffocating.
 	Bezi: And uncle really is ok with you leaving?
-	Marianna (Default): We’ve… discussed it. He didn’t really have much to say…
+	Marianna/Marianna (Default): We’ve… discussed it. He didn’t really have much to say…
 	Bezi: Oh? That doesn’t sound like him.
-	Marianna: I think… he wants what’s best for me, even if we don't necessarily agree on what’s best for me.
+	Marianna/Marianna: I think… he wants what’s best for me, even if we don't necessarily agree on what’s best for me.
 	if {Pronouns} == "They/Them":
 		Marianna’s eyes don’t quite meet their eyes when she says that.
 	elif {Pronouns} == "She/Her":
@@ -45,7 +44,7 @@ Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a lon
 		Marianna reaches out and squeezes her hand.
 	elif {Pronouns} == "He/Him":
 		Marianna reaches out and squeezes his hand.
-	Marianna (Pensive): I also sometimes think back on how if I maybe noticed things sooner I could have helped so it wouldn’t have happened to you two. Alas, we could have wished on a thousand stars  but the past cannot be changed.
+	Marianna/Marianna (Pensive): I also sometimes think back on how if I maybe noticed things sooner I could have helped so it wouldn’t have happened to you two. Alas, we could have wished on a thousand stars  but the past cannot be changed.
 	if {Pronouns} == "They/Them":
 		{PlayerName} sighs and gives Marianna a slight smile. They squeeze her hand back and let go.
 	elif {Pronouns} == "He/Him":
@@ -53,7 +52,7 @@ Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a lon
 	elif {Pronouns} == "He/Him":
 		{PlayerName} sighs and gives Marianna a slight smile. She squeezes her hand back and let go.
 	Bezi: Yeah, I’ll try to remember that. Thanks. Anyway, I was wondering, since you’ve offered it to me so generously, what can I do for you in return?
-	Marianna (Default): Oh, just take good care of it, I guess? I would feel better knowing it's in good hands.
+	Marianna/Marianna (Default): Oh, just take good care of it, I guess? I would feel better knowing it's in good hands.
 	if {Pronouns} == "They/Them":
 		There’s a look of surprise on her face. She probably didn’t expect them to be so grateful for her help.
 	elif {Pronouns} == "She/Her":
@@ -61,9 +60,9 @@ Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a lon
 	elif {Pronouns} == "He/Him":
 		There’s a look of surprise on her face. She probably didn’t expect him to be so grateful for her help.
 	Bezi: Well what about uncle, though? You’re not gonna ask me to take care of him all alone, right?
-	Marianna: Oh yeah, I did arrange for the nurse Alina to help you if you need it but she has her own work so… please?
+	Marianna/Marianna: Oh yeah, I did arrange for the nurse Alina to help you if you need it but she has her own work so… please?
 	Bezi: Right. It’s kind of a big commitment, I just wish you had told me this earlier. Can I at least see what condition he’s in?
-	Marianna: N-no! He’s resting, we really shouldn’t disturb him… Honestly, that’s all he does these days. Don’t worry, he won’t be a burden at all.
+	Marianna/Marianna: N-no! He’s resting, we really shouldn’t disturb him… Honestly, that’s all he does these days. Don’t worry, he won’t be a burden at all.
 	if {Pronouns} == "They/Them":
 		There is something dishonest about Marianna's words, but they doubt that they’ll get more information out of her. She doesn’t seem to be willing to say more on this matter.
 	elif {Pronouns} == "She/Her":
@@ -72,14 +71,14 @@ Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted for a lon
 		There is something dishonest about Marianna's words, but he doubts that he'll get more information out of her. She doesn’t seem to be willing to say more on this matter.
 - Ask about uncle
 	Bezi: I know that but uncle had different plans for you, no? And with him becoming ill…
-	Marianna (Pensive): Yeah… It happened so suddenly too.
+	Marianna/Marianna (Pensive): Yeah… It happened so suddenly too.
 	Bezi: His sickness?
-	Marianna (Default): His uhm… what? What do you mean?
+	Marianna/Marianna (Default): His uhm… what? What do you mean?
 	Bezi: Like he suddenly became ill?
-	Marianna: What? No, he uhm… suddenly wanted me to take over the diner. The illness came later actually.
-	Marianna (Pensive): I hope it wasn’t my refusal that triggered it.
+	Marianna/Marianna: What? No, he uhm… suddenly wanted me to take over the diner. The illness came later actually.
+	Marianna/Marianna (Pensive): I hope it wasn’t my refusal that triggered it.
 	Bezi: Huh? How would that even work?
-	Marianna (Default): I don’t know! But after that argument he stormed off. And when we talked again the next day, he seemed… different.
+	Marianna/Marianna (Default): I don’t know! But after that argument he stormed off. And when we talked again the next day, he seemed… different.
 	Marianna: Ugh… I don’t really want to talk about it…
 update Bezi
 update 
@@ -94,42 +93,43 @@ update
 		{PlayerName} seems to be unable to finish that sentence his face heartbroken. Marianna looks at him worried but he quickly pulls himself together.
 	Bezi: At the same time the city took what it gave way too quickly.
 	Bezi: I’d hate for you to have to go through the same.
-	Marianna: You don’t have to worry about me so much. I know it won’t be easy but I’d rather struggle in a life I chose than be comfortable with no agency.
+	Marianna/Marianna: You don’t have to worry about me so much. I know it won’t be easy but I’d rather struggle in a life I chose than be comfortable with no agency.
 - Examine papers
 	Bezi: Let me see… uncle’s already signed it? Wait. You crossed out yours and put in my name? What’s going on? Does he know about this?
-	Marianna (Pensive): No he does… he just… doesn’t approve… so I have to go behind his back. Please understand!
+	Marianna/Marianna (Pensive): No he does… he just… doesn’t approve… so I have to go behind his back. Please understand!
 	Bezi: Is this even legal if he doesn’t agree to it? What if he gets better and kicks me out?
-	Marianna (Default): He won’t.
+	Marianna/Marianna (Default): He won’t.
 	Bezi: You can’t know that! Is the situation really so bad to go behind his back like that? He loves you! Surely you could’ve talked it through?
-	Marianna: You haven’t seen him… you wouldn’t understand…
+	Marianna/Marianna: You haven’t seen him… you wouldn’t understand…
 	Bezi: Then show me!
-	Marianna: I wish I could…
+	Marianna/Marianna: I wish I could…
 	Bezi: Then why won’t you?!
-	Marianna: Because he’s not around, okay!
+	Marianna/Marianna: Because he’s not around, okay!
 	Bezi: What?
-	Marianna (Pensive): He leaves the house, I never know when or if he’ll come back…
+	Marianna/Marianna (Pensive): He leaves the house, I never know when or if he’ll come back…
 	Marianna: Half the time he doesn’t even remember me…
 	Marianna starts sobbing, clearly distressed by the situation.
 	Bezi: Wait, wait, please don’t cry. I didn’t mean to distress you so.
 	{PlayerName} visibly panics and pulls Marianna into a hug trying to calm her down. They start rocking back and forth. After a while of this Marianna starts calming down.
 	Bezi: Are you feeling a bit better now?
-	Marianna: Yeah… sorry about that and thanks.
+	Marianna/Marianna: Yeah… sorry about that and thanks.
 	if {Choices} == 1.0:
 		Bezi: I’m glad to hear that but there’s something I must ask. You said earlier that uncle’s resting. Now you contradicted yourself. What gives?
-		Marianna (Default): Wha…?
+		Marianna/Marianna (Default): Wha…?
 		Bezi: You said “That he rests all day”, but now you claim he’s… what? Hiking? Marianna, please stop lying to me. I thought we were friends. What’s going on?
-		Marianna: I- you’re right. I shouldn’t have tried to hide it from you.
-		update 
+		Marianna/Marianna: I- you’re right. I shouldn’t have tried to hide it from you.
+		update Marianna/Marianna
 		Marianna sighs heavily and starts fidgeting nervously with her hands.
-		Marianna: It started a while ago when he brought some plants from the forest and started growing them in the diner’s basement. That new hobby of his completely consumed him.
-		Marianna: He even abandoned the diner. Closed sign and everything. It was really concerning because since mother’s death he became a workaholic. And then suddenly he what? Abandoned the diner that was his everything? No, that didn’t make any sense.
-		Marianna: Maybe it was poisonous or was diseased or… something. I don’t know. All I know is that it wasn't normal.
-		Marianna: And then he became very insistent on putting it in EVERY dish. There was no way I would eat some weird plant and combine this with him suddenly wanting for me to take over the diner, we… started fighting.
-		Marianna: And then he started hiking in the forest, and rarely coming back, and… and…
-		Marianna: It’s been a week since I last saw him.
-		Marianna: I’m just… scared, {PlayerName}. I can’t be here anymore.
-		Bezi: [i[Oh shit. Didn’t I put that in the dish I made for us earlier? Maybe I should tell-[/i]
-		audio "STATIC NOISE, STATICY EFFECT ON SCREEN"
+		Marianna/Marianna: It started a while ago when he brought some plants from the forest and started growing them in the diner’s basement. That new hobby of his completely consumed him.
+		Marianna/Marianna: He even abandoned the diner. Closed sign and everything. It was really concerning because since mother’s death he became a workaholic. And then suddenly he what? Abandoned the diner that was his everything? No, that didn’t make any sense.
+		Marianna/Marianna: Maybe it was poisonous or was diseased or… something. I don’t know. All I know is that it wasn't normal.
+		Marianna/Marianna: And then he became very insistent on putting it in EVERY dish. There was no way I would eat some weird plant and combine this with him suddenly wanting for me to take over the diner, we… started fighting.
+		Marianna/Marianna: And then he started hiking in the forest, and rarely coming back, and… and…
+		Marianna/Marianna: It’s been a week since I last saw him.
+		Marianna/Marianna (Pensive): I’m just… scared, {PlayerName}. I can’t be here anymore.
+		Bezi: [i]Oh shit. Didn’t I put that in the dish I made for us earlier? Maybe I should tell-[/i]
+		audio "res://DialogicStuff/CopyrightFreeAudio/mixkit-glitch-static.wav"
+		[wait time="1.0" hide_text="false" skippable="true"]
 		Bezi: [i]No, I’m sure it’s going to be fine. That plant looked totally normal after all. It probably wasn’t the same one that she told me about.[/i]
 Bezi: [i]Maybe it’s better to move on from that. I should probably finally sign those papers.[/i]
 if {Pronouns} == "He/Him":
@@ -144,11 +144,11 @@ elif {Pronouns} == "She/Her":
 	She takes the pen and signs the papers.
 	Bezi: Ok then… That’s it.
 	Marianna takes the signed papers from her.
-Marianna (Smiling): Yay, thank you so much!
+Marianna/Marianna (Smiling): Yay, thank you so much!
 Bezi: So when do you plan on leaving?
-Marianna: Probably in a few days. I should probably at least help you acclimate yourself, right?
-Marianna (Pensive): Althought, I have to get ready for the journey first…
+Marianna/Marianna: Probably in a few days. I should probably at least help you acclimate yourself, right?
+Marianna/Marianna (Pensive): Althought, I have to get ready for the journey first…
 Bezi: Are you hungry? I could make us a late night snack.
-Marianna: No, thanks. I’ll just uhh… head to bed and we’ll talk again tomorrow, okay?
+Marianna/Marianna (Default): No, thanks. I’ll just uhh… head to bed and we’ll talk again tomorrow, okay?
 After she leaves {PlayerName} also heads to bed and the day ends.
 [end_timeline]
