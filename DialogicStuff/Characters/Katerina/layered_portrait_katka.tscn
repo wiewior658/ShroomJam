@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dewvsuufrnrri"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_4knvx"]
+[ext_resource type="Script" uid="uid://c4u0yhugcxog2" path="res://DialogicStuff/Characters/Katerina/KatkaMood.gd" id="3_3drwi"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=328216977]
+script = ExtResource("1_uubi5")
+
+[node name="def" type="Sprite2D" parent="." unique_id=1416046125]
+texture = ExtResource("2_4knvx")
+
+[node name="Mood" type="Node2D" parent="." unique_id=1665679766]
+script = ExtResource("3_3drwi")
+
+[node name="Base" type="Sprite2D" parent="Mood" unique_id=104832248]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Base" unique_id=1843528588]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Angry" type="Sprite2D" parent="Mood" unique_id=380539827]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Angry" unique_id=85650083]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Happy" type="Sprite2D" parent="Mood" unique_id=384989240]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Happy" unique_id=113377395]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Smug" type="Sprite2D" parent="Mood" unique_id=1011387257]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Smug" unique_id=171503920]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true

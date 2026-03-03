@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://pwru1u7jehyb"]
+
+[ext_resource type="Script" uid="uid://cfwf5d8exox4f" path="res://addons/dialogic/Modules/LayeredPortrait/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://c1a0cr5qh0tra" path="res://DialogicStuff/ChangeCharacterPortrait/Example/obrazki/base.png" id="2_1nw78"]
+[ext_resource type="Script" uid="uid://gtftot0bv7br" path="res://DialogicStuff/Characters/Alina/AlinaMood.gd" id="3_vrjbo"]
+
+[node name="LayeredPortrait" type="CanvasGroup" unique_id=1378655862]
+script = ExtResource("1_uubi5")
+
+[node name="def" type="Sprite2D" parent="." unique_id=98593292]
+texture = ExtResource("2_1nw78")
+
+[node name="Mood" type="Node2D" parent="." unique_id=1158471124]
+script = ExtResource("3_vrjbo")
+
+[node name="Base" type="Sprite2D" parent="Mood" unique_id=208274640]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Base" unique_id=1300420904]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Happy" type="Sprite2D" parent="Mood" unique_id=1517712537]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Happy" unique_id=1226532297]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Sad" type="Sprite2D" parent="Mood" unique_id=1773539993]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Sad" unique_id=1578158121]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Scared" type="Sprite2D" parent="Mood" unique_id=890598358]
+
+[node name="TextureRect" type="TextureRect" parent="Mood/Scared" unique_id=1349684919]
+offset_left = -140.0
+offset_top = -99.0
+offset_right = 140.0
+offset_bottom = 100.0
+expand_mode = 5
+metadata/_edit_use_anchors_ = true
