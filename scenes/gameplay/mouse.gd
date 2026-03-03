@@ -7,14 +7,15 @@ extends DialogicBackground
 @export var tug_speed := 12.0      # higher = snappier
 @export var is_enabled := true #toggle script
 @export var random_direction_enabled := true #toggle randomness
-@export var target : Node2D
+@export var target : Control = null
 
 var is_tugging := false
 var tug_target := Vector2.ZERO
 var tug_elapsed := 0.0
+var offset := Vector2(100,25)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CONFINED
+	#Input.mouse_mode = Input.MOUSE_MODE_CONFINED
 	randomize()
 	_mouse_noise()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -34,7 +35,9 @@ func _mouse_noise() -> void:
 	await get_tree().create_timer(delay).timeout
 	var current_pos = get_window().get_mouse_position()
 	if target != null:
+		#print("yay")
 		tug_target = current_pos + (target.global_position - current_pos)
+		tug_target += offset
 			#Vector2(current_pos.x + target.transform.x, current_pos.y + target.transform.y)
 	else :
 		if random_direction_enabled:
@@ -44,9 +47,18 @@ func _mouse_noise() -> void:
 			var random_direction = distance_vector_2d
 			tug_target = current_pos + 	random_direction
 	is_tugging = true
+func set_target(new_target: Control)-> void:
+	target = new_target
 	#this script is spooky with how hard it takes control of your mouse so I installed a kill switch when you hit escape, for when the values accidentally go too hard
 	#this shouldn't be in the final build
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed and event.keycode == KEY_ESCAPE:
 			is_enabled = false
+func set_funny_haha_node_position(new_pos : Transform2D, turn_off : bool)->void:
+	if turn_off:
+		target = null
+	else:
+		$Node2D.global_transform = new_pos
+		set_target($Node2D)
+	#print(new_pos)

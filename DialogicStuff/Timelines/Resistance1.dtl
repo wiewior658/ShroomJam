@@ -37,7 +37,9 @@ Zdzichu: Hey! You said you didn’t have any! Some people…
 join Alina (Scared) rightmost
 Alina: Uhm… I’m not sure alcohol is a good idea with… whatever this is?
 Zdzichu: Yeah, you should just give it to me instead.
+[signal arg="2"]
 - ACCEPT BOTTLE
+	[signal arg="0"]
 	You take a swig from the bottle, then another.
 	The burn is immediate. Sharp. Real. The voices dull, like someone turned down the volume knob inside your skull.
 	PLACEHOLDER FOR REDUCING UNRULY MOUSE
