@@ -1,15 +1,16 @@
-audio "SILENCE, FADE-OUT TO OUR ROOM/DINNER:"
-[background arg="EARLY MORNING ROOM/DINER" fade="0.0"]
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [loop="true"]
 if {Pronouns} == "They/Them":
 	The nights were never easy for them. The memories of the city, its nauseating smells and images are hard to forget, even now as they’re surrounded by silence.
 elif {Pronouns} == "He/Him":
 	The nights were never easy for him. The memories of the city, its nauseating smells and images are hard to forget, even now as he’s surrounded by silence.
 elif {Pronouns} == "She/Her":
 	The nights were never easy for her. The memories of the city, its nauseating smells and images are hard to forget, even now as she’s surrounded by silence.
-audio "SOUND CHANGES TO BIRDS CHIRPING"
+audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Forest_Birds_Loop_Stereo.wav"
 A single bird starts chirping outside the window.
 Bezi: [i]*sigh* …My body feels stiff. As always. And my brain hurts from dreaming.[/i]
 Bezi: [i]I have to get up. Marianna didn’t give me the diner for it to rot away, right? Speaking of Marianna, I wonder if she’s ready to go. I should bid her farewell.[/i]
+audio LongSFX -
 if {Pronouns} == "They/Them":
 	{PlayerName} gets all their strength to stand up and put on clean clothes. The new person in the village has to make the right impression.
 	They head to the diner.
@@ -19,12 +20,13 @@ elif {Pronouns} == "She/Her":
 elif {Pronouns} == "He/Him":
 	{PlayerName} gets all his strength to stand up and put on clean clothes. The new guy in the village has to make the right impression.
 	He heads to the diner.
-[background arg="DINER - MORNING (BG: DINER" fade="0.0"]
-audio "SOUNDS - CREAKING WOODEN FLOOR"
+audio "res://DialogicStuff/CopyrightFreeAudio/walk-down-the-stairs.mp3"
 Bezi: [i]I was right about the creaking floor yesterday evening, but now that it’s brighter I can see how worn out they really are.[/i]
 Bezi: [i]I should ask the lumberjack and get them replaced. The pantry might need a bit of supplying too. After all, I have to feed the entire village. I could ask around the square for some fresh produce.[/i]
 Bezi: [i]It’s still early enough. I don’t expect any clients so early in the morning.[/i]
 - GO TO THE LUMBER
+	[background arg="res://assets/art/environments/forrest _maybe.png" fade="0.0"]
+	audio Music "res://DialogicStuff/CopyrightFreeAudio/Gentle Breeze.mp3" [loop="true"]
 	if {Pronouns} == "They/Them":
 		Hubanka borders a huge forest from the south. {PlayerName} would often play there with other children when they were young, despite the adults telling them it’s easy to get lost there. A fellow lumberjack would nag the children for losing their way, but was always kind enough to walk them to the market square safely.
 	elif {Pronouns} == "She/Her":
@@ -37,11 +39,12 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	Bezi: My parents taught me some tricks to distinguish which mushrooms are edible. Maybe I’ll spot some on the way to the lumber… If there are any left, that is…
 	Bezi: Hm?
 	What’s that sound?
-	audio "A WHISTLING TUNE"
+	audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/whistling-tune.mp3"
 	A quiet tune wanders in the morning wind. {PlayerName} goes slowly in the direction of the sound and sees a man sitting under the tree, fiddling with something in his fingers.
 	He looks old, but he doesn’t resemble any of the senior folks we used to know. Perhaps that’s the mushroom connoisseur.
 	The man’s face is not clearly visible because of his ginormous red moustache and beard. His clothes are shabby, but what piques {PlayerName}’s interest is a necklace with a symbol - a peace sign. Some youngsters in the city wore a similar one.
 	He seemed to notice us staring and waves at us slowly.
+	audio LongSFX -
 	Hippie: Welcome, stranger! What brings you to this haven?
 	Hippie: Are you a traveller? Came to see the village? I don’t think I’ve seen you around before…
 	His calm and intriguingly monotone voice immediately sparks a memory - This is Richard, the boy who spent all days reading books he got from Mrs. Barbara. He never really got along with other kids his age.
@@ -90,6 +93,8 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	elif {Pronouns} == "He/Him":
 		With a smile, Richie waves him goodbye as {PlayerName} leaves for the lumber.
 - GO TO THE SQUARE MARKET
+	[background arg="res://assets/art/environments/village_square_day.jpg" fade="0.0"]
+	audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [loop="true"]
 	The square, as in every village, is the heart of the community.
 	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PLAYER’S NAME} to buy supplies.
 	The vendors come and go all the time, but one gentleman stays in Hubanka no matter the weather - Mr. Kabanos, with his freshly-picked vegetables and fruit.
@@ -182,19 +187,26 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			elif {Pronouns} == "He/Him":
 				If {PlayerName} ever sees him at the diner, he’ll remember not to put mushrooms in his dishes.
 			This might be the beginning of a rather interesting day.
-[background arg="SCENE BACKGROUND - DINER, BRIEF SOUNDS OF HAMMERING?" fade="0.0"]
-audio "SOUNDS OF HAMMERING?"
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio "res://DialogicStuff/CopyrightFreeAudio/drill_whizz.wav"
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3"
 You spend the whole morning busy with repairs. Finally you step back to examine your handiwork.
 Bezi: Well… hah… that looks much better… hah.
-Bezi: Where was that sign? *sounds of rummaging*
+Bezi: Where was that sign?
+audio "res://DialogicStuff/CopyrightFreeAudio/room-rummaging.mp3"
 Bezi: I swear I saw it here earlier… aha!
 You brandish the open sign triumphantly, and hammer it into the ground in front of the diner. It’s then that your tummy rumbles. You had completely forgotten about breakfast.
-Bezi: [i]Whoops! Thankfully I got some ingredients earlier… Let’s just make something small.[/i]
+Bezi: [i]Whoops! Thankfully I got some ingredients earlier… Let’s just make something small. Meanwhile, let me turn on a music box.[/i]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/musicboxhumming.mp3" [loop="false"]
 Bezi: *Humming while cooking*
+audio "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3"
 characterTesty: [STRANGE WHISPER] Taaaas… Ty… Shhhh…
+audio Music "res://DialogicStuff/CopyrightFreeAudio/music-box-stop.mp3" [loop="false"]
 Bezi: Huh? Is someone there?
 join Barbara rightmost
 join Alina right
+audio "res://DialogicStuff/CopyrightFreeAudio/bell 2.wav"
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [loop="true"]
 Alina: Look Ma! The diner’s open, I knew I smelled something tasty this way.
 Barbara: Why, this wasn’t here before. This was uhm… it was a…
 Alina: Flower shop?

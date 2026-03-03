@@ -27,11 +27,11 @@ directories/dch_directory={
 "Alina": "res://DialogicStuff/Characters/Alina.dch",
 "Barbara": "res://DialogicStuff/Characters/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
-"Characters/Marianna": "res://DialogicStuff/Characters/Marianna.dch",
 "Danuta": "res://DialogicStuff/Characters/Danuta.dch",
 "Hippie": "res://DialogicStuff/Characters/Hippie.dch",
 "Katerina": "res://DialogicStuff/Characters/Katerina.dch",
-"Marianna": "res://DialogicStuff/ChangeCharacterPortrait/Marianna/Marianna.dch",
+"Marianna": "res://DialogicStuff/Marianna.dch",
+"Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
 "Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
 "Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
@@ -40,6 +40,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",
 "Day_1_before_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
+"Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
@@ -53,9 +54,12 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
+"Choices": 0.0,
 "Marianna": {
 "Shroomness": 3
 },
+"PlayerName": "",
+"Pronouns": "",
 "Testy": {
 "Shroomness": 1
 }
@@ -78,8 +82,8 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 animations/cross_fade_default="Fade Cross"
-animations/leave_default="Fade Out Down"
-animations/join_default="Fade In Up"
+animations/leave_default="Fade Out"
+animations/join_default="Fade In"
 text/autopauses={}
 audio/channel_defaults={
 "": {
@@ -88,7 +92,19 @@ audio/channel_defaults={
 "loop": false,
 "volume": 0.0
 },
-"music": {
+"LongSFX": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+},
+"LongSFXaddition": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+},
+"Music": {
 "audio_bus": "",
 "fade_length": 0.0,
 "loop": true,
