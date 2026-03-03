@@ -11,6 +11,8 @@ extends Control
 const FIRST_SCENE := "res://scenes/levels/prologue1.tscn"
 const OPTIONS_SCENE := "res://scenes/ui/options_menu.tscn"
 var volume_index := AudioServer.get_bus_index("Master")
+var _save : SaveStats
+var _globalstats : GlobalStats
 
 func _ready() -> void:
 	new_btn.pressed.connect(_on_new_game)
@@ -29,14 +31,21 @@ func _refresh_continue_state() -> void:
 	pass
 
 func _on_new_game() -> void:
-	
-	#SaveSystem.new_game(FIRST_SCENE)
 	get_tree().change_scene_to_file(FIRST_SCENE)
 	
 func _on_continue() -> void:
 	#if not SaveSystem.has_save():
 	#	_refresh_continue_state()
 	#	return
+	if SaveStats.save_exists():
+		_save = SaveStats.load_SavedGame() as SaveStats
+	else:
+		print("ERROR Nie ma sava ktorego ladujesz AAAAAAAAAAAAAAAAAAAAA")
+		pass
+	_globalstats = _save.globalstats
+	_globalstats.setGlobalVar()
+	print(Dialogic.VAR.Shroomnes.Wojciech)
+	get_tree().change_scene_to_file(_save.get_Timeline())
 
 	#var save := SaveSystem.load_game()
 	#var scene_path := save.get("scene_path", "")
@@ -44,7 +53,7 @@ func _on_continue() -> void:
 		
 	#	cont_btn.disabled = true
 	#	return
-	pass
+	#pass
 	#get_tree().change_scene_to_file(scene_path)
 
 func _on_options() -> void:

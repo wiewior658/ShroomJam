@@ -20,6 +20,7 @@ config/icon="uid://cx4q7bkyge5te"
 Dialogic="*uid://ds2q0uclmolvu"
 Food="*uid://fhysgsrdv0he"
 GlobalVar="*uid://j6w8ea0flq3t"
+Stats="*uid://b66ixvt6wu3qm"
 
 [dialogic]
 
@@ -28,10 +29,10 @@ directories/dch_directory={
 "Barbara": "res://DialogicStuff/Characters/Barbara.dch",
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
 "Danuta": "res://DialogicStuff/Characters/Danuta.dch",
+"DialogicStuff/Marianna": "res://DialogicStuff/Marianna.dch",
 "Hippie": "res://DialogicStuff/Characters/Hippie.dch",
 "Katerina": "res://DialogicStuff/Characters/Katerina.dch",
-"Marianna": "res://DialogicStuff/Marianna.dch",
-"Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
+"Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
 "Wojciech": "res://DialogicStuff/Characters/Wojciech.dch",
 "Zdzichu": "res://DialogicStuff/Characters/Zdzichu.dch",
 "characterTesty": "res://DialogicStuff/ChangeCharacterPortrait/Example/characterTesty.dch",
@@ -55,13 +56,20 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
-"Marianna": {
-"Shroomness": 3
+"Player": {
+"PlayerName": "Bezi",
+"Pronouns": "nb"
 },
-"PlayerName": "",
-"Pronouns": "",
-"Testy": {
-"Shroomness": 1
+"Shroomnes": {
+"Barbara": 3,
+"Bezi": 0,
+"Danuta": 0,
+"Katerina": 0,
+"Marianna": 2,
+"Richie": 0,
+"Wojciech": 0,
+"Zdzichu": 0,
+"entity": 0
 }
 }
 text/letter_speed=0.01
