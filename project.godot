@@ -53,6 +53,7 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
+"Choices": 0.0,
 "Marianna": {
 "Shroomness": 3
 },
