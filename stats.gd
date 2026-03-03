@@ -43,27 +43,27 @@ func ChangeStats(name:String, value:int) -> void:
 	characters_stats[name] = value
 	
 func setParams() -> void:
-	name = Dialogic.VAR.Player.PlayerName
-	pronounce = Dialogic.VAR.Player.Pronouns
-	ChangeStats("entity",Dialogic.VAR.Shroomnes.entity)
-	ChangeStats("Bezi",Dialogic.VAR.Shroomnes.Bezi)
-	ChangeStats("Marianna",Dialogic.VAR.Shroomnes.Marianna)
-	ChangeStats("Zdzichu",Dialogic.VAR.Shroomnes.Zdzichu)
-	ChangeStats("Richie",Dialogic.VAR.Shroomnes.Richie)
-	ChangeStats("Barbara",Dialogic.VAR.Shroomnes.Barbara)
-	ChangeStats("Wojciech",Dialogic.VAR.Shroomnes.Wojciech)
-	ChangeStats("Katerina",Dialogic.VAR.Shroomnes.Katerina)
-	ChangeStats("Danuta",Dialogic.VAR.Shroomnes.Danuta)
+	name = Dialogic.VAR.PlayerName
+	pronounce = Dialogic.VAR.Pronouns
+	ChangeStats("entity",Dialogic.VAR.Shroomness.entity)
+	ChangeStats("Bezi",Dialogic.VAR.Shroomness.Bezi)
+	ChangeStats("Marianna",Dialogic.VAR.Shroomness.Marianna)
+	ChangeStats("Zdzichu",Dialogic.VAR.Shroomness.Zdzichu)
+	ChangeStats("Richie",Dialogic.VAR.Shroomness.Richie)
+	ChangeStats("Barbara",Dialogic.VAR.Shroomness.Barbara)
+	ChangeStats("Wojciech",Dialogic.VAR.Shroomness.Wojciech)
+	ChangeStats("Katerina",Dialogic.VAR.Shroomness.Katerina)
+	ChangeStats("Danuta",Dialogic.VAR.Shroomness.Danuta)
 	
 func setGlobalVar() -> void:
-	Dialogic.VAR.Player.PlayerName = name
-	Dialogic.VAR.Player.Pronouns = pronounce
-	Dialogic.VAR.Shroomnes.entity = characters_stats["entity"]
-	Dialogic.VAR.Shroomnes.Bezi = characters_stats["Bezi"]
-	Dialogic.VAR.Shroomnes.Marianna = characters_stats["Marianna"]
-	Dialogic.VAR.Shroomnes.Zdzichu = characters_stats["Zdzichu"]
-	Dialogic.VAR.Shroomnes.Richie = characters_stats["Richie"]
-	Dialogic.VAR.Shroomnes.Barbara = characters_stats["Barbara"]
-	Dialogic.VAR.Shroomnes.Wojciech = characters_stats["Wojciech"]
-	Dialogic.VAR.Shroomnes.Katerina = characters_stats["Katerina"]
-	Dialogic.VAR.Shroomnes.Danuta = characters_stats["Danuta"]
+	Dialogic.VAR.PlayerName = name
+	Dialogic.VAR.Pronouns = pronounce
+	Dialogic.VAR.Shroomness.entity = characters_stats["entity"]
+	Dialogic.VAR.Shroomness.Bezi = characters_stats["Bezi"]
+	Dialogic.VAR.Shroomness.Marianna = characters_stats["Marianna"]
+	Dialogic.VAR.Shroomness.Zdzichu = characters_stats["Zdzichu"]
+	Dialogic.VAR.Shroomness.Richie = characters_stats["Richie"]
+	Dialogic.VAR.Shroomness.Barbara = characters_stats["Barbara"]
+	Dialogic.VAR.Shroomness.Wojciech = characters_stats["Wojciech"]
+	Dialogic.VAR.Shroomness.Katerina = characters_stats["Katerina"]
+	Dialogic.VAR.Shroomness.Danuta = characters_stats["Danuta"]

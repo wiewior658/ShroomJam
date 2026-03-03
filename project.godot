@@ -55,9 +55,19 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
-"PlayerName": "",
-"Pronouns": "",
-"Shroomness": 0
+"PlayerName": "Bezi",
+"Pronouns": "They/Them",
+"Shroomness": {
+"Barbara": 3,
+"Bezi": 0,
+"Danuta": 0,
+"Katerina": 0,
+"Marianna": 2,
+"Richie": 0,
+"Wojciech": 5,
+"Zdzichu": 0,
+"entity": 0
+}
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
