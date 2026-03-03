@@ -1,10 +1,8 @@
 [gd_scene format=3 uid="uid://ckh7ohu0m8fev"]
 
 [ext_resource type="Script" uid="uid://rqgy50ulytkl" path="res://scenes/ui/Main_menu.gd" id="1_gkwmd"]
-[ext_resource type="Texture2D" uid="uid://5gs6r5tvurnv" path="res://DialogicStuff/smuglastor.png" id="1_gqnrb"]
-[ext_resource type="Texture2D" uid="uid://b3q77x1fdmgwq" path="res://Assets/art/ui/close-button-png-26.png" id="3_2i3o1"]
-[ext_resource type="AudioStream" uid="uid://l7etikva0ewl" path="res://Assets/audio/Vox dei scene _ Hazbin hotel season 2.mp3" id="3_hqref"]
-[ext_resource type="Texture2D" uid="uid://cml1823swc4em" path="res://Assets/art/ui/close_button_1_7138522895.png" id="4_oo74q"]
+[ext_resource type="Texture2D" uid="uid://dsutpvbal20qj" path="res://Assets/art/ui/close-button-png-26.png" id="3_2i3o1"]
+[ext_resource type="Texture2D" uid="uid://52riqkhhk8vu" path="res://Assets/art/ui/close_button_1_7138522895.png" id="4_oo74q"]
 
 [node name="Control" type="Control" unique_id=1546105740]
 layout_mode = 3
@@ -22,13 +20,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_gqnrb")
 stretch_mode = 6
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=200084872]
-stream = ExtResource("3_hqref")
 autoplay = true
-parameters/looping = true
 
 [node name="Panel" type="Panel" parent="." unique_id=478033551]
 layout_mode = 1
