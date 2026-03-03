@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cjewcvfntj34c"
-path="res://.godot/imported/Ithaca-LVB75.ttf-1517e5422e88ff68740d00242d9e411c.fontdata"
+uid="uid://dtvnmkq0s1al2"
+path="res://.godot/imported/SuperRugged-4nBy9.ttf-bac2275b3fa783062bd33342c94cb950.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/Ithaca-LVB75.ttf"
-dest_files=["res://.godot/imported/Ithaca-LVB75.ttf-1517e5422e88ff68740d00242d9e411c.fontdata"]
+source_file="res://DialogicStuff/Fonts/SuperRugged-4nBy9.ttf"
+dest_files=["res://.godot/imported/SuperRugged-4nBy9.ttf-bac2275b3fa783062bd33342c94cb950.fontdata"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c2qjdkw36gnps"
-path="res://.godot/imported/Moogalator-yYJr3.ttf-35318748e3d3e75f427336c7fb99fb1f.fontdata"
+uid="uid://vrrmdx83skor"
+path="res://.godot/imported/Roboto-Regular.ttf-af9bb80832e989fec6638dc3acdbbd37.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/Moogalator-yYJr3.ttf"
-dest_files=["res://.godot/imported/Moogalator-yYJr3.ttf-35318748e3d3e75f427336c7fb99fb1f.fontdata"]
+source_file="res://DialogicStuff/Fonts/Roboto-Regular.ttf"
+dest_files=["res://.godot/imported/Roboto-Regular.ttf-af9bb80832e989fec6638dc3acdbbd37.fontdata"]
 
 [params]
 
@@ -23,7 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
 hinting=1
-subpixel_positioning=4
+subpixel_positioning=1
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

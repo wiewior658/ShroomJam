@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ddudawqfcv01h"
-path="res://.godot/imported/SuperMystery-BLG4x.ttf-cafbd19f8943799be50ebb63fd8fdc7d.fontdata"
+uid="uid://cjewcvfntj34c"
+path="res://.godot/imported/Ithaca-LVB75.ttf-e8e3b7f21cb9af9635f0256f854c5738.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/SuperMystery-BLG4x.ttf"
-dest_files=["res://.godot/imported/SuperMystery-BLG4x.ttf-cafbd19f8943799be50ebb63fd8fdc7d.fontdata"]
+source_file="res://DialogicStuff/Fonts/Ithaca-LVB75.ttf"
+dest_files=["res://.godot/imported/Ithaca-LVB75.ttf-e8e3b7f21cb9af9635f0256f854c5738.fontdata"]
 
 [params]
 

@@ -1,6 +1,5 @@
 [style name="New_style"]
-# Put some pixelated art here. Not game location. We are in the void of making a decision before the game starts
-[background arg="res://" fade="0.0"]
+[background arg="res://assets/art/environments/the_void.png" fade="0.0"]
 Tell us your name.
 [text_input text="Name:" var="PlayerName" default="Bezi"]
 Now pick your pronouns.

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c6i50auhbii2c"
-path="res://.godot/imported/MountainKingRegular-woBYn.ttf-6c1887e644887570abb005340b80ae95.fontdata"
+uid="uid://c7fgtkbr8h5qo"
+path="res://.godot/imported/SuperMaples-2vR2w.ttf-49507b33f40ea8fa814a726daa74b2bd.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/MountainKingRegular-woBYn.ttf"
-dest_files=["res://.godot/imported/MountainKingRegular-woBYn.ttf-6c1887e644887570abb005340b80ae95.fontdata"]
+source_file="res://DialogicStuff/Fonts/SuperMaples-2vR2w.ttf"
+dest_files=["res://.godot/imported/SuperMaples-2vR2w.ttf-49507b33f40ea8fa814a726daa74b2bd.fontdata"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cfae4coo6xxpy"
-path="res://.godot/imported/MoogalatorFiller-9MvdB.ttf-2df9ab0fb5a1eb41abe813ced2008e47.fontdata"
+path="res://.godot/imported/MoogalatorFiller-9MvdB.ttf-a32f3c8907cbe7591eae6e184075c53d.fontdata"
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/Fonts/MoogalatorFiller-9MvdB.ttf"
-dest_files=["res://.godot/imported/MoogalatorFiller-9MvdB.ttf-2df9ab0fb5a1eb41abe813ced2008e47.fontdata"]
+source_file="res://DialogicStuff/Fonts/MoogalatorFiller-9MvdB.ttf"
+dest_files=["res://.godot/imported/MoogalatorFiller-9MvdB.ttf-a32f3c8907cbe7591eae6e184075c53d.fontdata"]
 
 [params]
 
