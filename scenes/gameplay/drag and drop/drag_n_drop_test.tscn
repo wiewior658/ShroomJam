@@ -189,10 +189,10 @@ texture = ExtResource("15_tqe0x")
 
 [node name="Gib" type="Button" parent="Micha" unique_id=890630694]
 layout_mode = 0
-offset_left = 637.5653
-offset_top = 515.4383
-offset_right = 941.5653
-offset_bottom = 599.4383
+offset_left = 93.380714
+offset_top = 174.65263
+offset_right = 543.38074
+offset_bottom = 274.65265
 scale = Vector2(1.3015579, 1.6919528)
 theme = ExtResource("5_ugj3d")
 theme_override_font_sizes/font_size = 61
