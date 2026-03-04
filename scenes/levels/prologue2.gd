@@ -19,5 +19,5 @@ func _on_timeline_ended()->void:
 
 func autosave() -> void:
 	_save = SaveStats.new()
-	_save.timeline = "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl"
+#	_save.timeline = "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl"
 	_save.write_SaveGame()

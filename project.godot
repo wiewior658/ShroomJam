@@ -59,7 +59,10 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
+"CurrentScene": "",
+"CustomersLeft": 0,
 "Money": 200,
+"NextScene": "",
 "PlayerName": "Bezi",
 "Pronouns": "They/Them",
 "Shroomness": {
@@ -72,7 +75,8 @@ variables={
 "Wojciech": 5,
 "Zdzichu": 0,
 "entity": 0
-}
+},
+"Tutorial": false
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
