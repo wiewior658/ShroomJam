@@ -108,7 +108,7 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-15.0" bus="" loop="true"]
 	audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/freesound_crowd_talking_poland-old-market.mp3" [volume="0.0" bus="" loop="true"]
 	The square, as in every village, is the heart of the community.
-	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PLAYER’S NAME} to buy supplies.
+	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PlayerName} to buy supplies.
 	The vendors come and go all the time, but one gentleman stays in Hubanka no matter the weather - Mr. Kabanos, with his freshly-picked vegetables and fruit.
 	join Kabanos center
 	Bezi: Hello, Sir. I’m {PlayerName}, new owner of the diner. Since it’s gonna be open again, I wanted to buy some necessities.
