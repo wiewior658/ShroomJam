@@ -45,4 +45,13 @@ audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-dog-barking-70
 	Soon the dogs catch up to where you were and to your surprise start barking up the tree not able to climb.
 	Unfortunately they are also followed by armed soldiers, who open fire. Get hit and fall out of the tree to your death.
 	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+	[signal arg="ded"]
 - DOUSE YOURSELF IN ALCOHOL
+	Bezi: [i]I need to mask my scent somehow.[/i]
+	You wrack your brain for a solution, when you remember the flask Katerina gave you. You take a whiff of the alcohol.
+	[i]Phew… that’s potent stuff. Let’s hope this works.[/i]
+	You spill the substance on top of yourself, and make sure to douse your feet as well. You can hear the barking intensifying, so you change direction and pray.
+	Soon enough the barking gets quieter, but you’re not out of the proverbial woods yet.
+You repeat this feinting maneuver a few more times. Running in one direction with your flashlight on and in another with it off, to hopefully confuse your pursuers.
+It’s definitely working on you as you have no idea where you are yourself.
+Meanwhile the sun is slowly setting, soon you won’t be able to move without the flashlight. You better make your way back to the village fast.

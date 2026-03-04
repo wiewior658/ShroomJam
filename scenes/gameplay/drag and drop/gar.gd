@@ -86,7 +86,7 @@ func _serve_customer() -> void:
 			
 	else:
 		#get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
-		Dialogic.start(Dialogic.VAR.NextScene)
+		get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
 	print(CurrentCustomer.Name)
 func update_customer(new_customer : Customer) -> void:
 	CurrentCustomer = new_customer
