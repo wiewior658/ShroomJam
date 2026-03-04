@@ -49,6 +49,7 @@ directories/dtl_directory={
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "Resistance1": "res://DialogicStuff/Timelines/Resistance1.dtl",
+"Resistance2": "res://DialogicStuff/Timelines/Resistance2.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }

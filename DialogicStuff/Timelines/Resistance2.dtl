@@ -1,0 +1,48 @@
+[style name="New_style"]
+[background arg="res://assets/art/environments/village_square_dusk.jpg" fade="0.0"]
+Dusk is rapidly approaching. It is time to execute the plan. Everyone is in position. Zdzichu and Richie managed to find a ladder and toolbox.
+Katerina scouted out the way to the phone pole. Danuta is ready to make the phone call as soon as the lines are back up.
+Alina and Barbara are with her to make sure “she doesn’t try anything funny”.
+It’s go time.
+join Danuta leftmost
+Danuta: We probably only have one shot at this. Don’t fuck it up.
+join Alina center
+Alina: We’re counting on you.
+join Barbara center
+Barbara: It’s been an honour gentlemen.
+Your small group heads out into the woods.
+leave --All--
+[background arg="res://assets/art/environments/forrest _maybe.png" fade="0.0"]
+audio "res://DialogicStuff/CopyrightFreeAudio/sspsurvival-footsteps-on-the-leaves-autumn-city-park-248352.mp3"
+Bezi: [i]When I left my old life behind, I didn’t expect such an unexpected turn. Government experiments and talking shrooms. You could write a book about it.[/i]
+join Katerina center
+Katerina: Stát! Shh…
+Katerina saw it 1st and ordered you all on the ground. A beam of light is moving across the nearby area. Luckily this soldier patrol passes you by.
+You keep going. Every now and then you think you see wires above your head, but Katerina shakes her head.
+Katerina: Further.
+You’ve taken a more circuitous route to avoid patrols as much as possible.
+And it's probably working. You haven’t run into another one when Katerina stops seemingly in the middle of nowhere.
+Katerina: This is where we split. You go rozptýlení. We go other way.
+She pulls a flask from her pocket and hands it to you.
+Pití. For good luck.
+Bezi: Thanks, good luck to you too.
+Katerina points you in the right direction, before vanishing from sight.
+leave Katerina
+You soon make your way over to the military camp. Danuta said it surrounds the bunker, where the lab was. You can see the lights from afar, as well as silhouettes in gas masks moving about.
+Earlier you found a firecracker left over from new years at Marianna’s. You get up as close to the camp as you dare, light it and YEET.
+You do not wait for it to go off instead darting away from your hiding spot immediately. You have to buy as much time as possible.
+audio -
+The firecracker repeatedly pierces the silence of the night. It perhaps could be mistaken for gunshots.
+You run, vaguely aware of the commotion happening behind you. You hear proper gunshots, before silence returns for a while.
+You slow down for a moment to catch your breath and turn on your flashlight. You do want them to see you, if briefly.
+Suddenly behind you you hear dogs barking in the distance. You didn’t know they had dogs. You have to lose them somehow.
+audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-dog-barking-70772.mp3"
+- CLIMB A TREE
+	Bezi: [i]Dogs can’t climb, right? I think I read  that in a book somewhere?\
+	[/i]
+	You turn off your flashlight and get to climbing. You haven’t done this since childhood, so you slip a few times, but eventually you make it to the top of the tree.
+	Bezi: [i]Now to just wait for them too pass…[/i]
+	Soon the dogs catch up to where you were and to your surprise start barking up the tree not able to climb.
+	Unfortunately they are also followed by armed soldiers, who open fire. Get hit and fall out of the tree to your death.
+	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+- DOUSE YOURSELF IN ALCOHOL
