@@ -10,12 +10,20 @@ var soupColor
 var soupPos
 var contents=[]
 var CurrentCustomer: Customer
+var AvaibleCustomers = [1,2,3,4,5,6]
+var temp : String
 
 signal splash
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	CurrentCustomer=Food.Marianna
+	Dialogic.VAR.CustomersLeft = 3
+	AvaibleCustomers.shuffle()
+	CurrentCustomer=Food.allCustomers[str(AvaibleCustomers.pop_front())]
+	if Dialogic.VAR.Tutorial == true:
+		CurrentCustomer = Food.Marianna
+		Dialogic.VAR.CustomersLeft = 1
+	setSprite()
 	newSoup()
 
 func newSoup()->void:
@@ -67,10 +75,38 @@ func _drop_data(_pos, data):
 
 func _on_button_button_up() -> void:
 	newSoup()
+	
 func _serve_customer() -> void:
 	Dialogic.VAR.Money+=CurrentCustomer.pay(taste, nourishment)
-	
+	Dialogic.VAR.CustomersLeft-=1
+	if Dialogic.VAR.CustomersLeft > 0:
+		AvaibleCustomers.shuffle()
+		update_customer(Food.allCustomers[str(AvaibleCustomers.pop_front())])
+		setSprite()
+			
+	else:
+		#get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
+		Dialogic.start(Dialogic.VAR.NextScene)
+	print(CurrentCustomer.Name)
 func update_customer(new_customer : Customer) -> void:
 	CurrentCustomer = new_customer
+	
+func setSprite() -> void:
+	match CurrentCustomer.Name:
+				"Marianna":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Marianna/Base0.png")
+				"Zdzichu":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Zdzich/Drunk3.png")
+				"Richie":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Richie/Base0.png")
+				"Danuta":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Danuta/Base0.png")
+				"Katerina":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Katka/Base0.png")
+				"Barbara":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Barbara/Base0.png")
+				"Alina":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Alina/Base0.png")
+	
 	
 	
