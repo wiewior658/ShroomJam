@@ -1,0 +1,11 @@
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus="" loop="true"]
+Days turn to weeks as the quarantine of Hubanka persists. Those who have tried to breach it, or bargain with the soldiers were shot at.
+Things are looking dire as food stores are dwindling, since what little the villagers can grow or scavenge from the forest isn’t enough to feed everyone.
+Today, people have gathered at your diner.
+You’ve been trying your best to feed them throughout this crisis and they’ve grown to depend on you.
+Many brought ingredients for today’s communal stew. But as usual it isn’t enough.
+And in a cruel ironic twist you are the one to ration out the portions…
+# REPLACE FARMERS MARKET WITH : “THIS HOW MUCH YOU GOT TODAY” - LIST OF INGREDIENTS
+# COOK LAST MEAL FOR EACH NPC, THEN CHECK THEIR SHROOMNESS.
+# ACCORDING TO SHROOMNESS JUMP TO ONE OF THE TWO ENDING PATHS
