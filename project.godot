@@ -44,6 +44,7 @@ directories/dtl_directory={
 "Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",
 "Day_1_before_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
 "Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
+"Day_3_before_endings": "res://DialogicStuff/Timelines/Day_3_before_endings.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
