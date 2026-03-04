@@ -8,7 +8,7 @@ join Danuta leftmost
 Danuta: We probably only have one shot at this. Don’t fuck it up.
 join Alina center
 Alina: We’re counting on you.
-join Barbara center
+join Barbara rightmost
 Barbara: It’s been an honour gentlemen.
 Your small group heads out into the woods.
 leave --All--
@@ -46,6 +46,7 @@ audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-dog-barking-70
 	Unfortunately they are also followed by armed soldiers, who open fire. Get hit and fall out of the tree to your death.
 	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
 	[signal arg="ded"]
+	[end_timeline]
 - DOUSE YOURSELF IN ALCOHOL
 	Bezi: [i]I need to mask my scent somehow.[/i]
 	You wrack your brain for a solution, when you remember the flask Katerina gave you. You take a whiff of the alcohol.
@@ -68,6 +69,7 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 		An agonizing few seconds later he opens fire.
 		audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
 		[signal arg="ded"]
+		[end_timeline]
 	- MOVE SLOWLY IN DARKNESS
 		You’ll have to move slowly to avoid tripping and falling in the dark, but you haven’t heard any soldiers for a while now, so you hope you’ve lost them.
 		Your hopes are brought up then dashed, as you see light ahead of you, followed by the sounds of movement.
@@ -120,7 +122,7 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 		join Alina center
 		Alina: What’s going on…? He really shouldn’t be moved right now. His back is broken.
 		Bezi: Eh…? Too f-fucking bad.
-		update Alina [extra_data="set Modd/Scared"]
+		update Alina [extra_data="set Mood/Scared"]
 		Alina: Why…?
 		Bezi:  It’s b-better this way, trust me. I’m not going with you.
 		Bezi:  We have n-no idea how contagious this thing is, b-but better not risk it too much, r-right?
@@ -128,7 +130,7 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 		Alina: Oh… That’s… very brave of you. Take care.
 		Bezi: Thanks.
 		 She takes Barbara by the arm and leaves.
-		leave Alina
+		leave --All--
 		join Barbara center
 		Barbara: You know what you must do.
 		leave Barbara
@@ -154,6 +156,7 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 		The flames spread, engulfing the whole basement, and soon diner.
 		You take solace in knowing you have done a great service to humanity, and pass away.
 		[signal arg="win"]
+		[end_timeline]
 - CHECK COMPASS
 	You pull a compass out of your pocket, that you had the forethought to bring. This way you’ll get your bearings and save time.
 	Bezi: [i]So the camp was east of the village. I've run more or less south to distract them, since the pole is north.[/i]
@@ -165,3 +168,4 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 	The soldiers catch up to you and you are shot in the back.
 	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
 	[signal arg="ded"]
+	[end_timeline]
