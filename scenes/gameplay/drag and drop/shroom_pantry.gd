@@ -16,3 +16,12 @@ func _get_drag_data(_at_position):
 	#setting dragged data
 	var DraggedData=[self,Food.Shroom]
 	return DraggedData
+
+
+
+func _on_mouse_entered() -> void:
+	self.texture=load("res://assets/pics/shroomPantryOpen.png")
+	
+
+func _on_mouse_exited() -> void:
+	self.texture=load("res://assets/pics/shroomPantry.png")

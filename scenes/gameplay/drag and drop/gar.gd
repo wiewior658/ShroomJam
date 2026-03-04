@@ -2,7 +2,7 @@ extends TextureRect
 
 var Capacity=5
 var EmptyPotColor=Color.BLACK
-var EmptyPotPos=35.0
+var EmptyPotPos=105.0
 
 var taste
 var nourishment
@@ -11,7 +11,9 @@ var soupPos
 var contents=[]
 var CurrentCustomer: Customer
 
-signal splash
+signal splash()
+signal moveLeft()
+signal serveSoup(color:Color)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,6 +29,7 @@ func newSoup()->void:
 	updateInfo()
 
 func updateInfo()->void:
+	pass
 	#wyświetlanie danych liczbowych
 	$"../Staty/Capacity".text=str("Capacity: ",contents.size(),"/",Capacity)
 	$"../Staty/Taste".text=str("Taste: ",taste)
@@ -48,9 +51,10 @@ func _drop_data(_pos, data):
 			GlobalVar.RemoveFood(droppedFood)
 		taste+=droppedFood.taste+CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
-		soupPos-=6
+		soupPos-=20
 		contents.push_back(droppedFood)
 		print(contents)
+		splash.emit(-20)
 		if contents.size()==0:
 			soupColor=droppedFood.color
 		else:
@@ -59,7 +63,11 @@ func _drop_data(_pos, data):
 							(soupColor.b*(contents.size()-1)+droppedFood.color.b)/contents.size())
 			
 		updateInfo()
-	splash.emit(-30)
 
-func _on_button_button_up() -> void:
-	newSoup()
+func _on_serve_button_up() -> void:
+	if contents.size()>0:
+		serveSoup.emit(soupColor)
+		newSoup()
+		splash.emit()
+		moveLeft.emit()
+		
