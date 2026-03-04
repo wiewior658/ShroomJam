@@ -30,6 +30,7 @@ directories/dch_directory={
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
 "Danuta": "res://DialogicStuff/Characters/Danuta/Danuta.dch",
 "Hippie": "res://DialogicStuff/Characters/Richie/Hippie.dch",
+"Kabanos": "res://DialogicStuff/Characters/Kabanos.dch",
 "Katerina": "res://DialogicStuff/Characters/Katerina/Katerina.dch",
 "Marianna": "res://DialogicStuff/Marianna.dch",
 "Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
@@ -74,7 +75,7 @@ text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
-text/autoadvance_per_character_delay=0.1
+text/autoadvance_per_character_delay=0
 text/autoadvance_ignored_characters_enabled=true
 animations/join_default_length=0.5
 animations/join_default_wait=true
@@ -117,6 +118,8 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+text/autoadvance_fixed_delay=0.5
+text/autoadvance_per_word_delay=0
 
 [display]
 
