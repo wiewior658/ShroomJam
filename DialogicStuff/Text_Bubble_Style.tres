@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="DialogicStyle" format=3 uid="uid://lj0jpwpgdtan"]
+
+[ext_resource type="PackedScene" uid="uid://syki6k0e6aac" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn" id="1_72mqx"]
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_udnhi"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_5xe4r"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="4_1m6h5"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="5_rqgn1"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="5_udnhi"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="6_5xe4r"]
+
+[sub_resource type="Resource" id="Resource_uc5p6"]
+script = ExtResource("2_udnhi")
+scene = ExtResource("1_72mqx")
+
+[sub_resource type="Resource" id="Resource_h84gh"]
+script = ExtResource("2_udnhi")
+scene = ExtResource("3_5xe4r")
+
+[sub_resource type="Resource" id="Resource_wes75"]
+script = ExtResource("2_udnhi")
+scene = ExtResource("4_1m6h5")
+overrides = {
+"behaviour_direction": "Vector2(-120, -70)",
+"behaviour_distance": "150.0",
+"name_label_enabled": "false",
+"text_size": "25.0"
+}
+
+[sub_resource type="Resource" id="Resource_5xe4r"]
+script = ExtResource("2_udnhi")
+scene = ExtResource("5_udnhi")
+
+[sub_resource type="Resource" id="Resource_1m6h5"]
+script = ExtResource("2_udnhi")
+scene = ExtResource("6_5xe4r")
+
+[resource]
+script = ExtResource("5_rqgn1")
+name = "Text_Bubble_Style"
+layer_list = Array[String](["12", "13", "10", "11"])
+layer_info = {
+"": SubResource("Resource_uc5p6"),
+"10": SubResource("Resource_h84gh"),
+"11": SubResource("Resource_wes75"),
+"12": SubResource("Resource_5xe4r"),
+"13": SubResource("Resource_1m6h5")
+}
+metadata/_latest_layer = "11"
