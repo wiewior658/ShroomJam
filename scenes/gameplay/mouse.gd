@@ -12,7 +12,7 @@ extends DialogicBackground
 var is_tugging := false
 var tug_target := Vector2.ZERO
 var tug_elapsed := 0.0
-var offset := Vector2(100,25)
+#var offset := Vector2(100,25)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#Input.mouse_mode = Input.MOUSE_MODE_CONFINED
@@ -36,8 +36,8 @@ func _mouse_noise() -> void:
 	var current_pos = get_window().get_mouse_position()
 	if target != null:
 		#print("yay")
-		tug_target = current_pos + (target.global_position - current_pos)
-		tug_target += offset
+		tug_target = current_pos + (target.get_global_rect().get_center() - current_pos)
+		#tug_target += offset
 			#Vector2(current_pos.x + target.transform.x, current_pos.y + target.transform.y)
 	else :
 		if random_direction_enabled:

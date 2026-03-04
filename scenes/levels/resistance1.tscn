@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://5j16uvar8qta"]
+
+[ext_resource type="Script" uid="uid://h7axk52r6bqv" path="res://scenes/levels/resistance_1.gd" id="1_gpd3a"]
+[ext_resource type="PackedScene" uid="uid://c4oveabqy4o5y" path="res://scenes/gameplay/Unruly_mouse.tscn" id="2_aedch"]
+
+[node name="Resistance1" type="Node2D" unique_id=1311134595]
+script = ExtResource("1_gpd3a")
+
+[node name="Unruly_mouse" parent="." unique_id=1415645689 instance=ExtResource("2_aedch")]
+random_direction_enabled = true
