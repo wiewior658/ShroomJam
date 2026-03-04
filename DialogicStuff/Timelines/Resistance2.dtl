@@ -104,6 +104,56 @@ Meanwhile the sun is slowly setting, soon you won’t be able to move without th
 		Though… uhh I only mentioned 6 people…
 		Bezi: And you think I s-sh-should stay?
 		Danuta: No… that’s not what I said… Frankly Zdzichu might be in no shape to travel…
+		Bezi: S-save it… I can see it in your eyes. S-somehow I’m the only one infected…
+		Bezi: Just… just g-go… I’ll have more f-food alone…\
+		…Where are the others?
+		Hippie: Alina and Barbara are upstairs tending to Zdzichu.
+		Bezi: I see… I think you should leave.
+		Hippie: Uhm…?
+		Bezi: The diner’s closed.
+		leave Katerina
+		Hippie: Right… well thanks for everything…\
+		I’ll just go help get Zdzichu down, ok?
+		leave Hippie
+		It takes them a while to carry Zdzichu, who’s yelping in pain.\
+		Meanwhile Alina approaches you.
+		join Alina center
+		Alina: What’s going on…? He really shouldn’t be moved right now. His back is broken.
+		Bezi: Eh…? Too f-fucking bad.
+		update Alina [extra_data="set Modd/Scared"]
+		Alina: Why…?
+		Bezi:  It’s b-better this way, trust me. I’m not going with you.
+		Bezi:  We have n-no idea how contagious this thing is, b-but better not risk it too much, r-right?
+		update Alina [extra_data="set Mood/Sad"]
+		Alina: Oh… That’s… very brave of you. Take care.
+		Bezi: Thanks.
+		 She takes Barbara by the arm and leaves.
+		leave Alina
+		join Barbara center
+		Barbara: You know what you must do.
+		leave Barbara
+		And just like that you are alone again.
+		[background arg="res://assets/art/environments/shrooms3.png" fade="0.0"]
+		You make your way to the basement, where the shrooms are.
+		lionsmith: Fool…
+		You rummage around the pantry and find one bottle of wodka that slipped behind the shelf.
+		lionsmith: You are nothing without us…
+		An idea that was brewing in your mind starts taking proper shape.
+		lionsmith: Resistance is illogical…
+		You head upstairs and tear some clothes into rags.
+		lionsmith: Together we could be stronger, better…
+		You start soaking the rags in alcohol.
+		lionsmith: Cease this…
+		You scatter them in every corner of the basement.
+		lionsmith: And embrace immortality…!
+		Bezi: We’ll see about that.
+		You light a match and toss it on the soaked piles.
+		lionsmith: NoooOOO…!
+		As the flames take, the voice in your head gets louder and louder.
+		You clutch your head as what you hear becomes increasingly more cacophonous.
+		The flames spread, engulfing the whole basement, and soon diner.
+		You take solace in knowing you have done a great service to humanity, and pass away.
+		[signal arg="win"]
 - CHECK COMPASS
 	You pull a compass out of your pocket, that you had the forethought to bring. This way you’ll get your bearings and save time.
 	Bezi: [i]So the camp was east of the village. I've run more or less south to distract them, since the pole is north.[/i]
