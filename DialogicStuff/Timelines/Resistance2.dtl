@@ -55,3 +55,63 @@ audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-dog-barking-70
 You repeat this feinting maneuver a few more times. Running in one direction with your flashlight on and in another with it off, to hopefully confuse your pursuers.
 It’s definitely working on you as you have no idea where you are yourself.
 Meanwhile the sun is slowly setting, soon you won’t be able to move without the flashlight. You better make your way back to the village fast.
+- CLIMB TREE
+	You climb up the tree to get your bearings. You haven’t done this since childhood, so you slip a few times. But eventually you get the lay of the land.
+	Luckily the church is visible above the treeline, so you’ve regained your bearings.
+	Even more luckily, as you’re about to climb down from the tree, you notice a soldier passing below you. He does not bother looking up.
+	You keep going in the direction of the village, however the sun has set before you’re able to get there.
+	- TURN ON FLASHLIGHT
+		You turn on your flashlight hoping you’re close enough to your target.
+		Suddenly you hear movement ahead of you, so you quickly turn it off.
+		lionsmith: Who goes there?
+		You hold your breath in the hopes of hiding, but are blinded by the soldiers’ own flashlight.
+		An agonizing few seconds later he opens fire.
+		audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+		[signal arg="ded"]
+	- MOVE SLOWLY IN DARKNESS
+		You’ll have to move slowly to avoid tripping and falling in the dark, but you haven’t heard any soldiers for a while now, so you hope you’ve lost them.
+		Your hopes are brought up then dashed, as you see light ahead of you, followed by the sounds of movement.
+		You quickly crouch behind a tree and hold your breath.
+		Soon the footsteps you heard grow silent and you breathe a sigh of relief.
+		With that you complete the final stretch of your trek back to the village successfully.
+		[background arg="res://assets/art/environments/village_square_night.jpg" fade="0.0"]
+		No one tired you make your way over to the diner, but are interrupted.
+		join Katerina center [extra_data="set Mood/Happy"]
+		{PlayerName}! Jsi v pořádku! Others say you die, heard shots. I don’t believe. Hah! We show them!
+		Bezi: Yeah I don’t know how I managed myself. How’d the mission go?
+		update Katerina [extra_data="set Mood/Smug"]
+		Katerina: Success! Though Zdzichu zranění…
+		Bezi: Huh? What does that mean?
+		update Katerina [extra_data="set Mood/Base"]
+		Katerina: Uhh… he not good.
+		Bezi: What? He’s injured? Don’t tell me we got shot?!
+		update Katerina [extra_data="set Mood/Smug"]
+		No no! Idiot just fall from ladder. Had to carry him back. Alina léčit him now. You did good.
+		leave Katerina
+		[background arg="res://assets/art/environments/diner_night.jpg" fade="0.0"]
+		join Danuta leftmost
+		Danuta: Woah {PlayerName}! You made it.
+		Bezi: Yeah yeah, I’m surprised myself. Glad to see you too guys…
+		join Hippie rightmost [extra_data="set Mood/Pensive"]
+		Hippie: Yeah… we definitely WEREN'T betting on whether you'll return…
+		join Katerina center [extra_data="set Mood/Smug"]
+		Katerina: Pay up…
+		Hippie: Shh… not now.
+		Bezi: ...
+		Bezi: So? Did it work?
+		update Danuta [extra_data="set Mood/Happy"]
+		Danuta: Absolutely! They’ll send a helicopter for us in the morning.\
+		Though… uhh I only mentioned 6 people…
+		Bezi: And you think I s-sh-should stay?
+		Danuta: No… that’s not what I said… Frankly Zdzichu might be in no shape to travel…
+- CHECK COMPASS
+	You pull a compass out of your pocket, that you had the forethought to bring. This way you’ll get your bearings and save time.
+	Bezi: [i]So the camp was east of the village. I've run more or less south to distract them, since the pole is north.[/i]
+	Bezi: [i]If I go west/northwest I should reach the village.[/i]
+	You keep heading in that direction, but find no village and the sun has set.
+	Bezi: [i]Did I overshoot it?[/i]
+	You try to adjust, but still nothing and soon enough the light from your torchlight attracts attention. You’ve been found by the soldiers!
+	You once again break into a sprint, turning off your flashlight, but in the complete darkness you trip and fall over some roots.
+	The soldiers catch up to you and you are shot in the back.
+	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+	[signal arg="ded"]
