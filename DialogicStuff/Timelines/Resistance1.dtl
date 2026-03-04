@@ -1,42 +1,43 @@
 [style name="New_style"]
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus="" loop="true"]
 It’s not much, but it’s honest work. You try to add as few of these strange shrooms as possible. If your worsening condition is any indication, they’re probably not good for you.
-audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
-Shroom: [i]Don’t fight it…[/i]
+audio "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3" [volume="-35.0"]
+lionsmith: [i]Don’t fight it…[/i]
 After the meal some people linger in the diner as you sit down, tired.
 join Alina leftmost [extra_data="set Mood/Sad"]
 Alina: We can’t go on like this…
-join Zdzichu rightmost
+join Zdzichu rightmost [extra_data="set Mood/Base"]
 Zdzichu (Default): Ya think? Wait, who was it saying we should comply with the soldiers in the first place, huh?
 Alina: ...
 leave Alina
-join Barbara (Default) center
+join Barbara (Default) center [extra_data="set Mood/Base"]
 Barbara: Hmm… might have been farmer Kabanos…?
 leave Zdzichu
-join Hippie (Default) leftmost
+join Hippie (Default) leftmost [extra_data="set Mood/Base"]
 Hippie: Nah - he said he’d sneak out through the woods at night… I hope he made it.
 leave Barbara
-join Danuta rightmost
+join Danuta rightmost [extra_data="set Mood/Base"]
 Danuta: Unlikely… But Alina has a point - {PlayerName}, how much supplies do we have left?
 leave Hippie
-join Katerina (Default) center
+join Katerina (Default) center [extra_data="set Mood/Base"]
 Katerina: {PlayerName}? You are good?
 During the conversation, you’ve sort of slumped down on the diner counter, holding your head in your arms, trying to keep the voices away.
 audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
-Shroom: [i]Join us…[/i]
-join Zdzichu (Default) leftmost
+lionsmith: [i]Join us…[/i]
+join Zdzichu (Default) leftmost [extra_data="set Mood/Base"]
 Zdzichu: Maaan… you do look, like… terrible. I think…
 update Danuta [animation="Tada" length="0.1" extra_data="set Mood/Disgust"]
 Danuta: Don’t take this the wrong way but it hurts to look at you…
 leave Danuta
-join Barbara rightmost
+join Barbara rightmost [extra_data="set Mood/Base"]
 if {Pronouns} == "He/Him":
 	Barbara: I think he looks good.
 elif {Pronouns} == "She/Her":
 	Barbara: I think she looks good.
 elif {Pronouns} == "They/Them":
 	Barbara: I think they look good.
-update Katerina [extra_data="set Mood/Happy"]
+update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 Katerina: Napít se.
 She offers you a bottle of booze.
 leave Barbara
@@ -56,34 +57,37 @@ Zdzichu: Yeah, you should just give it to me instead.
 	update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 	Zdzichu: Yoink. Thank you very much chief.
 	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Angry"]
+	audio "res://DialogicStuff/CopyrightFreeAudio/woman-sigh.mp3" [volume="-20.0" bus=""]
 	Katerina: *rolls her eyes, disappointed*
 	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 	Shroom: [i]Good…[/i]
 leave Katerina
 leave Zdzichu
 Alina: We need to get you checked out… I’m not sure what, but I can’t shake this feeling that something is wrong with you.
-join Hippie leftmost
+join Hippie leftmost [extra_data="set Mood/Base"]
 if {Pronouns} == "He/Him":
 	Hippie: I dunno he looks kinda cool to me.
-elif {Pronouns} == "She/Her":
-	Hippie: I dunno she looks kinda cool to me.
-elif {Pronouns} == "They/Them":
-	Hippie: I dunno they look kinda cool to me.
-if {Pronouns} == "He/Him":
 	Alina: Even if, he shouldn’t look like that…
 elif {Pronouns} == "She/Her":
+	Hippie: I dunno she looks kinda cool to me.
 	Alina: Even if, she shouldn’t look like that…
-else:
+elif {Pronouns} == "They/Them":
+	Hippie: I dunno they look kinda cool to me.
 	Alina: Even if, they shouldn’t look like that…
 [signal arg="1"]
 - I’M FINE
 	[signal arg="0"]
 	Alina: A-are you sure?
-	Hippie: Hey. Don’t, like, question another [man/woman/person]’s choices.
+	if {Pronouns} == "They/Them":
+		Hippie: Hey. Don’t, like, question another person’s choices.
+	elif {Pronouns} == "She/Her":
+		Hippie: Hey. Don’t, like, question another woman’s choices.
+	elif {Pronouns} == "He/Him":
+		Hippie: Hey. Don’t, like, question another man’s choices.
 	Against your better judgement, you’ve refused medical help.
 	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 	Shroom: [i]It is time…[/i]
-- ITHINK I'M SICK
+- I THINK I'M SICK
 	[signal arg="0"]
 	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 	Alina: Ok, tell me where does it hurt…?
@@ -93,7 +97,7 @@ else:
 	She presses gently along your forearm.
 	Alina: I can feel engorged veins, even though they aren’t… visible? Weird…
 	Alina: But some of them are in places where veins shouldn’t be… Like the infection is spreading across your entire body…?
-	join Danuta (Default) center
+	join Danuta (Default) center [extra_data="set Mood/Base"]
 	leave Hippie
 	Danuta: Fuck… I knew this was bad, but not this bad…
 	join Katerina leftmost [extra_data="set Mood/Angry"]
@@ -121,7 +125,7 @@ else:
 	join Alina rightmost [extra_data="set Mood/Scared"]
 	leave Katerina
 	Alina: That’s… that’s horrible. And you were in on it all along?
-	join Zdzichu leftmost
+	join Zdzichu leftmost [extra_data="set Mood/Base"]
 	Zdzichu: Fucking Hell! I knew it. It’s the mushrooms all along!!!
 	All the gathered villagers seem to be getting increasingly more agitated…
 	[signal arg="2"]
@@ -136,17 +140,18 @@ else:
 		You make an effort to get up and walk over to Danuta and sit beside her.
 		Bezi: We h-have to hear her out… It mi-might be our only chance at this p-point.
 		Your speech seems to have calmed people down. Katerina lowers her switchblade.
-		update  length="0.1" extra_data="set Mood/Default"]
+		update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 		Danuta: Ok… I think I could pull a few strings and get us all out of here…
 		Zdzichu: If you could, wouldn’t you have done so already? Yourself at least?
 		Danuta: No. The phone line is down, if you haven’t noticed.
 		leave Katerina
 		Danuta: But if there was a way to get a message out to any Party officials… I know people there that owe me.
-		join Alina rightmost
+		join Alina rightmost [extra_data="set Mood/Base"]
 		Alina: Uhm… I’m not sure that helps, but Ma used to be an electrician?
 		leave Danuta
 		Alina: Ma, how are you feeling?
-		join Barbara center
+		join Barbara center [extra_data="set Mood/Base"]
+		audio "res://DialogicStuff/CopyrightFreeAudio/happy-whistle.mp3" [volume="-10.0" bus=""]
 		Barbara: *Whistles*
 		update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
 		Alina: She’s not all here.
@@ -161,9 +166,10 @@ else:
 		update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
 		Alina: It’s no use when she’s like this.
 		join Hippie leftmost [extra_data="set Mood/Happy"]
+		audio "res://DialogicStuff/CopyrightFreeAudio/deep-laugh-chuckle.mp3" [volume="-20.0" bus=""]
 		Hippie: *Chuckles*
 		leave Alina
-		join Zdzichu rightmost
+		join Zdzichu rightmost [extra_data="set Mood/Base"]
 		Zdzichu: Yeah, very fucking funny man… our survival depends on alzheimer grandma over here…
 		update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 		Hippie: Actually I remembered a mix of “medicines” that would help me think more clearly.
@@ -176,11 +182,12 @@ else:
 			join Alina rightmost [extra_data="set Mood/Scared"]
 			Alina: I still think this is a bad idea…
 			leave Barbara
-			join Danuta center
+			join Danuta center [extra_data="set Mood/Base"]
 			Danuta: It’s a risk we have to take…
 			Danuta: Or would you rather we all starve?
 			Alina: …No.
 			Hippie: There! This should work, let me just try… a microdose…
+			audio "res://DialogicStuff/CopyrightFreeAudio/nose-snort.mp3" [volume="-30.0" bus=""]
 			Hippie: *Snort*
 			Hippie: ...
 			update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
@@ -192,9 +199,10 @@ else:
 			Danuta: Okay… this is so dumb it might just work.
 			leave Hippie
 			You mix the drugs with a cup of tea and offer it to Barbara.
-			join Barbara leftmost
-			Barbara: Thank you dearie… *sip*
-			...
+			join Barbara leftmost [extra_data="set Mood/Base"]
+			Barbara: Thank you dearie…
+			audio "res://DialogicStuff/CopyrightFreeAudio/drink-sip.mp3" [volume="-10.0" bus=""]
+			She sips the tea.
 			update Alina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Alina: So… what do you think, Ma?
 			Barbara: About what?
@@ -213,7 +221,7 @@ else:
 			She looks among the gathered.
 			leave Barbara
 			Danuta: Zdzichu, Richie, are you guys up to the task?
-			join Zdzichu leftmost
+			join Zdzichu leftmost [extra_data="set Mood/Base"]
 			Zdzichu: We just follow the line…? And immediately get shot by soldiers? No thank you.
 			Danuta: In that case we need a distraction…
 			...
@@ -234,33 +242,34 @@ else:
 		- TOO RISKY
 			[signal arg="0"]
 			leave Barbara
-			join Alina center
-			I agree. No offense Richie.
+			join Alina center [extra_data="set Mood/Base"]
+			Alina: I agree. No offense Richie.
 			Hippie: Chill, none taken.
 			Zdzichu: So what…? we have to wait until she’s remembered who she is? Great.
 			leave Alina
-			join Danuta center
+			join Danuta center [extra_data="set Mood/Base"]
 			Danuta: Unless you have a better idea… Then yes.
 			The people in your diner settle into a quiet unease…
 	- DON'T
 		[signal arg="0"]
 		leave Zdzichu
-		join Katerina leftmost
+		join Katerina leftmost [extra_data="set Mood/Angry"]
 		update Danuta [extra_data="set Mood/Scared"]
 		Danuta: Listen to me, you don’t understand—
 		Katerina moves before anyone processes it. The small switchblade clicks open with a quiet, almost polite sound.
 		Alina: Katerina—?!
 		There’s a struggle. A sharp intake of breath, then a chair tips over.
-		audio "res://assets/audio/chair-fall.mp3"
+		audio "res://assets/audio/chair-fall.mp3" [volume="-10.0" bus=""]
 		Then silence.
 		Danuta collapses against the counter and onto the floor. The blade slips from Katerina’s hand and clatters on the tiles.
 		leave Danuta
 		Katerina: This all her fault. Káča pitomá.
 		She throws up her hands defensively, looking to the others
 		But no one moves for several seconds. The diner feels smaller.
-		update Alina [extra_data="set Mood/Scared"]
+		update Alina [animation="Tada" length="0.1" extra_data="set Mood/Scared"]
 		Eventually Alina breaks out of her stupor.
 		Alina: What have you done!? Where are the bandages…?
+		update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 		Zdzichu: Stop… Katerina was right… Danuta was always an outsider… She sold us out to some Party eggheads.
 		Alina: No! How can you say something like that?! Let me go!
 		She struggles out of Zdzichu’s grasp and kneels down beside Danuta.
@@ -276,7 +285,7 @@ else:
 		But soon Katerina’s hand shoots up, joining Zdzichu’s in the air, followed shortly by Barbara’s.
 		join Alina center [extra_data="set Mood/Scared"]
 		Alina: MOM?! WHAT THE FUCK
-		join Barbara left
+		join Barbara left [extra_data="set Mood/Base"]
 		Barbara: What’s happening? I just wanted to be included…
 		leave Barbara
 		Zdzichu: Ok… 3 in favor. All against?
@@ -288,30 +297,31 @@ else:
 		Bezi: [i]I should raise my hand… but why is it so heavy?[/i]
 		Bezi: [i]Come on, you’ve done this many times…[/i]
 		Bezi: [i]Do I…? Not want to?[/i]
-		Bezi: [i]Come to think of it… [/i] That’s a lot of meat.
+		Bezi: [i]Come to think of it… [/i]
+		Bezi: That’s a lot of meat.
 		Alina: WHAT THE FUCK?!?
 		Bezi: Uhh… did I say that outloud? I didn’t mean to…!
-		update Hippie [extra_data="set Mood/Pensive"]
+		update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
 		Hippie: Not cool man…
 		if {Pronouns} == "He/Him":
 			Zdzichu: Uhhhh… I think that means he abstained?
 		elif {Pronouns} == "She/Her":
 			Zdzichu: Uhhhh… I think that means she abstained?
-		else:
-			Zdzichu: Uhhhh… I think that means [he/she/they] abstained?
-		leave Alina
+		elif {Pronouns} == "They/Them":
+			Zdzichu: Uhhhh… I think that means they abstained?
 		Alina storms out of the diner hearing this, and Richie follows after her.
+		leave Alina
 		leave Hippie
-		Zdzichu shares a pensive glance with Katerina\
-		She just shrugs.
-		join Katerina rightmost
+		Zdzichu shares a pensive glance with Katerina. She just shrugs.
+		join Katerina rightmost [extra_data="set Mood/Base"]
 		Katerina: Kdo ví how long we stuck here.
 		Katerina: Move her to basement?
 		Zdzichu: Uh… for now I suppose yeah.
 		They grab Danuta’s unconscious body and move it downstairs.
 		leave Zdzichu
 		leave Katerina
-		join Barbara center
-		Barbara: *hum*
+		join Barbara center [extra_data="set Mood/Base"]
+		audio "res://DialogicStuff/CopyrightFreeAudio/humming_woman.mp3" [volume="-20.0" bus=""]
+		Barbara hums for a bit.
 		Barbara: War makes for tough times… and sometimes we must make unthinkable decisions…
 		Her gaze absent, as if she were talking to herself.
