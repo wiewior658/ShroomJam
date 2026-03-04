@@ -20,3 +20,5 @@ func _on_go_right_btn_button_up() -> void:
 
 func _on_go_left_btn_button_up() -> void:
 	cameraXpos=-576.0
+func change_customer(customer_name : String) -> void:
+	pass

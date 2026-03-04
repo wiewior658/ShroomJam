@@ -55,6 +55,7 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
+"Money": 200,
 "PlayerName": "Bezi",
 "Pronouns": "They/Them",
 "Shroomness": {

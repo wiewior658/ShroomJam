@@ -2,10 +2,13 @@
 
 [ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/kitchen shelf/kitchen_shelf.gd" id="1_icbk6"]
 [ext_resource type="Script" uid="uid://jqcga4p5hce5" path="res://scenes/gameplay/drag and drop/BarWork.gd" id="1_v10i0"]
-[ext_resource type="Texture2D" uid="uid://xdlr5msgfeay" path="res://Assets/pics/gar.png" id="4_m2xqb"]
+[ext_resource type="Texture2D" uid="uid://p3w8o08kqaeh" path="res://assets/art/environments/kitchen_day.jpg" id="2_awjo4"]
+[ext_resource type="Texture2D" uid="uid://do32he1h4fvxs" path="res://assets/art/environments/diner_day.jpg" id="3_rhpnf"]
+[ext_resource type="Texture2D" uid="uid://cewd04rrons5n" path="res://assets/art/characters/Marianna/Pensive5.png" id="4_e750r"]
+[ext_resource type="Texture2D" uid="uid://xdlr5msgfeay" path="res://assets/pics/gar.png" id="4_m2xqb"]
 [ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
-[ext_resource type="Texture2D" uid="uid://bs23u7s8vinbo" path="res://Assets/pics/soup.png" id="5_vbxp8"]
-[ext_resource type="Texture2D" uid="uid://ddm3mwqo3y2dv" path="res://Assets/pics/shroomPantry.png" id="7_v10i0"]
+[ext_resource type="Texture2D" uid="uid://bs23u7s8vinbo" path="res://assets/pics/soup.png" id="5_vbxp8"]
+[ext_resource type="Texture2D" uid="uid://ddm3mwqo3y2dv" path="res://assets/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b4mae02b4v33y" path="res://scenes/gameplay/drag and drop/Kitchen_audio_stream_player.gd" id="8_awjo4"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
 
@@ -15,6 +18,23 @@ GridContainer/constants/v_separation = 9
 
 [node name="DragNDropTest" type="Node2D" unique_id=949569843]
 script = ExtResource("1_v10i0")
+
+[node name="Sprite2DKitchen" type="Sprite2D" parent="." unique_id=201487940]
+z_index = -50
+position = Vector2(600, 325)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("2_awjo4")
+
+[node name="Sprite2DDiner" type="Sprite2D" parent="." unique_id=1499986696]
+z_index = -45
+position = Vector2(-660, 325)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("3_rhpnf")
+
+[node name="CustomerSprite" type="Sprite2D" parent="." unique_id=1186855953]
+position = Vector2(-650, 280)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_e750r")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=152075155]
 position = Vector2(-576, 322)
