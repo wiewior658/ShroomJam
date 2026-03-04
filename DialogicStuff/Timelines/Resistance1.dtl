@@ -1,7 +1,7 @@
 [style name="New_style"]
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
 It’s not much, but it’s honest work. You try to add as few of these strange shrooms as possible. If your worsening condition is any indication, they’re probably not good for you.
-audio -
+audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 Shroom: [i]Don’t fight it…[/i]
 After the meal some people linger in the diner as you sit down, tired.
 join Alina leftmost [extra_data="set Mood/Sad"]
@@ -22,7 +22,7 @@ leave Hippie
 join Katerina (Default) center
 Katerina: {PlayerName}? You are good?
 During the conversation, you’ve sort of slumped down on the diner counter, holding your head in your arms, trying to keep the voices away.
-audio -
+audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 Shroom: [i]Join us…[/i]
 join Zdzichu (Default) leftmost
 Zdzichu: Maaan… you do look, like… terrible. I think…
@@ -57,7 +57,7 @@ Zdzichu: Yeah, you should just give it to me instead.
 	Zdzichu: Yoink. Thank you very much chief.
 	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Angry"]
 	Katerina: *rolls her eyes, disappointed*
-	audio -
+	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 	Shroom: [i]Good…[/i]
 leave Katerina
 leave Zdzichu
@@ -81,7 +81,7 @@ else:
 	Alina: A-are you sure?
 	Hippie: Hey. Don’t, like, question another [man/woman/person]’s choices.
 	Against your better judgement, you’ve refused medical help.
-	audio -
+	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
 	Shroom: [i]It is time…[/i]
 - ITHINK I'M SICK
 	[signal arg="0"]
