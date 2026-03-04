@@ -32,7 +32,6 @@ func _refresh_continue_state() -> void:
 
 func _on_new_game() -> void:
 	get_tree().change_scene_to_file(FIRST_SCENE)
-	
 func _on_continue() -> void:
 	#if not SaveSystem.has_save():
 	#	_refresh_continue_state()

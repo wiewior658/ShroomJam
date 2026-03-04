@@ -8,7 +8,7 @@ var eqOther=[]
 @export var name : String = "Bezi" #name of charackter
 @export var CurrentScene = ""
 @export var NextScnee = ""
-
+@export var eq = []
 @export var characters_stats: Dictionary ={
 	"entity"=0,
 	"Bezi"=0,
@@ -20,6 +20,8 @@ var eqOther=[]
 	"Katerina"=0,
 	"Danuta"=0,
 }
+
+	
 
 #func RemoveFood(item)->void:
 #	if eqFood.rfind(item)>=0:
@@ -39,6 +41,7 @@ func set_stats(new_stats:Dictionary) -> void:
 	characters_stats = new_stats
 
 func ShowStats() -> void:
+	print(eq)
 	print(characters_stats)
 	
 func ChangeStats(name:String, value:int) -> void:
@@ -58,6 +61,7 @@ func setParams() -> void:
 	ChangeStats("Danuta",Dialogic.VAR.Shroomness.Danuta)
 	CurrentScene = Dialogic.VAR.CurrentScene
 	NextScnee = Dialogic.VAR.NextScene
+	eq = GlobalVar.eqFood
 	
 	
 func setGlobalVar() -> void:
@@ -74,3 +78,4 @@ func setGlobalVar() -> void:
 	Dialogic.VAR.Shroomness.Danuta = characters_stats["Danuta"]
 	Dialogic.VAR.CurrentScene = CurrentScene
 	Dialogic.VAR.NextScene = NextScnee
+	GlobalVar.eqFood = eq
