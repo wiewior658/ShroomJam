@@ -19,6 +19,10 @@ func _ready() -> void:
 	newSoup()
 
 func newSoup()->void:
+	if(contents.size()>0):
+		_serve_customer()
+	else:
+		print("Can't serve empty plate")
 	nourishment=0
 	taste=0
 	soupColor=EmptyPotColor
@@ -49,7 +53,7 @@ func _drop_data(_pos, data):
 		taste+=droppedFood.taste+CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
 		soupPos-=6
-		contents.push_back(droppedFood)
+		contents.push_back(droppedFood.itemName)
 		print(contents)
 		if contents.size()==0:
 			soupColor=droppedFood.color
@@ -63,3 +67,10 @@ func _drop_data(_pos, data):
 
 func _on_button_button_up() -> void:
 	newSoup()
+func _serve_customer() -> void:
+	Dialogic.VAR.Money+=CurrentCustomer.pay(taste, nourishment)
+	
+func update_customer(new_customer : Customer) -> void:
+	CurrentCustomer = new_customer
+	
+	
