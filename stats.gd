@@ -6,6 +6,8 @@ var eqOther=[]
 @export var money:float=20.0
 @export var pronounce :String = "" #f m nb
 @export var name : String = "Bezi" #name of charackter
+@export var CurrentScene = ""
+@export var NextScnee = ""
 
 @export var characters_stats: Dictionary ={
 	"entity"=0,
@@ -54,6 +56,9 @@ func setParams() -> void:
 	ChangeStats("Wojciech",Dialogic.VAR.Shroomness.Wojciech)
 	ChangeStats("Katerina",Dialogic.VAR.Shroomness.Katerina)
 	ChangeStats("Danuta",Dialogic.VAR.Shroomness.Danuta)
+	CurrentScene = Dialogic.VAR.CurrentScene
+	NextScnee = Dialogic.VAR.NextScene
+	
 	
 func setGlobalVar() -> void:
 	Dialogic.VAR.PlayerName = name
@@ -67,3 +72,5 @@ func setGlobalVar() -> void:
 	Dialogic.VAR.Shroomness.Wojciech = characters_stats["Wojciech"]
 	Dialogic.VAR.Shroomness.Katerina = characters_stats["Katerina"]
 	Dialogic.VAR.Shroomness.Danuta = characters_stats["Danuta"]
+	Dialogic.VAR.CurrentScene = CurrentScene
+	Dialogic.VAR.NextScene = NextScnee
