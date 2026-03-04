@@ -32,11 +32,13 @@ directories/dch_directory={
 "Hippie": "res://DialogicStuff/Characters/Richie/Hippie.dch",
 "Kabanos": "res://DialogicStuff/Characters/Kabanos.dch",
 "Katerina": "res://DialogicStuff/Characters/Katerina/Katerina.dch",
+"Larry": "res://DialogicStuff/Characters/Larry.dch",
 "Marianna": "res://DialogicStuff/Marianna.dch",
 "Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
+"Rando": "res://DialogicStuff/Characters/Rando.dch",
 "Wojciech": "res://DialogicStuff/Characters/Wojciech/Wojciech.dch",
 "Zdzichu": "res://DialogicStuff/Characters/Zdzichu/Zdzichu.dch",
-"lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
+"lionsmith": "res://DialogicStuff/Characters/Strange.dch"
 }
 directories/dtl_directory={
 "Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",

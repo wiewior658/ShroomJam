@@ -28,7 +28,8 @@ Bezi: [i]I should ask the lumberjack and get them replaced. The pantry might nee
 Bezi: [i]It’s still early enough. I don’t expect any clients so early in the morning.[/i]
 - GO TO THE LUMBER
 	[background arg="res://assets/art/environments/forrest _maybe.png" fade="0.0"]
-	audio Music "res://DialogicStuff/CopyrightFreeAudio/Gentle Breeze.mp3" [loop="true"]
+	audio Music "res://DialogicStuff/CopyrightFreeAudio/Gentle Breeze.mp3" [volume="0.0" bus="" loop="true"]
+	audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Wind_Forest_Loop_Stereo.wav" [volume="-10.0" bus="" loop="true"]
 	if {Pronouns} == "They/Them":
 		Hubanka borders a huge forest from the south. {PlayerName} would often play there with other children when they were young, despite the adults telling them it’s easy to get lost there. A fellow lumberjack would nag the children for losing their way, but was always kind enough to walk them to the market square safely.
 	elif {Pronouns} == "She/Her":
@@ -216,6 +217,7 @@ leave Zdzichu
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
 audio "res://DialogicStuff/CopyrightFreeAudio/drill_whizz.wav" [volume="-10.0" bus=""]
 audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus=""]
+audio LongSFX -
 You spend the whole morning busy with repairs. Finally you step back to examine your handiwork.
 Bezi: Well… hah… that looks much better… hah.
 Bezi: Where was that sign?
@@ -238,6 +240,8 @@ Barbara: Why, this wasn’t here before. This was uhm… it was a…
 Alina: Flower shop?
 Barbara: Yes! That’s the one. You’re saying it’s open again? Good, this place was glum without flowers.
 Alina: No Ma, the flower shop closed years ago. This is the diner… Oh, hello!
+update Alina center [move_time="0.5"]
+update Barbara right [move_time="0.5"]
 Bezi: Ah! Hello, I’ll be with you in just a moment!
 Barbara: My Henryk would like this place. He always said Hubanka needed something decent.
 update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]

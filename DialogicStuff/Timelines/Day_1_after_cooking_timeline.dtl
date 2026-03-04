@@ -1,23 +1,26 @@
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
-audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3"
-join Barbara (Default) left [animation="Fade In"]
-join Alina (Default) leftmost [animation="Fade In"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-30.0" bus=""]
+join Barbara left [animation="Fade In" extra_data="set Mood/Base"]
+join Alina leftmost [animation="Fade In" extra_data="set Mood/Base"]
 After both ladies have had their meal, there’s a brief pause, during which you could initiate a conversation. One thought in particular has been nagging you.
 Bezi: [i]While I recognise Alina, I have no clue who the old lady is. I can only recall her dad.[/i]
 - ASK
 	Bezi: Thank you for coming!
 	Bezi: Hey… uhm… Alina, may I have a word?
-	update Alina (Sorrow) center [move_time="1.0"]
+	update Alina center [move_time="1.0"]
 	leave Barbara [animation="Fade Out"]
-	Alina (Sorrow): Uh… sure…? What is it?
+	Alina: Uh… sure…? What is it?
 	Bezi: Uhh… how do I put it… uhm did your father remarry?
 	Alina: Huh???
 	Bezi: It’s just… I remember your dad right - Bartosz?
 	Bezi: And his friend Henryk, right? So who’s… *pointing towards door*
-	Alina (Smiling): Oh! I get it now! Haha You’ve really been away for a while.
-	Alina (Sorrow): Yeah that’s… my dad alright. He’s old age has caught up to him - he’s got Alzheimer's. Frankly it’s like he’s forgotten who he is.
+	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
+	Alina: Oh! I get it now! Haha You’ve really been away for a while.
+	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
+	Alina: Yeah that’s… my dad alright. He’s old age has caught up to him - he’s got Alzheimer's. Frankly it’s like he’s forgotten who he is.
 	Bezi: Oh! I am so sorry to hear that.
-	Alina (Default): Yeah, don’t be. It’s a cruel twist of fate, really.
+	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+	Alina: Yeah, don’t be. It’s a cruel twist of fate, really.
 	Bezi: Oh?
 	Alina: Yeah, since I’m a nurse - I knew I would need to take care of her… uh him…  but this is… Yeah you really should have been here when it started. The neighbors wouldn’t stop talking about it…
 	Bezi: Ah, I see.
@@ -26,18 +29,20 @@ Bezi: [i]While I recognise Alina, I have no clue who the old lady is. I can only
 - DROP IT
 	You decide to let them leave, but as soon as they do you hear a commotion outside.
 	audio "res://DialogicStuff/CopyrightFreeAudio/catcall.mp3"
-	join Barbara (Default) left [animation="Slide From Left"]
+	join Barbara left [animation="Slide From Left" extra_data="set Mood/Base"]
 	update Alina leftmost [move_time="0.5"]
-	join Zdzichu (Visibly drunk) center [animation="Fade In"]
-	Zdzichu (Visibly drunk): Ooo, Hubanka’sss finest out for inshpection!
+	join Zdzichu center [animation="Fade In" extra_data="set Mood/Drunk"]
+	Zdzichu: Ooo, Hubanka’sss finest out for inshpection!
 	The drunken man stumbles past them.
 	leave Zdzichu [animation="Slide To Right"]
 	update Barbara center [move_time="1.2"]
 	update Alina left [move_time="1.2"]
-	Barbara (Default): He still remembers me!
-	Alina (Sorrow): Uhg… He remembers everyone after three bottles. He should really lay them off.
+	Barbara: He still remembers me!
+	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
+	Alina: Uhg… He remembers everyone after three bottles. He should really lay them off.
 	Barbara: Well what joy would he have left in life? Cabbage and eggs? Like his wife used to make…
-	Alina (Sorrow): Why… How do you remember that, Ma?
+	update Alina [animation="Tada" length="0.1" extra_data="set Mood/Scared"]
+	Alina: Why… How do you remember that, Ma?
 	Barbara: Hm? Remember what?
 	audio "res://DialogicStuff/CopyrightFreeAudio/parquet-floor-footsteps.wav"
 leave Barbara [animation="Fade Out"]
@@ -45,13 +50,13 @@ leave Alina [animation="Fade Out"]
 The diner got quiet. It’s this time of day where one shouldn't expect much commotion.
 Bezi: [i]*sigh* This is just the beginning, isn’t it?[/i]
 Bezi: Well, with no customers in sight for now, I think I should think of some new dishes. Can’t keep going in circles with the menu.
+[background arg="res://assets/art/environments/kitchen_later_day.jpg" fade="0.0"]
 Bezi: Let’s see what we have here. Some carrots and potatoes would make a nice stew. Add meat, and we have a goulash.
 Bezi: What else? Alcohol, cheese, sugar… I’ve heard of a foreign desert like that once, but I’m not sure how to make it yet.
 {PlayerName}’s focus shifts when a strange rummaging reverberates nearby.
 Like someone knocking on hard wood. But there are no customers by the door yet.
 audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3" [loop="true"]
-characterTesty: STRANGE WHISPER\
-Me…Meaat. Fufuf…
+characterTesty: Me…Meaat. Fufuf…
 Bezi: [i]I knew this would happen one day or another.[/i]
 Bezi: Rats. Probably…
 Bezi: They’d never miss a chance to grab the supplies for themselves.
@@ -69,6 +74,7 @@ Bezi: I need to find their nest or whatever way they got into the diner.
 	Bezi: [i]Where did this stuff come from?[/i]
 	Aside from the obvious, there are no little locators in any of the cabinets.
 - CHECK THE BASEMENT
+	[background arg="res://assets/art/environments/basement_day.jpg" fade="0.0"]
 	if {Pronouns} == "They/Them":
 		{PlayerName} steps into the basement. It’s rather dark down there, but they don’t spot any rodents. Thankfully.
 		There’s only some spots of mold growing on the walls. The basement is rather humid, so no wonder it picked this place to grow.
@@ -98,6 +104,8 @@ elif {Pronouns} == "She/Her":
 	Suddenly, she hears the diner door open. She goes to the counter.
 elif {Pronouns} == "He/Him":
 	Suddenly, he hears the diner door open. He goes to the counter.
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+join Katerina center [extra_data="set Mood/Base"]
 A young lady in overalls comes in. {PlayerName} recognizes her - This is the moonshiner Katerina.
 Originally from Czechoslovakia, she settled in our village because she heard the alcohol market in the area is great.
 if {Pronouns} == "They/Them":
@@ -107,24 +115,26 @@ elif {Pronouns} == "She/Her":
 elif {Pronouns} == "He/Him":
 	{PlayerName} and her go a long way back, when he were/was still living in the city.
 Katerina used to deliver Marianna’s messages to {PlayerName} as some sort of favour. {PlayerName} never got to know what the truth was, though.
-Katerina (Default): Hiya, {PlayerName}! You here. Good. Me hungry.
+Katerina: Hiya, {PlayerName}! You here. Good. Me hungry.
 The language barrier between the two is clearly visible. At least she got some basics down.
 And if {PlayerName} doesn’t understand, she’s ready to march into the kitchen herself and serve whatever she needs.
 Katerina: You have uuh… cheese and meat, yes? No? I want this.
 Bezi: I was just thinking about new dishes, but this mix didn’t come to my head yet.
 Bezi: I’ll think of something tasty.
+update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 Katerina is visibly content and excited for her piece of well-done meaty delight.
 {PlayerName} hears a faint meowing from behind the counter.
 This must be her new companion, Larry, Marianna mentioned once.
 He was an Italian stray, but its charm worked on Katerina from the start and she decided to take care of him.
 Bezi: *chuckle* And something for the gentleman too, I suppose?
+join Larry (Pixelated Larry) left [z_index="-50"]
 audio "res://DialogicStuff/CopyrightFreeAudio/cat-meow-1.mp3"
-lionsmith: LARRY\
-Meow.
+Larry: Meow.
 label GAMEPLAY
 The quickly made-up recipe worked better than {PlayerName} thought. Now it’s Katerina’s turn to judge it.
 The lady takes the plate and digs right in.
 Katerina: Mhm. This? Good!
+update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 Katerina: But… No money. Sorry… Give next time.
 Katerina: BUT! Have this.
 She puts a bottle of clear liquid on the counter.
@@ -137,6 +147,8 @@ The thought alone counts.
 	Bezi: When I make a new dish with this, you’ll be the first to try it.
 	Bezi: It’s a deal?
 	{PlayerName} takes the bottle behind the counter.
+	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
+	audio "res://DialogicStuff/CopyrightFreeAudio/cat-purring.mp3" [volume="-10.0" bus=""]
 	if {Pronouns} == "They/Them":
 		Katerina is happy with their response and Larry purrs in agreement.
 	elif {Pronouns} == "She/Her":
@@ -145,7 +157,9 @@ The thought alone counts.
 		Katerina is happy with his response and Larry purrs in agreement.
 - DEMAND MONEY (+booze either way)
 	Bezi: What? No, Katka, I’m sorry but money is important here. You’ll have to pay as soon as you get the money.
+	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Angry"]
 	Katerina is upset, but her mercantile nature speaks up for her.
+	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 	Katerina: WAIT. Please, take. I go to Italy for it. Good stuff. Good mushrooms inside. And- and plants! Sweet. And spicy. But good. Best in Europe!
 	The Italian mushroom seems like a truffle. And by plants she most likely means the herbs. The Mediterranean countries are flooded with good spices and herbs after all.
 	Her story makes {PlayerName} feel bad, yet at the same time Katerina is known for flashy stories and adventures.
@@ -165,21 +179,19 @@ elif {Pronouns} == "He/Him":
 	{PlayerName} is not much of a drinker, but even he can tell a good booze from a standard one.
 audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/opening-door.mp3" [loop="false"]
 audio "res://DialogicStuff/CopyrightFreeAudio/bell 2.wav"
+leave Larry
 The talk gets interrupted by a man standing in the doorway holding a package. Perhaps a courier.
 if {Pronouns} == "They/Them":
-	characterTesty: THE MAN\
-	Package for Mx. {PlayerName}.
+	Rando: Package for Mx. {PlayerName}.
 elif {Pronouns} == "She/Her":
-	characterTesty: THE MAN\
-	Package for Ms. {PlayerName}.
+	Rando: Package for Ms. {PlayerName}.
 elif {Pronouns} == "He/Him":
-	characterTesty: THE MAN\
-	Package for Mr. {PlayerName}.
+	Rando: Package for Mr. {PlayerName}.
 Bezi: Hm? I didn’t order anything.
-characterTesty: THE MAN\
-Not my problem. Sign here please.
+Rando: Not my problem. Sign here please.
 The package is not very big, but it’s definitely heavy. And a tad wet.
 The courier goes away.
+update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 Katerina: Hm? Smell… *sniff* meat.
 {PlayerName} takes a whiff of the package’s smell and nods in agreement. The package is full of fresh, red meat.
 {PlayerName}’s seen chickens, beef, or even mutton meat, but this one doesn’t resemble any one of them.
@@ -192,12 +204,13 @@ elif {Pronouns} == "She/Her":
 elif {Pronouns} == "He/Him":
 	He should ask the butcher when he gets a chance. This could just be a nice welcoming gift from him.
 label Time passes chyba? …
+leave Katerina
 As the hours go by, more customers start flooding into the diner.
 Time to get to work.
 label MORE GAMEPLAY. shadow customers. not important.
 label TIMESKIP - END OF THE SHIFT, LATE EVENING
 [background arg="res://assets/art/environments/diner_evening.jpg" fade="0.0"]
-audio Music "res://DialogicStuff/CopyrightFreeAudio/after-a-long-night-out-1930s-smooth-jazz.mp3"
+audio Music "res://DialogicStuff/CopyrightFreeAudio/after-a-long-night-out-1930s-smooth-jazz.mp3" [volume="-20.0" bus=""]
 Bezi: [i]*Sigh* I’m exhausted. Can’t believe uncle Wojciech used to do this for so many years.[/i]
 Bezi: [i]Perhaps I’ll get used to it. One day. Or week… Year?[/i]
 Bezi: [i]At least I got some money to start with. This should be enough to cover another batch of products.[/i]

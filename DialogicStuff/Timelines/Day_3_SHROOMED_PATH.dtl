@@ -1,4 +1,5 @@
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus=""]
 With the diner cramped more than ever, you've created a fest fit for kings today, thanks to the shrooms' abundance.
 Everyone is looking full and beautiful.
 join Hippie (Happy) center [animation="Fade In"]
