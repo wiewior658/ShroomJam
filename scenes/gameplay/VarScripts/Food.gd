@@ -41,3 +41,11 @@ var Danuta=Customer.create("Danuta",8,8,25,[Egg,Cheese,Sausage,Potato],[Shroom])
 var Katerina=Customer.create("Katerina",8,8,25,[Wodka,Chicken, Sausage,Cheese],[Carrot,Dandelion,Nettle,Bark])
 var Barbara=Customer.create("Barbara",7,8,25,[Potato,Sausage,Bread],[Turnip,Bark,Nettle])
 var Alina=Customer.create("Alina",8,8,25,[Potato,Bread,Dandelion,Nettle,Egg],[Cabbage,Turnip,Cheese,Milk])
+@export var allCustomers : Dictionary = {
+	"1" = Zdzichu,
+	"2" = Richie,
+	"3" = Danuta,
+	"4" = Katerina,
+	"5" = Barbara,
+	"6" = Alina,
+}
