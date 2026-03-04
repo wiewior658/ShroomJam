@@ -10,23 +10,12 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Pixelated Kabanos",
+&"default_portrait": "",
 &"description": "",
-&"display_name": "Vendor",
+&"display_name": "????",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {
-"Pixelated Kabanos": {
-"export_overrides": {
-"image": "\"res://Assets/art/characters/pixelated_kabanos.png\""
-},
-"ignore_char_scale": false,
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1.0,
-"scene": ""
-}
-},
-&"scale": 0.8
+&"portraits": {},
+&"scale": 1.0
 }
