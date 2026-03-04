@@ -43,6 +43,7 @@ directories/dtl_directory={
 "Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
+"Resistance1": "res://DialogicStuff/Timelines/Resistance1.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }

@@ -1,0 +1,202 @@
+[style name="New_style"]
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+It’s not much, but it’s honest work. You try to add as few of these strange shrooms as possible. If your worsening condition is any indication, they’re probably not good for you.
+audio -
+Shroom: [i]Don’t fight it…[/i]
+After the meal some people linger in the diner as you sit down, tired.
+join Alina (Sorrow) leftmost
+Alina (Sorrow): We can’t go on like this…
+join Zdzichu rightmost
+Zdzichu (Default): Ya think? Wait, who was it saying we should comply with the soldiers in the first place, huh?
+Alina: ...
+leave Alina
+join Barbara (Default) center
+Barbara: Hmm… might have been farmer Kabanos…?
+leave Zdzichu
+join Hippie (Default) leftmost
+Hippie: Nah - he said he’d sneak out through the woods at night… I hope he made it.
+leave Barbara
+join Danuta rightmost
+Danuta: Unlikely… But Alina has a point - {PlayerName}, how much supplies do we have left?
+leave Hippie
+join Katerina (Default) center
+Katerina: {PlayerName}? You are good?
+During the conversation, you’ve sort of slumped down on the diner counter, holding your head in your arms, trying to keep the voices away.
+audio -
+Shroom: [i]Join us…[/i]
+join Zdzichu (Default) leftmost
+Zdzichu: Maaan… you do look, like… terrible. I think…
+Danuta (Disgusted): Don’t take this the wrong way but it hurts to look at you…
+leave Danuta
+join Barbara rightmost
+Barbara: I think [he/she/they] look\s good.
+Katerina (Smiling): Napít se.
+She offers you a bottle of booze.
+leave Barbara
+Zdzichu: Hey! You said you didn’t have any! Some people…
+join Alina (Scared) rightmost
+Alina: Uhm… I’m not sure alcohol is a good idea with… whatever this is?
+Zdzichu: Yeah, you should just give it to me instead.
+[signal arg="2"]
+- ACCEPT BOTTLE
+	[signal arg="0"]
+	You take a swig from the bottle, then another.
+	The burn is immediate. Sharp. Real. The voices dull, like someone turned down the volume knob inside your skull.
+	PLACEHOLDER FOR REDUCING UNRULY MOUSE
+	Alina: Ok that’s enough for now…
+- REFUSE IT
+	[signal arg="0"]
+	Zdzichu (Smiling): Yoink. Thank you very much chief.
+	Katerina (Angry): *rolls her eyes, disappointed*
+	audio -
+	Shroom: [i]Good…[/i]
+leave Katerina
+leave Zdzichu
+Alina: We need to get you checked out… I’m not sure what, but I can’t shake this feeling that something is wrong with you.
+join Hippie leftmost
+Hippie: I dunno [he/she/they] look/s kinda cool to me.
+Alina: Even if, [he/she/they] shouldn’t look like that…
+- I’M FINE
+	Alina: A-are you sure?
+	Hippie: Hey. Don’t, like, question another [man/woman/person]’s choices.
+	Against your better judgement, you’ve refused medical help.
+	audio -
+	Shroom: [i]It is time…[/i]
+- ITHINK I'M SICK
+	Alina (Smiling): Ok, tell me where does it hurt…?
+	The nurse takes a moment to examine you. You grit your teeth and force your body to cooperate. Your muscles twitch, but you hold still.
+	Alina (Sorrow): There’s… something under your skin.
+	She presses gently along your forearm.
+	Alina: I can feel engorged veins, even though they aren’t… visible? Weird…
+	Alina: But some of them are in places where veins shouldn’t be… Like the infection is spreading across your entire body…?
+	join Danuta (Default) center
+	leave Hippie
+	Danuta: Fuck… I knew this was bad, but not this bad…
+	join Katerina (Angry) leftmost
+	Katerina: Huh? You know about this? Vysvětlit teď!
+	She points an accusatory finger at Danuta.
+	Danuta: *Shrug* Doesn’t matter now, we’re all gonna die, or worse.
+	Katerina's eye twitches and she pulls out a switchblade
+	Katerina: Kurva! Why you not tell us?!
+	leave Alina
+	Danuta (Intrigued): THIS SUPPOSED TO BE SCARED Hey now! Calm down, let’s talk about this…
+	join Hippie rightmost
+	Hippie: Hmm… I think you should start talking then… we deserve to know what’s going on man.
+	Danuta (Default): Ok ok! Uhh...
+	Danuta: There’s an underground bunker in the forest. Post-war, never used by the Germans.
+	Danuta: From what I know it was repurposed by the government, for uhh… an agricultural laboratory.
+	Danuta: I was never inside, but I mediated deals with farmer Kabanos to supply them in secret.
+	Danuta: From what I heard they made some sort of breakthrough. But what they were working on was dangerous…
+	Danuta: Up to this point I was hoping… My contacts were in a panic the day before the quarantine.
+	Danuta: I guess I shouldn’t have trusted them - that the situation was under control…
+	Danuta: I was just hoping the quarantine was to protect us from whatever outbreak happened. But it seems it’s to keep it contained…
+	leave Hippie
+	She hangs her head in her hands.
+	join Alina (Scared) rightmost
+	leave Katerina
+	Alina: That’s… that’s horrible. And you were in on it all along?
+	join Zdzichu (Default) leftmost
+	Zdzichu: Fucking Hell! I knew it. It’s the mushrooms all along!!!
+	All the gathered villagers seem to be getting increasingly more agitated…
+	- INTERVENE
+		Bezi: C-c-calm down everyone. That’s not im-important… N-now that we kn-know, what can we do about it?
+		leave Alina
+		Danuta: Uh… let me think…
+		join Katerina (Angry) rightmost
+		Zdzichu: Uhh… and why should we listen to anything you say, liar?
+		Katerina: Yeah, you done enough, píča!
+		You make an effort to get up and walk over to Danuta and sit beside her.
+		Bezi: We h-have to hear her out… It mi-might be our only chance at this p-point.
+		Your speech seems to have calmed people down. Katerina lowers her switchblade.
+		update Katerina (Default)
+		Danuta: Ok… I think I could pull a few strings and get us all out of here…
+		Zdzichu: If you could, wouldn’t you have done so already? Yourself at least?
+		Danuta: No. The phone line is down, if you haven’t noticed.
+		leave Katerina
+		Danuta: But if there was a way to get a message out to any Party officials… I know people there that owe me.
+		join Alina rightmost
+		Alina: Uhm… I’m not sure that helps, but Ma used to be an electrician?
+		leave Danuta
+		Alina: Ma, how are you feeling?
+		join Barbara (Smiling Kindly) center
+		Barbara: *Whistles*
+		Alina (Sorrow): She’s not all here.
+		update Zdzichu [animation="Shake X"]
+		Zdzichu reaches over to shake her.
+		Zdzichu: Wake up man! We need you.
+		Barbara (Default): …huh? What’s going on? Where are we? I was just with Henry…
+		Alina (Smiling): Phone lines Ma! We need to fix them. Can you help?
+		Barbara: I don’t know what you mean…
+		leave Zdzichu
+		Alina (Sorrow): It’s no use when she’s like this.
+		join Hippie leftmost
+		Hippie (Happy): *Chuckles*
+		leave Alina
+		join Zdzichu rightmost
+		Zdzichu: Yeah, very fucking funny man… our survival depends on alzheimer grandma over here…
+		Hippie (Default): Actually I remembered a mix of “medicines” that would help me think more clearly.
+		Hippie: I could fix her a small dose… Maybe it will help?
+		- TRY IT
+			leave Zdzichu
+			Having been given the green light, Richie starts crushing and mixing some herbs, shrooms and pills.
+			join Alina (Scared) rightmost
+			Alina: I still think this is a bad idea…
+			leave Barbara
+			join Danuta center
+			Danuta: It’s a risk we have to take…
+			Danuta: Or would you rather we all starve?
+			Alina: …No.
+			Hippie: There! This should work, let me just try… a microdose…
+			Hippie: *Snort*
+			Hippie: ...
+			Hippie (Happy): Oh yeah… that’s the stuff
+			He stares at the ceiling, eyes widening.
+			Hippie: The planet’s not broken. It’s misaligned. Like a machine vibrating off-axis. You don’t smash it, you have to tune it.
+			Hippie: Synchronize incentives with survival. Align growth with sustainability. Make short-term gain mathematically irrational. Then we wouldn’t even be in this predicament.
+			Danuta (Disgusted): Okay… this is so dumb it might just work.
+			leave Hippie
+			You mix the drugs with a cup of tea and offer it to Barbara.
+			join Barbara (Smiling Kindly) center
+			Barbara: Thank you dearie… *sip*
+			...
+			Alina (Default): So… what do you think, Ma?
+			Barbara (Default): About what?
+			Alina (Smiling): Restoring the phone lines in the village?
+			Barbara: Hm… depends why they’re down… Is it all of them?
+			Danuta (Default): Yes. Let’s assume sabotage?
+			Barbara: Huh? Most likely physically cut then… The signal runs from here to a trunk line, I’d check there.
+			She looks toward the window.
+			Barbara: From there it’s one short trip up the pole to fix the right wires and restore the connection…
+			Danuta: We’d need simply a ladder, do you think you can manage?
+			Barbara shakes her head
+			Barbara (Smiling Kindly): Maybe if I were 20 years younger… buut… I’ll draw you the schematics! I still remember what it looked like, I put up those poles myself after all.
+			Danuta: Huh… well if one of us can do it…
+			She looks among the gathered.
+			leave Barbara
+			Danuta: Zdzichu, Richie, are you guys up to the task?
+			join Zdzichu (Default) center
+			Zdzichu: We just follow the line…? And immediately get shot by soldiers? No thank you.
+			Danuta: In that case we need a distraction…
+			...
+			- VOLUNTEER
+				Bezi: I’ll go.
+				Alina (Sorrow): But… that’s suicidal!
+				Bezi: Exactly. And I’m a-already infected. I don’t t-think I should leave with you…
+				There’s a long silence
+				leave Alina
+				Danuta: We can’t thank you enough…
+				join Katerina (Smug) center
+				Katerina: I also go. Need me for sneaking. We leave at večer - small light, but not too small, best time to \
+				vyhnout se soldiers.
+				She gestures to mimic the sun setting.
+		- TOO RISKY
+			leave Barbara
+			join Alina (Default) center
+			I agree. No offense Richie.
+			Hippie: Chill, none taken.
+			Zdzichu: So what…? we have to wait until she’s remembered who she is? Great.
+			leave Alina
+			join Danuta center
+			Danuta: Unless you have a better idea… Then yes.
+			The people in your diner settle into a quiet unease…
+	- DON'T
