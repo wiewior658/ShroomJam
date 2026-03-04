@@ -42,6 +42,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",
+"Day_1_after_farmers_market": "res://DialogicStuff/Timelines/Day_1_after_farmers_market.dtl",
 "Day_1_before_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
 "Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
 "Day_3_before_endings": "res://DialogicStuff/Timelines/Day_3_before_endings.dtl",

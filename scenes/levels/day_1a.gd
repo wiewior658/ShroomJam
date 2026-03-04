@@ -6,7 +6,7 @@ var _save : SaveStats
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	autosave()
-	Dialogic.start("res://DialogicStuff/Timelines/Prologue_2_timeline.dtl")
+	Dialogic.start("res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl")
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
 
 
@@ -14,7 +14,8 @@ func _ready() -> void:
 #func _process(delta: float) -> void:
 #	pass
 func _on_timeline_ended()->void:
-	get_tree().change_scene_to_file("res://scenes/levels/day1a.tscn")
+	#get_tree().change_scene_to_file(tutorial)
+	pass
 
 func autosave() -> void:
 	_save = SaveStats.new()
