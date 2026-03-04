@@ -12,7 +12,7 @@ Now pick your pronouns.
 - She/Her
 	set {Pronouns} = "She/Her"
 audio Music -
-audio "res://assets/audio/freesound_community-engine-start-86242.mp3" [volume="-10.0" bus=""]
+audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-engine-start-86242.mp3" [volume="-10.0" bus=""]
 audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-15.0" bus="" loop="true"]
 [background arg="res://assets/art/environments/village_square_dusk.jpg" fade="0.0"]
 A cranky bus drives on the road. There is only one passenger on it, sitting and looking outside the window pensively. The autumnal forest landscape changes to a rural village, and the bus slows down before honking, announcing its passengers to get off.
@@ -118,5 +118,4 @@ Marianna/Marianna: Sure just, uh, how much experience do you have in the kitchen
 - Uh, maybe you can show me how to do it?
 	set {Tutorial} = true
 	Marianna/Marianna: Alright, I do have some experience from helping dad all those years. Let me show you the ropes.
-[background arg="res://assets/art/environments/6057b801015284aa784bd67961d71867.jpg" fade="0.0"]
 Tutorial placeholder

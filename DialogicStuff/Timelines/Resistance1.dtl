@@ -2,7 +2,7 @@
 [background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
 audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus="" loop="true"]
 It’s not much, but it’s honest work. You try to add as few of these strange shrooms as possible. If your worsening condition is any indication, they’re probably not good for you.
-audio "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3" [volume="-35.0"]
+audio "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3" [volume="-15.0" bus=""]
 lionsmith: [i]Don’t fight it…[/i]
 After the meal some people linger in the diner as you sit down, tired.
 join Alina leftmost [extra_data="set Mood/Sad"]
@@ -23,7 +23,7 @@ leave Hippie
 join Katerina (Default) center [extra_data="set Mood/Base"]
 Katerina: {PlayerName}? You are good?
 During the conversation, you’ve sort of slumped down on the diner counter, holding your head in your arms, trying to keep the voices away.
-audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
+audio "res://assets/audio/shroombert_intro.mp3" [volume="-20.0" bus=""]
 lionsmith: [i]Join us…[/i]
 join Zdzichu (Default) leftmost [extra_data="set Mood/Base"]
 Zdzichu: Maaan… you do look, like… terrible. I think…
@@ -57,9 +57,9 @@ Zdzichu: Yeah, you should just give it to me instead.
 	update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 	Zdzichu: Yoink. Thank you very much chief.
 	update Katerina [animation="Tada" length="0.1" extra_data="set Mood/Angry"]
-	audio "res://DialogicStuff/CopyrightFreeAudio/woman-sigh.mp3" [volume="-20.0" bus=""]
+	audio "res://DialogicStuff/CopyrightFreeAudio/woman-sigh.mp3" [volume="-15.0" bus=""]
 	Katerina: *rolls her eyes, disappointed*
-	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
+	audio "res://assets/audio/shroombert_intro.mp3" [volume="-20.0" bus=""]
 	Shroom: [i]Good…[/i]
 leave Katerina
 leave Zdzichu
@@ -85,7 +85,7 @@ elif {Pronouns} == "They/Them":
 	elif {Pronouns} == "He/Him":
 		Hippie: Hey. Don’t, like, question another man’s choices.
 	Against your better judgement, you’ve refused medical help.
-	audio "res://assets/audio/shroombert_intro.mp3" [volume="-35.0"]
+	audio "res://assets/audio/shroombert_intro.mp3" [volume="-20.0" bus=""]
 	Shroom: [i]It is time…[/i]
 - I THINK I'M SICK
 	[signal arg="0"]
@@ -151,7 +151,7 @@ elif {Pronouns} == "They/Them":
 		leave Danuta
 		Alina: Ma, how are you feeling?
 		join Barbara center [extra_data="set Mood/Base"]
-		audio "res://DialogicStuff/CopyrightFreeAudio/happy-whistle.mp3" [volume="-10.0" bus=""]
+		audio "res://DialogicStuff/CopyrightFreeAudio/happy-whistle.mp3" [volume="-15.0" bus=""]
 		Barbara: *Whistles*
 		update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
 		Alina: She’s not all here.
@@ -166,7 +166,7 @@ elif {Pronouns} == "They/Them":
 		update Alina [animation="Tada" length="0.1" extra_data="set Mood/Sad"]
 		Alina: It’s no use when she’s like this.
 		join Hippie leftmost [extra_data="set Mood/Happy"]
-		audio "res://DialogicStuff/CopyrightFreeAudio/deep-laugh-chuckle.mp3" [volume="-20.0" bus=""]
+		audio "res://DialogicStuff/CopyrightFreeAudio/deep-laugh-chuckle.mp3" [volume="-15.0" bus=""]
 		Hippie: *Chuckles*
 		leave Alina
 		join Zdzichu rightmost [extra_data="set Mood/Base"]
@@ -187,7 +187,7 @@ elif {Pronouns} == "They/Them":
 			Danuta: Or would you rather we all starve?
 			Alina: …No.
 			Hippie: There! This should work, let me just try… a microdose…
-			audio "res://DialogicStuff/CopyrightFreeAudio/nose-snort.mp3" [volume="-30.0" bus=""]
+			audio "res://DialogicStuff/CopyrightFreeAudio/nose-snort.mp3" [volume="-20.0" bus=""]
 			Hippie: *Snort*
 			Hippie: ...
 			update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
@@ -201,7 +201,7 @@ elif {Pronouns} == "They/Them":
 			You mix the drugs with a cup of tea and offer it to Barbara.
 			join Barbara leftmost [extra_data="set Mood/Base"]
 			Barbara: Thank you dearie…
-			audio "res://DialogicStuff/CopyrightFreeAudio/drink-sip.mp3" [volume="-10.0" bus=""]
+			audio "res://DialogicStuff/CopyrightFreeAudio/drink-sip.mp3" [volume="-15.0" bus=""]
 			She sips the tea.
 			update Alina [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Alina: So… what do you think, Ma?
@@ -259,7 +259,7 @@ elif {Pronouns} == "They/Them":
 		Katerina moves before anyone processes it. The small switchblade clicks open with a quiet, almost polite sound.
 		Alina: Katerina—?!
 		There’s a struggle. A sharp intake of breath, then a chair tips over.
-		audio "res://assets/audio/chair-fall.mp3" [volume="-10.0" bus=""]
+		audio "res://assets/audio/chair-fall.mp3" [volume="-15.0" bus=""]
 		Then silence.
 		Danuta collapses against the counter and onto the floor. The blade slips from Katerina’s hand and clatters on the tiles.
 		leave Danuta
@@ -321,7 +321,7 @@ elif {Pronouns} == "They/Them":
 		leave Zdzichu
 		leave Katerina
 		join Barbara center [extra_data="set Mood/Base"]
-		audio "res://DialogicStuff/CopyrightFreeAudio/humming_woman.mp3" [volume="-20.0" bus=""]
+		audio "res://DialogicStuff/CopyrightFreeAudio/humming_woman.mp3" [volume="-15.0" bus=""]
 		Barbara hums for a bit.
 		Barbara: War makes for tough times… and sometimes we must make unthinkable decisions…
 		Her gaze absent, as if she were talking to herself.
