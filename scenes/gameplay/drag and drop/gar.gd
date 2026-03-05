@@ -4,12 +4,15 @@ var Capacity=5
 var EmptyPotColor=Color.BLACK
 var EmptyPotPos=105.0
 
+var shroomnes = 0
 var taste
 var nourishment
 var soupColor
 var soupPos
 var contents=[]
 var CurrentCustomer: Customer
+var AvaibleCustomers = [1,2,3,4,5,6]
+var temp : String
 
 signal splash()
 signal moveLeft()
@@ -17,10 +20,20 @@ signal serveSoup(color:Color)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	CurrentCustomer=Food.Marianna
+	Dialogic.VAR.CustomersLeft = 3
+	AvaibleCustomers.shuffle()
+	CurrentCustomer=Food.allCustomers[str(AvaibleCustomers.pop_front())]
+	if Dialogic.VAR.Tutorial == true:
+		CurrentCustomer = Food.Marianna
+		Dialogic.VAR.CustomersLeft = 1
+	setSprite()
 	newSoup()
 
 func newSoup()->void:
+	if(contents.size()>0):
+		_serve_customer()
+	else:
+		print("Can't serve empty plate")
 	nourishment=0
 	taste=0
 	soupColor=EmptyPotColor
@@ -51,8 +64,9 @@ func _drop_data(_pos, data):
 			GlobalVar.RemoveFood(droppedFood)
 		taste+=droppedFood.taste+CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
-		soupPos-=20
-		contents.push_back(droppedFood)
+		shroomnes += droppedFood.shroom
+		soupPos-=6
+		contents.push_back(droppedFood.itemName)
 		print(contents)
 		splash.emit(-20)
 		if contents.size()==0:
@@ -71,3 +85,61 @@ func _on_serve_button_up() -> void:
 		splash.emit()
 		moveLeft.emit()
 		
+func _on_button_button_up() -> void:
+	newSoup()
+	
+func _serve_customer() -> void:
+	Dialogic.VAR.Money+=CurrentCustomer.pay(taste, nourishment)
+	changeShroomnes()
+	Dialogic.VAR.CustomersLeft-=1
+	if Dialogic.VAR.CustomersLeft > 0:
+		AvaibleCustomers.shuffle()
+		update_customer(Food.allCustomers[str(AvaibleCustomers.pop_front())])
+		setSprite()
+			
+	else:
+		#get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
+		#print(Dialogic.VAR.NextScene)
+		#Dialogic.start(Dialogic.VAR.NextScene)
+		get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
+	#print(CurrentCustomer.Name)
+func update_customer(new_customer : Customer) -> void:
+	CurrentCustomer = new_customer
+	
+func setSprite() -> void:
+	match CurrentCustomer.Name:
+				"Marianna":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Marianna/Base0.png")
+				"Zdzichu":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Zdzich/Drunk3.png")
+				"Richie":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Richie/Base0.png")
+				"Danuta":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Danuta/Base0.png")
+				"Katerina":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Katka/Base0.png")
+				"Barbara":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Barbara/Base0.png")
+				"Alina":
+					$"../CustomerSprite".texture = load("res://assets/art/characters/Alina/Base0.png")
+	
+func changeShroomnes() -> void:
+	match CurrentCustomer.Name:
+		"Marianna":
+			print(Dialogic.VAR.Shroomness.Marianna)
+			Dialogic.VAR.Shroomness.Marianna += shroomnes
+			print(Dialogic.VAR.Shroomness.Marianna)
+		"Zdzichu":
+			Dialogic.VAR.Shroomness.Zdzichu += shroomnes
+		"Richie":
+			Dialogic.VAR.Shroomness.Richie += shroomnes
+		"Danuta":
+			Dialogic.VAR.Shroomness.Danuta += shroomnes
+		"Katerina":
+			Dialogic.VAR.Shroomness.Katerina += shroomnes
+		"Barbara":
+			Dialogic.VAR.Shroomness.Barbara += shroomnes
+		"Alina":
+			Dialogic.VAR.Shroomness.Alina += shroomnes
+	
+	

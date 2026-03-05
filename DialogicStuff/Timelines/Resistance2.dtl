@@ -1,0 +1,171 @@
+[style name="New_style"]
+[background arg="res://assets/art/environments/village_square_dusk.jpg" fade="0.0"]
+Dusk is rapidly approaching. It is time to execute the plan. Everyone is in position. Zdzichu and Richie managed to find a ladder and toolbox.
+Katerina scouted out the way to the phone pole. Danuta is ready to make the phone call as soon as the lines are back up.
+Alina and Barbara are with her to make sure “she doesn’t try anything funny”.
+It’s go time.
+join Danuta leftmost
+Danuta: We probably only have one shot at this. Don’t fuck it up.
+join Alina center
+Alina: We’re counting on you.
+join Barbara rightmost
+Barbara: It’s been an honour gentlemen.
+Your small group heads out into the woods.
+leave --All--
+[background arg="res://assets/art/environments/forrest _maybe.png" fade="0.0"]
+audio "res://DialogicStuff/CopyrightFreeAudio/sspsurvival-footsteps-on-the-leaves-autumn-city-park-248352.mp3"
+Bezi: [i]When I left my old life behind, I didn’t expect such an unexpected turn. Government experiments and talking shrooms. You could write a book about it.[/i]
+join Katerina center
+Katerina: Stát! Shh…
+Katerina saw it 1st and ordered you all on the ground. A beam of light is moving across the nearby area. Luckily this soldier patrol passes you by.
+You keep going. Every now and then you think you see wires above your head, but Katerina shakes her head.
+Katerina: Further.
+You’ve taken a more circuitous route to avoid patrols as much as possible.
+And it's probably working. You haven’t run into another one when Katerina stops seemingly in the middle of nowhere.
+Katerina: This is where we split. You go rozptýlení. We go other way.
+She pulls a flask from her pocket and hands it to you.
+Pití. For good luck.
+Bezi: Thanks, good luck to you too.
+Katerina points you in the right direction, before vanishing from sight.
+leave Katerina
+You soon make your way over to the military camp. Danuta said it surrounds the bunker, where the lab was. You can see the lights from afar, as well as silhouettes in gas masks moving about.
+Earlier you found a firecracker left over from new years at Marianna’s. You get up as close to the camp as you dare, light it and YEET.
+You do not wait for it to go off instead darting away from your hiding spot immediately. You have to buy as much time as possible.
+audio -
+The firecracker repeatedly pierces the silence of the night. It perhaps could be mistaken for gunshots.
+You run, vaguely aware of the commotion happening behind you. You hear proper gunshots, before silence returns for a while.
+You slow down for a moment to catch your breath and turn on your flashlight. You do want them to see you, if briefly.
+Suddenly behind you you hear dogs barking in the distance. You didn’t know they had dogs. You have to lose them somehow.
+audio "res://DialogicStuff/CopyrightFreeAudio/freesound_community-dog-barking-70772.mp3"
+- CLIMB A TREE
+	Bezi: [i]Dogs can’t climb, right? I think I read  that in a book somewhere?\
+	[/i]
+	You turn off your flashlight and get to climbing. You haven’t done this since childhood, so you slip a few times, but eventually you make it to the top of the tree.
+	Bezi: [i]Now to just wait for them too pass…[/i]
+	Soon the dogs catch up to where you were and to your surprise start barking up the tree not able to climb.
+	Unfortunately they are also followed by armed soldiers, who open fire. Get hit and fall out of the tree to your death.
+	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+	[signal arg="ded"]
+	[end_timeline]
+- DOUSE YOURSELF IN ALCOHOL
+	Bezi: [i]I need to mask my scent somehow.[/i]
+	You wrack your brain for a solution, when you remember the flask Katerina gave you. You take a whiff of the alcohol.
+	[i]Phew… that’s potent stuff. Let’s hope this works.[/i]
+	You spill the substance on top of yourself, and make sure to douse your feet as well. You can hear the barking intensifying, so you change direction and pray.
+	Soon enough the barking gets quieter, but you’re not out of the proverbial woods yet.
+You repeat this feinting maneuver a few more times. Running in one direction with your flashlight on and in another with it off, to hopefully confuse your pursuers.
+It’s definitely working on you as you have no idea where you are yourself.
+Meanwhile the sun is slowly setting, soon you won’t be able to move without the flashlight. You better make your way back to the village fast.
+- CLIMB TREE
+	You climb up the tree to get your bearings. You haven’t done this since childhood, so you slip a few times. But eventually you get the lay of the land.
+	Luckily the church is visible above the treeline, so you’ve regained your bearings.
+	Even more luckily, as you’re about to climb down from the tree, you notice a soldier passing below you. He does not bother looking up.
+	You keep going in the direction of the village, however the sun has set before you’re able to get there.
+	- TURN ON FLASHLIGHT
+		You turn on your flashlight hoping you’re close enough to your target.
+		Suddenly you hear movement ahead of you, so you quickly turn it off.
+		lionsmith: Who goes there?
+		You hold your breath in the hopes of hiding, but are blinded by the soldiers’ own flashlight.
+		An agonizing few seconds later he opens fire.
+		audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+		[signal arg="ded"]
+		[end_timeline]
+	- MOVE SLOWLY IN DARKNESS
+		You’ll have to move slowly to avoid tripping and falling in the dark, but you haven’t heard any soldiers for a while now, so you hope you’ve lost them.
+		Your hopes are brought up then dashed, as you see light ahead of you, followed by the sounds of movement.
+		You quickly crouch behind a tree and hold your breath.
+		Soon the footsteps you heard grow silent and you breathe a sigh of relief.
+		With that you complete the final stretch of your trek back to the village successfully.
+		[background arg="res://assets/art/environments/village_square_night.jpg" fade="0.0"]
+		No one tired you make your way over to the diner, but are interrupted.
+		join Katerina center [extra_data="set Mood/Happy"]
+		{PlayerName}! Jsi v pořádku! Others say you die, heard shots. I don’t believe. Hah! We show them!
+		Bezi: Yeah I don’t know how I managed myself. How’d the mission go?
+		update Katerina [extra_data="set Mood/Smug"]
+		Katerina: Success! Though Zdzichu zranění…
+		Bezi: Huh? What does that mean?
+		update Katerina [extra_data="set Mood/Base"]
+		Katerina: Uhh… he not good.
+		Bezi: What? He’s injured? Don’t tell me we got shot?!
+		update Katerina [extra_data="set Mood/Smug"]
+		No no! Idiot just fall from ladder. Had to carry him back. Alina léčit him now. You did good.
+		leave Katerina
+		[background arg="res://assets/art/environments/diner_night.jpg" fade="0.0"]
+		join Danuta leftmost
+		Danuta: Woah {PlayerName}! You made it.
+		Bezi: Yeah yeah, I’m surprised myself. Glad to see you too guys…
+		join Hippie rightmost [extra_data="set Mood/Pensive"]
+		Hippie: Yeah… we definitely WEREN'T betting on whether you'll return…
+		join Katerina center [extra_data="set Mood/Smug"]
+		Katerina: Pay up…
+		Hippie: Shh… not now.
+		Bezi: ...
+		Bezi: So? Did it work?
+		update Danuta [extra_data="set Mood/Happy"]
+		Danuta: Absolutely! They’ll send a helicopter for us in the morning.\
+		Though… uhh I only mentioned 6 people…
+		Bezi: And you think I s-sh-should stay?
+		Danuta: No… that’s not what I said… Frankly Zdzichu might be in no shape to travel…
+		Bezi: S-save it… I can see it in your eyes. S-somehow I’m the only one infected…
+		Bezi: Just… just g-go… I’ll have more f-food alone…\
+		…Where are the others?
+		Hippie: Alina and Barbara are upstairs tending to Zdzichu.
+		Bezi: I see… I think you should leave.
+		Hippie: Uhm…?
+		Bezi: The diner’s closed.
+		leave Katerina
+		Hippie: Right… well thanks for everything…\
+		I’ll just go help get Zdzichu down, ok?
+		leave Hippie
+		It takes them a while to carry Zdzichu, who’s yelping in pain.\
+		Meanwhile Alina approaches you.
+		join Alina center
+		Alina: What’s going on…? He really shouldn’t be moved right now. His back is broken.
+		Bezi: Eh…? Too f-fucking bad.
+		update Alina [extra_data="set Mood/Scared"]
+		Alina: Why…?
+		Bezi:  It’s b-better this way, trust me. I’m not going with you.
+		Bezi:  We have n-no idea how contagious this thing is, b-but better not risk it too much, r-right?
+		update Alina [extra_data="set Mood/Sad"]
+		Alina: Oh… That’s… very brave of you. Take care.
+		Bezi: Thanks.
+		 She takes Barbara by the arm and leaves.
+		leave --All--
+		join Barbara center
+		Barbara: You know what you must do.
+		leave Barbara
+		And just like that you are alone again.
+		[background arg="res://assets/art/environments/shrooms3.png" fade="0.0"]
+		You make your way to the basement, where the shrooms are.
+		lionsmith: Fool…
+		You rummage around the pantry and find one bottle of wodka that slipped behind the shelf.
+		lionsmith: You are nothing without us…
+		An idea that was brewing in your mind starts taking proper shape.
+		lionsmith: Resistance is illogical…
+		You head upstairs and tear some clothes into rags.
+		lionsmith: Together we could be stronger, better…
+		You start soaking the rags in alcohol.
+		lionsmith: Cease this…
+		You scatter them in every corner of the basement.
+		lionsmith: And embrace immortality…!
+		Bezi: We’ll see about that.
+		You light a match and toss it on the soaked piles.
+		lionsmith: NoooOOO…!
+		As the flames take, the voice in your head gets louder and louder.
+		You clutch your head as what you hear becomes increasingly more cacophonous.
+		The flames spread, engulfing the whole basement, and soon diner.
+		You take solace in knowing you have done a great service to humanity, and pass away.
+		[signal arg="win"]
+		[end_timeline]
+- CHECK COMPASS
+	You pull a compass out of your pocket, that you had the forethought to bring. This way you’ll get your bearings and save time.
+	Bezi: [i]So the camp was east of the village. I've run more or less south to distract them, since the pole is north.[/i]
+	Bezi: [i]If I go west/northwest I should reach the village.[/i]
+	You keep heading in that direction, but find no village and the sun has set.
+	Bezi: [i]Did I overshoot it?[/i]
+	You try to adjust, but still nothing and soon enough the light from your torchlight attracts attention. You’ve been found by the soldiers!
+	You once again break into a sprint, turning off your flashlight, but in the complete darkness you trip and fall over some roots.
+	The soldiers catch up to you and you are shot in the back.
+	audio "res://DialogicStuff/CopyrightFreeAudio/ribhavagrawal-fast-gunshots-230519.mp3" [volume="-70.0" bus=""]
+	[signal arg="ded"]
+	[end_timeline]

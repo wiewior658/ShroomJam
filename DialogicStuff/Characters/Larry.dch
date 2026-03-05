@@ -1,0 +1,40 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Pixelated Larry",
+&"description": "",
+&"display_name": "Larry",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, -180),
+&"portraits": {
+"Larry": {
+"export_overrides": {
+"image": "\"res://Assets/art/characters/Larry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Pixelated Larry": {
+"export_overrides": {
+"image": "\"res://Assets/art/characters/pixelated_larry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 0.5
+}

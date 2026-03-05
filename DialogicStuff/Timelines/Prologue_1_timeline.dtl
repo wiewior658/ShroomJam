@@ -1,18 +1,19 @@
 [style name="New_style"]
-# Put some pixelated art here. Not game location. We are in the void of making a decision before the game starts
-[background arg="res://" fade="0.0"]
+[background arg="res://assets/art/environments/the_void.png" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/the_violin_void.mp3" [volume="-10.0" bus="" loop="true"]
 Tell us your name.
 [text_input text="Name:" var="PlayerName" placeholder="Bezi" default="Bezi"]
 Now pick your pronouns.
-[signal arg=""yespls""]
+[signal]
 - He/Him
 	set {Pronouns} = "He/Him"
 - They/Them
 	set {Pronouns} = "They/Them"
 - She/Her
 	set {Pronouns} = "She/Her"
+audio Music -
 audio "res://assets/audio/freesound_community-engine-start-86242.mp3" [volume="-10.0" bus=""]
-audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-10.0" bus="" loop="true"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-15.0" bus="" loop="true"]
 [background arg="res://assets/art/environments/village_square_dusk.jpg" fade="0.0"]
 A cranky bus drives on the road. There is only one passenger on it, sitting and looking outside the window pensively. The autumnal forest landscape changes to a rural village, and the bus slows down before honking, announcing its passengers to get off.
 if {Pronouns} == "They/Them":
@@ -41,28 +42,28 @@ elif {Pronouns} == "She/Her":
 	She spots someone waving at her from a distance.
 elif {Pronouns} == "He/Him":
 	He spots someone waving at him from a distance.
-join  center
+join Marianna/Marianna center [extra_data="set Mood/Happy"]
 Bezi: [i]Is that… Marianna? Wow, she has changed a lot since the last time I saw her. Damn, she looks good.\
 [/i]
 audio LongSFXaddition "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Wind_Calm_Loop_Stereo.wav" [volume="0.0" bus="" loop="true"]
-update  [animation="Shake X" fade="Fade Cross"]
 Marianna: Heey! How are you? It’s been too long!
-if {} == "They/Them":
+if {Pronouns} == "They/Them":
 	She leans in and kisses them lightly on the cheek.
-elif {} == "She/Her":
+elif {Pronouns} == "She/Her":
 	She leans in and kisses her lightly on the cheek.
-elif {} == "He/Him":
+elif {Pronouns} == "He/Him":
 	She leans in and kisses him lightly on the cheek.
-update  [animation="Shake X" fade="Fade Cross"]
 Bezi: Hey there, good to see you too! Damn, the place hasn’t changed a bit. Even the flower memorial is still here after all those years.
-Marianna/Marianna (Default): Only the weather’s somehow gotten worse. Come on, I’ll show you around the diner.
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+Marianna/Marianna: Only the weather’s somehow gotten worse. Come on, I’ll show you around the diner.
 Marianna locks arms with {PlayerName} and they start walking towards the diner.
 audio "res://DialogicStuff/CopyrightFreeAudio/freesound-two-people-walking-along-a-gravel-road.mp3" [volume="6.0" bus=""]
 update Bezi [animation="Shake Y" length="1.5" repeat_forever="true"]
-update  Y" length="1.5" repeat_forever="true"]
+update Marianna/Marianna right [move_time="0.5"]
 Bezi: How’s uncle Wojtek? You mentioned in your letters he’s been sick? I hope it’s nothing serious?
 {PlayerName} sees that Marianna’s gaze drops at the mention of her father.
-Marianna/Marianna (Pensive): He’s uhh… He’s not doing so well.
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
+Marianna/Marianna: He’s uhh… He’s not doing so well.
 - Comfort her
 	Bezi: Hey, it’s gonna be alright. He’s a fighter.
 	if {Pronouns} == "They/Them":
@@ -71,40 +72,51 @@ Marianna/Marianna (Pensive): He’s uhh… He’s not doing so well.
 		She pulls Marianna by the arm gently and stops her, hugging her for a moment. Then they continue walking.
 	elif {Pronouns} == "He/Him":
 		He pulls Marianna by the arm gently and stops her, hugging her for a moment. Then they continue walking.
-	Marianna/Marianna (Default): I’m not so sure… But thank you. Anyway, we’re here.
+	update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+	Marianna/Marianna: I’m not so sure… But thank you. Anyway, we’re here.
 - Ask details
 	Bezi: Oh god, how serious is it? Has he been to the hospital? What’s ailing him anyway?
 	Marianna/Marianna: No, you know, dad never really trusted doctors… not after mom’s death. But he’s been… absent lately.
 	Her voice starts to tremble mid-sentence.
 	Bezi: Oh, I’m so sorry to hear that, I-
-	Marianna/Marianna (Default): Anyway…! We’re here.
+	update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+	Marianna/Marianna: Anyway…! We’re here.
 - Stay silent
 	Bezi: .....
-	Marianna/Marianna (Default): Anyway! We’re here.
+	update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+	Marianna/Marianna: Anyway! We’re here.
 Marianna/Marianna: As you know, Dad turned the old flower shop into a diner, after mom was gone… He’s poured so much time and effort into it. It’s kinda sad to see it go to waste. But, hey! Now you’re here.
-update 
+update Bezi
+update Marianna/Marianna center [move_time="0.5"]
 The pair arrives at the diner. Marianna fidgets with the keys for a short while. Once inside she flips on the light switch.
 [background arg="res://assets/art/environments/diner_dusk.jpg" fade="0.0"]
 audio LongSFXaddition -
 audio LongSFX -
 audio Music "res://DialogicStuff/CopyrightFreeAudio/after-a-long-night-out-1930s-smooth-jazz.mp3" [volume="-10.0" bus="" loop="true"]
-Marianna/Marianna (Smiling): Here we are!
+update Marianna/Marianna [animation="Tada" length="0.1" move_time="0.5" extra_data="set Mood/Happy"]
+Marianna/Marianna: Here we are!
 The inside is rather dusty and there are some floorboards with holes in them.
 Bezi: This is… wow… How long ago did you say uncle fell ill?
-Marianna/Marianna (Pensive): Oh, I’m so sorry… I suppose I should have cleaned it beforehand. If you’re having second thoughts, I’ll understand…
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
+Marianna/Marianna: Oh, I’m so sorry… I suppose I should have cleaned it beforehand. If you’re having second thoughts, I’ll understand…
 Bezi: Nah, don’t worry about it. Nothing a little elbow grease can’t fix.
-Marianna/Marianna (Smiling): I’m glad to hear that. You’re a real lifesaver here, lately dad’s been really pushing for me to take over.
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
+Marianna/Marianna: I’m glad to hear that. You’re a real lifesaver here, lately dad’s been really pushing for me to take over.
 Bezi: You’re sure you don’t want to stay? The situation changed after all with uncle falling ill, I could still-
-Marianna (Pensive): No, no, I love him but you know, I just can’t…
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
+Marianna/Marianna: No, no, I love him but you know, I just can’t…
 There’s a moment of awkward silence.
 Bezi: So… kitchen’s that way?
-Marianna/Marianna (Default): Yep. Why don’t you make yourself at home? There should still  be some cured meats in the pantry, and dad’s pots and pans are all here.
+update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Base"]
+Marianna/Marianna: Yep. Why don’t you make yourself at home? There should still  be some cured meats in the pantry, and dad’s pots and pans are all here.
 Bezi: Sure, maybe I can fix us something to eat then, I’m starving.
 Marianna/Marianna: Sure just, uh, how much experience do you have in the kitchen? I mean in a restaurant kitchen, I’m sure your cooking is very good but…
 - I think I'll manage (SKIP TUTORIAL)
+	set {Tutorial} = false
 	Marianna/Marianna: Ok, I trust you.
 	Marianna grabs a duster from behind the counter and makes herself busy.
 - Uh, maybe you can show me how to do it?
+	set {Tutorial} = true
 	Marianna/Marianna: Alright, I do have some experience from helping dad all those years. Let me show you the ropes.
-[background arg="res://assets/art/environments/6057b801015284aa784bd67961d71867.jpg" fade="0.0"]
+[background arg="res://assets/art/environments/basement_duskier.jpg" fade="0.0"]
 Tutorial placeholder

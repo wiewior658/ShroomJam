@@ -17,12 +17,21 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
+
 func _on_timeline_ended()->void:
-	get_tree().change_scene_to_file(tutorial)
+	if Dialogic.VAR.Tutorial == true:
+		Dialogic.VAR.CurrentScene = "res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn"
+		Dialogic.VAR.NextScene = "res://scenes/levels/prologue2.tscn"
+	else:
+		Dialogic.VAR.CurrentScene = "res://scenes/levels/prologue2.tscn"
+		Dialogic.VAR.NextScene = "res://scenes/levels/prologue2.tscn"
+	get_tree().change_scene_to_file(Dialogic.VAR.CurrentScene)
 #func _setName(argument:String) -> void:
 
 func autosave() -> void:
 	_save = SaveStats.new()
-	_save.timeline = "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl"
+	Dialogic.VAR.CurrentScene = "res://scenes/levels/prologue1.tscn"
+	Dialogic.VAR.NextScene = "res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn"
+	#_save.timeline = "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl"
 	_save.write_SaveGame()
 	

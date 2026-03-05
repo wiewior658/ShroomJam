@@ -3,7 +3,7 @@ extends Resource
 
 const Save_Game_Path := "user://saveManual.tres"
 #Current scene, shroomnes, inventory, moneyu
-@export var timeline := "res://scenes/levels/prologue2.tscn"
+#@export var timeline := "res://scenes/levels/prologue2.tscn"
 #@export var event_index := -1
 #@export var subsystems: Dictionary[String, Dictionary] = {}
 @export var globalstats: Resource
@@ -29,5 +29,5 @@ static func load_SavedGame() -> Resource:
 func printStats() ->void:
 	print(globalstats)
 	
-func get_Timeline() -> String:
-	return timeline
+#func get_Timeline() -> String:
+#	return timeline

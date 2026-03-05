@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="ShroomJamGame"
+config/name="Mycelium"
 run/main_scene="uid://ckh7ohu0m8fev"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://cx4q7bkyge5te"
+config/icon="uid://c0qemu6s2xsq1"
 
 [autoload]
 
@@ -30,19 +30,26 @@ directories/dch_directory={
 "Bezi": "res://DialogicStuff/Characters/Bezi.dch",
 "Danuta": "res://DialogicStuff/Characters/Danuta/Danuta.dch",
 "Hippie": "res://DialogicStuff/Characters/Richie/Hippie.dch",
+"Kabanos": "res://DialogicStuff/Characters/Kabanos.dch",
 "Katerina": "res://DialogicStuff/Characters/Katerina/Katerina.dch",
+"Larry": "res://DialogicStuff/Characters/Larry.dch",
 "Marianna": "res://DialogicStuff/Marianna.dch",
 "Marianna/Marianna": "res://DialogicStuff/Characters/Marianna/Marianna.dch",
+"Rando": "res://DialogicStuff/Characters/Rando.dch",
 "Wojciech": "res://DialogicStuff/Characters/Wojciech/Wojciech.dch",
 "Zdzichu": "res://DialogicStuff/Characters/Zdzichu/Zdzichu.dch",
-"lionsmith": "res://DialogicStuff/Characters/lionsmith.dch"
+"lionsmith": "res://DialogicStuff/Characters/Strange.dch"
 }
 directories/dtl_directory={
 "Day_1_after_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_after_cooking_timeline.dtl",
+"Day_1_after_farmers_market": "res://DialogicStuff/Timelines/Day_1_after_farmers_market.dtl",
 "Day_1_before_cooking_timeline": "res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl",
 "Day_3_SHROOMED_PATH": "res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl",
+"Day_3_before_endings": "res://DialogicStuff/Timelines/Day_3_before_endings.dtl",
 "Prologue_1_timeline": "res://DialogicStuff/Timelines/Prologue_1_timeline.dtl",
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
+"Resistance1": "res://DialogicStuff/Timelines/Resistance1.dtl",
+"Resistance2": "res://DialogicStuff/Timelines/Resistance2.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
@@ -55,15 +62,30 @@ layout/style_list=["res://DialogicStuff/New_style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
-"PlayerName": "",
-"Pronouns": "",
-"Shroomness": 0
+"CurrentScene": "",
+"CustomersLeft": 0,
+"Money": 200,
+"NextScene": "",
+"PlayerName": "Bezi",
+"Pronouns": "They/Them",
+"Shroomness": {
+"Barbara": 3,
+"Bezi": 0,
+"Danuta": 0,
+"Katerina": 0,
+"Marianna": 2,
+"Richie": 0,
+"Wojciech": 5,
+"Zdzichu": 0,
+"entity": 0
+},
+"Tutorial": false
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
-text/autoadvance_per_character_delay=0.1
+text/autoadvance_per_character_delay=0
 text/autoadvance_ignored_characters_enabled=true
 animations/join_default_length=0.5
 animations/join_default_wait=true
@@ -106,6 +128,8 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+text/autoadvance_fixed_delay=0.5
+text/autoadvance_per_word_delay=0
 
 [display]
 

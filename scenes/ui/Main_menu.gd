@@ -32,20 +32,18 @@ func _refresh_continue_state() -> void:
 
 func _on_new_game() -> void:
 	get_tree().change_scene_to_file(FIRST_SCENE)
-	
 func _on_continue() -> void:
 	#if not SaveSystem.has_save():
 	#	_refresh_continue_state()
 	#	return
 	if SaveStats.save_exists():
 		_save = SaveStats.load_SavedGame() as SaveStats
+		_globalstats = _save.globalstats
+		_globalstats.setGlobalVar()
+		get_tree().change_scene_to_file(Dialogic.VAR.CurrentScene)
 	else:
 		print("ERROR Nie ma sava ktorego ladujesz AAAAAAAAAAAAAAAAAAAAA")
 		pass
-	_globalstats = _save.globalstats
-	_globalstats.setGlobalVar()
-	print(Dialogic.VAR.Shroomnes.Wojciech)
-	get_tree().change_scene_to_file(_save.get_Timeline())
 
 	#var save := SaveSystem.load_game()
 	#var scene_path := save.get("scene_path", "")

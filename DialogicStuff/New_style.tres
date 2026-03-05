@@ -62,10 +62,10 @@ overrides = {
 "boxes_stylebox_hovered": "\"res://assets/2choice.png\"",
 "boxes_stylebox_normal": "\"res://assets/choiceboxregular.png\"",
 "boxes_stylebox_pressed": "\"res://assets/1choice.png\"",
-"choice_texture_margin_bottom": "10.0",
-"choice_texture_margin_left": "30.0",
-"choice_texture_margin_right": "30.0",
-"choice_texture_margin_top": "10.0",
+"choice_texture_margin_bottom": "20.0",
+"choice_texture_margin_left": "60.0",
+"choice_texture_margin_right": "60.0",
+"choice_texture_margin_top": "20.0",
 "margin_thickness": "2.0"
 }
 
@@ -95,4 +95,4 @@ layer_info = {
 "16": SubResource("Resource_fog1p"),
 "17": SubResource("Resource_ewghu")
 }
-metadata/_latest_layer = "17"
+metadata/_latest_layer = "15"

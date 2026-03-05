@@ -1,16 +1,15 @@
-[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
-audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [loop="true"]
+[background arg="res://assets/art/environments/pixelated_room_day.png" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/room_loop.mp3" [volume="-20.0" bus="" loop="true"]
 if {Pronouns} == "They/Them":
 	The nights were never easy for them. The memories of the city, its nauseating smells and images are hard to forget, even now as they’re surrounded by silence.
 elif {Pronouns} == "He/Him":
 	The nights were never easy for him. The memories of the city, its nauseating smells and images are hard to forget, even now as he’s surrounded by silence.
 elif {Pronouns} == "She/Her":
 	The nights were never easy for her. The memories of the city, its nauseating smells and images are hard to forget, even now as she’s surrounded by silence.
-audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Forest_Birds_Loop_Stereo.wav"
+audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Forest_Birds_Loop_Stereo.wav" [loop="false"]
 A single bird starts chirping outside the window.
 Bezi: [i]*sigh* …My body feels stiff. As always. And my brain hurts from dreaming.[/i]
 Bezi: [i]I have to get up. Marianna didn’t give me the diner for it to rot away, right? Speaking of Marianna, I wonder if she’s ready to go. I should bid her farewell.[/i]
-audio LongSFX -
 if {Pronouns} == "They/Them":
 	{PlayerName} gets all their strength to stand up and put on clean clothes. The new person in the village has to make the right impression.
 	They head to the diner.
@@ -20,13 +19,17 @@ elif {Pronouns} == "She/Her":
 elif {Pronouns} == "He/Him":
 	{PlayerName} gets all his strength to stand up and put on clean clothes. The new guy in the village has to make the right impression.
 	He heads to the diner.
+audio LongSFX -
 audio "res://DialogicStuff/CopyrightFreeAudio/walk-down-the-stairs.mp3"
+[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [volume="-20.0" bus="" loop="true"]
 Bezi: [i]I was right about the creaking floor yesterday evening, but now that it’s brighter I can see how worn out they really are.[/i]
 Bezi: [i]I should ask the lumberjack and get them replaced. The pantry might need a bit of supplying too. After all, I have to feed the entire village. I could ask around the square for some fresh produce.[/i]
 Bezi: [i]It’s still early enough. I don’t expect any clients so early in the morning.[/i]
 - GO TO THE LUMBER
 	[background arg="res://assets/art/environments/forrest _maybe.png" fade="0.0"]
-	audio Music "res://DialogicStuff/CopyrightFreeAudio/Gentle Breeze.mp3" [loop="true"]
+	audio Music "res://DialogicStuff/CopyrightFreeAudio/Gentle Breeze.mp3" [volume="0.0" bus="" loop="true"]
+	audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/Ambiance_Wind_Forest_Loop_Stereo.wav" [volume="-10.0" bus="" loop="true"]
 	if {Pronouns} == "They/Them":
 		Hubanka borders a huge forest from the south. {PlayerName} would often play there with other children when they were young, despite the adults telling them it’s easy to get lost there. A fellow lumberjack would nag the children for losing their way, but was always kind enough to walk them to the market square safely.
 	elif {Pronouns} == "She/Her":
@@ -45,6 +48,7 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	The man’s face is not clearly visible because of his ginormous red moustache and beard. His clothes are shabby, but what piques {PlayerName}’s interest is a necklace with a symbol - a peace sign. Some youngsters in the city wore a similar one.
 	He seemed to notice us staring and waves at us slowly.
 	audio LongSFX -
+	join Hippie center [extra_data="set Mood/Base"]
 	Hippie: Welcome, stranger! What brings you to this haven?
 	Hippie: Are you a traveller? Came to see the village? I don’t think I’ve seen you around before…
 	His calm and intriguingly monotone voice immediately sparks a memory - This is Richard, the boy who spent all days reading books he got from Mrs. Barbara. He never really got along with other kids his age.
@@ -60,15 +64,19 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	Hippie: No.
 	A straightforward answer.
 	Bezi: The guy who owned a diner.
+	update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 	Hippie: Ooooh, you should’ve said that sooner! I loved that diner! They served the best mushroom alfredo in the area! I love mushrooms, so I often come here to pick them. Look.
 	Richard reaches for a wicker basket from behind his back and shows {PlayerName} his collection.
 	He really knows his mushrooms. Specimens like these would easily land on a plate in a 5-star city restaurant.
+	update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
 	Hippie: Too bad the diner’s been closed for a while now… They could make something tasty with these.
 	Bezi: Actually, I’m the new owner. I was going to the lumber for new planks, but saw you instead-
+	update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 	Hippie: Take these then.
 	Richard shoves a basket into {PlayerName}’s hands without hesitation. He’s a VERY straightforward guy. But he’s also right - {PlayerName} could make something delicious from them. It’s a tempting offer.
 	- ACCEPT (+30 mushrooms)
 		Bezi: Well… Thank you, Richard. I should be back at the diner in a few hours. If you have time, do come by. I’ll think of something we could do with these.
+		update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 		Richard smiles warmly. It’s clear he’s excited to try the new dish.
 	- DENY (+15 mushrooms)
 		Bezi: W-what?! No, I can’t take them, I’m sorry. You probably took your sweet time to pick all of this. You should have some for yourself, Richard.
@@ -79,6 +87,7 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			Eating so many mushrooms would definitely kill his liver faster than the blunts would. As there’s no point arguing with him, {PlayerName} takes half of the mushrooms and shoves them into her pockets.
 		elif {Pronouns} == "He/Him":
 			Eating so many mushrooms would definitely kill his liver faster than the blunts would. As there’s no point arguing with him, {PlayerName} takes half of the mushrooms and shoves them into his pockets.
+	update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 	Hippie: By the way, you should call me Richie. That’s what everyone calls me.
 	If you ever need advice on mushroom-hunting in the future, find me. I can show you so many of them - sweet, bitter, brown or blue!
 	Hippie: I also saw a very strange one down the path by the lake. But I’m not sure if it’s edible. I’ve only seen such a mushroom in one book.
@@ -86,20 +95,24 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	Hippie: But there’s no mushroom like that. I would know about it.
 	A brain-eating mushroom. That’s an interesting concept for a story.
 	There is an awkward silence between the two. While Richie surely doesn’t believe in such monstrosities, {PlayerName}’s mind is intrigued. To say the least.
+	update Hippie [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 	if {Pronouns} == "They/Them":
 		With a smile, Richie waves them goodbye as {PlayerName} leaves for the lumber.
 	elif {Pronouns} == "She/Her":
 		With a smile, Richie waves her goodbye as {PlayerName} leaves for the lumber.
 	elif {Pronouns} == "He/Him":
 		With a smile, Richie waves him goodbye as {PlayerName} leaves for the lumber.
+	leave Hippie
 - GO TO THE SQUARE MARKET
 	[background arg="res://assets/art/environments/village_square_day.jpg" fade="0.0"]
-	audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [loop="true"]
+	audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-15.0" bus="" loop="true"]
+	audio LongSFX "res://DialogicStuff/CopyrightFreeAudio/freesound_crowd_talking_poland-old-market.mp3" [volume="0.0" bus="" loop="true"]
 	The square, as in every village, is the heart of the community.
-	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PLAYER’S NAME} to buy supplies.
+	People come here for various reasons - to talk, to play, to sit on the bench and admire the blue sky, or, like {PlayerName} to buy supplies.
 	The vendors come and go all the time, but one gentleman stays in Hubanka no matter the weather - Mr. Kabanos, with his freshly-picked vegetables and fruit.
+	join Kabanos center
 	Bezi: Hello, Sir. I’m {PlayerName}, new owner of the diner. Since it’s gonna be open again, I wanted to buy some necessities.
-	characterTesty: Aye, welcome! Pick whichever you need. Picked everything straight from the farmers. You won’t find fresher produce in the area, I’ll tell ya that.
+	Kabanos: Aye, welcome! Pick whichever you need. Picked everything straight from the farmers. You won’t find fresher produce in the area, I’ll tell ya that.
 	label MARKET TUTORIAL (-x coins)
 	Bezi: Thanks a lot! You should come by the diner sometime, once you’re off work that is. I’ll try to do these products justice- \
 	*Ugh*
@@ -109,9 +122,12 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 		{PlayerName} suddenly feels a putrid stench behind her back. Alcohol mixed with… God knows what other substance.
 	elif {Pronouns} == "He/Him":
 		{PlayerName} suddenly feels a putrid stench behind his back. Alcohol mixed with… God knows what other substance.
+	join Zdzichu right [extra_data="set Mood/Drunk"]
 	Zdzichu: ‘Ello, Boss! You got a coin by any chance?
-	characterTesty: Go away, old drunkie.
+	Kabanos: Go away, old drunkie.
 	Zdzichu: I ain’t talking to you, meathead.
+	leave Kabanos [animation="Fade Out"]
+	update Zdzichu center [move_time="1.0"]
 	if {Pronouns} == "They/Them":
 		The old man appears to be talking to {PlayerName}, as they’re the only one at the stall except Mr. Kabanos.
 	elif {Pronouns} == "She/Her":
@@ -128,9 +144,11 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 		He could help him. One coin is not a fortune, but one can never be sure what it will be really spent on.
 	- YES (-1 coin)
 		Bezi: Here you go, sir.
+		update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 		Zdzichu: Ohohoho, cheers, Boss.
 		Zdzichu: Do say - Would you like an old man to tell ya a story?
 		- SURE, WHY NOT?
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Zdzichu: Well, sit your bottocks down, ‘cause this is gonna get interesting.
 			Zdzichu: *clears throat* LONG AGO… In this very place, which we now call Hubanka, used to live an old witch.
 			Zdzichu: In the forest, I mean, not [i]here[/i], ‘cause people didn’t like her much. Anyway.
@@ -142,15 +160,19 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			Zdzichu: And here they were - A witch feared by everyone, and a shitty overgrown mushroom who could talk. As if the world wasn’t fucked up enough.
 			Zdzichu: They had a plan. To take revenge on everyone who ever doubted the witch. And…
 			Zdzichu: They infected everyone with the mushroom’s spores! Lads started acting like zombies. The mushroom was IN CONTROL OF THEM.
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 			Zdzichu: IT MADE AN ARMY OF MINDLESS SHROOMS. GET IT? HAHAHAHA
 			…Seems like that coin will be well spent on more alcohol, as if there wasn’t enough in his brain to think of that story.
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Zdzichu: My advice for you, Boss - Keep. Away. From. Mushrooms.
 			Zdzichu: You’ll thank me for it.
 		- NO, THANKS. I’M RATHER BUSY.
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Zdzichu: You don’t know what you’re missing, kid.
 			Zdzichu: Lemme just tell ya - The mushrooms are coming.
 			Zdzichu: Better watch out for yourself, hm?
 		The old man walks away looking behind at {PlayerName} every few steps.
+		leave Zdzichu
 		if {Pronouns} == "They/Them":
 			If {PlayerName} ever sees him at the diner, they’ll remember not to put mushrooms in his dishes.
 		elif {Pronouns} == "She/Her":
@@ -159,6 +181,7 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			If {PlayerName} ever sees him at the diner, he’ll remember not to put mushrooms in his dishes.
 		This might be the beginning of a rather interesting day.
 	- NO
+		update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 		Zdzichu: Ah, poop. Wanna hear a story, then?
 		Zdzichu: For one coin.
 		- OKAY, WHY NOT (-1 coin)
@@ -174,12 +197,15 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			Zdzichu: And here they were - A witch feared by everyone, and a shitty overgrown mushroom who could talk. As if the world wasn’t fucked up enough.
 			Zdzichu: They had a plan. To take revenge on everyone who ever doubted the witch. And…
 			Zdzichu: They infected everyone with the mushroom’s spores! Lads started acting like zombies. The mushroom was IN CONTROL OF THEM.
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Happy"]
 			Zdzichu: IT MADE AN ARMY OF MINDLESS SHROOMS. GET IT? HAHAHAHA
 		- NO, LEAVE ME ALONE
+			update Zdzichu [animation="Tada" length="0.1" extra_data="set Mood/Base"]
 			Zdzichu: You don’t know what you’re missing, kid.
 			Zdzichu: Lemme just tell ya - The mushrooms are coming.
 			Zdzichu: Better watch out for yourself, hm?
 			The old man walks away looking behind at {PlayerName} every few steps.
+			leave Zdzichu
 			if {Pronouns} == "They/Them":
 				If {PlayerName} ever sees him at the diner, they’ll remember not to put mushrooms in his dishes.
 			elif {Pronouns} == "She/Her":
@@ -187,63 +213,4 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			elif {Pronouns} == "He/Him":
 				If {PlayerName} ever sees him at the diner, he’ll remember not to put mushrooms in his dishes.
 			This might be the beginning of a rather interesting day.
-[background arg="res://assets/art/environments/diner_day.jpg" fade="0.0"]
-audio "res://DialogicStuff/CopyrightFreeAudio/drill_whizz.wav"
-audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3"
-You spend the whole morning busy with repairs. Finally you step back to examine your handiwork.
-Bezi: Well… hah… that looks much better… hah.
-Bezi: Where was that sign?
-audio "res://DialogicStuff/CopyrightFreeAudio/room-rummaging.mp3"
-Bezi: I swear I saw it here earlier… aha!
-You brandish the open sign triumphantly, and hammer it into the ground in front of the diner. It’s then that your tummy rumbles. You had completely forgotten about breakfast.
-Bezi: [i]Whoops! Thankfully I got some ingredients earlier… Let’s just make something small. Meanwhile, let me turn on a music box.[/i]
-audio Music "res://DialogicStuff/CopyrightFreeAudio/musicboxhumming.mp3" [loop="false"]
-Bezi: *Humming while cooking*
-audio "res://DialogicStuff/CopyrightFreeAudio/creepy-whispering.mp3"
-characterTesty: [STRANGE WHISPER] Taaaas… Ty… Shhhh…
-audio Music "res://DialogicStuff/CopyrightFreeAudio/music-box-stop.mp3" [loop="false"]
-Bezi: Huh? Is someone there?
-join Barbara rightmost
-join Alina right
-audio "res://DialogicStuff/CopyrightFreeAudio/bell 2.wav"
-audio Music "res://DialogicStuff/CopyrightFreeAudio/jazz-background-music.mp3" [loop="true"]
-Alina: Look Ma! The diner’s open, I knew I smelled something tasty this way.
-Barbara: Why, this wasn’t here before. This was uhm… it was a…
-Alina: Flower shop?
-Barbara: Yes! That’s the one. You’re saying it’s open again? Good, this place was glum without flowers.
-Alina: No Ma, the flower shop closed years ago. This is the diner… Oh, hello!
-Bezi: Ah! Hello, I’ll be with you in just a moment!
-Barbara: My Henryk would like this place. He always said Hubanka needed something decent.
-Alina (Pensive): I’m sure he would…
-- Hi! what can I get you?
-	label Work in progres: TRANSITION TO COOKING FOR ALINA, THEN BARBARA
-	Work in progres\: TRANSITION TO COOKING FOR ALINA, THEN BARBARA
-- What’s the matter?
-	Alina: Nothing… it’s just that dad…
-	Barbara: …will be back before supper!
-	Alina (Pensive): For sure! *quietly sighing* He died at war, but Ma believes otherwise…
-	Bezi: Oh I’m so sorry to hear, but uhm… aren’t you Alina? I’m {PlayerName}. Remember me?
-	Alina (Smiling): Wow I totally didn’t recognise you! I heard you left for the city! It’s been years. What are you doing here?
-	Bezi: Yeah, I’ve come back home I guess, and now I’m running the diner. The city was… too stressful.
-	Alina (Default): Really? Huh… I thought for sure Marianna would be taking over the diner.
-	Bezi: She was supposed to, but she asked me to run it in her stead. The city calls out to her as it once did to me.
-	Bezi: Have you seen her today by any chance?
-	Alina: No… I can’t say that I have… Shouldn’t she be… well… here?
-	Bezi: We spoke just yesterday… She must have gone out early in the morning… but where to?
-	Bezi: I hope she didn’t hop on the 1st bus that came this way without saying goodbye.
-	Alina (Scared): That… would be pretty mean.
-	Alina (Default): So… what do you serve here anyway?
-	Bezi: Oh… yeah the menu is uhm… limited for now, I’m still getting things ready. But I can make you any of these\:…
-	label SWITCH TO COOKING MINIGAME
-- Ma’am! Please leave the potted plants alone
-	Alina (Scared): Hey… don’t yell at her… look you startled her!
-	Barbara: Hrmpf, where are your manners young one! If Henryk were here he wouldn’t stand for such behaviour!
-	Bezi: I’m so sorry, it’s just those plants were barely holding on when I got here and…
-	Alina: Wait… you seem familiar… {PlayerName}?
-	Bezi: Yeah, actually. And you’re Alina right?
-	Alina: Well it’s been a while. Why are you here? I expected Marianna or Wojciech, since they like… own this place?
-	Bezi: Oh… no no they gave it to me just yesterday when I…
-	Barbara: Listen here young one, the state of these plants is unacceptable for a flower shop, how can you…
-	Alina (Default): No, Ma… I told you this is the diner…
-	Alina: Here let’s order… What would you like?
-	label COOKING MINIGAME (switch so that BARBARA orders 1st)
+leave Zdzichu
