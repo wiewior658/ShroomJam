@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://ddm3mwqo3y2dv" path="res://assets/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b4mae02b4v33y" path="res://scenes/gameplay/drag and drop/Kitchen_audio_stream_player.gd" id="8_awjo4"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
+[ext_resource type="AudioStream" uid="uid://do1qtce3xnkcv" path="res://DialogicStuff/CopyrightFreeAudio/cooking-food-background-music.mp3" id="11_ugj3d"]
+[ext_resource type="Texture2D" uid="uid://c5n2endl0o8gq" path="res://assets/art/ui/speech_bubble.png" id="12_vft7v"]
 [ext_resource type="Texture2D" uid="uid://dbrv5wbpye3y" path="res://assets/art/environments/pixargar.png" id="8_ugj3d"]
 [ext_resource type="Texture2D" uid="uid://dmnofiebby2e8" path="res://assets/art/environments/micha.png" id="14_tqe0x"]
 [ext_resource type="Texture2D" uid="uid://dxfbnaosqelvu" path="res://assets/art/environments/michaFront.png" id="15_tqe0x"]
@@ -21,6 +23,9 @@
 GridContainer/constants/h_separation = 1
 GridContainer/constants/v_separation = 9
 
+[sub_resource type="LabelSettings" id="LabelSettings_vft7v"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbcjh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_awjo4"]
@@ -63,6 +68,12 @@ texture = ExtResource("3_rhpnf")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=152075155]
 position = Vector2(-576, 322)
+
+[node name="CookingMusic" type="AudioStreamPlayer" parent="." unique_id=1238484841]
+stream = ExtResource("11_ugj3d")
+volume_db = -30.0
+autoplay = true
+parameters/looping = true
 
 [node name="shelf" type="GridContainer" parent="." unique_id=1864656250]
 offset_left = 366.0
@@ -157,6 +168,21 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxTexture_awjo4")
 text = ">
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=29998338]
+position = Vector2(-650, 200)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_vft7v")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1758568118]
+offset_left = -420.0
+offset_top = -60.0
+offset_right = 351.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "Hello. Please give me food."
+label_settings = SubResource("LabelSettings_vft7v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1936717707]
 volume_db = -12.817

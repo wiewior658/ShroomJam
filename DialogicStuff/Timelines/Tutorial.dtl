@@ -1,0 +1,17 @@
+[style name="Text_Bubble_Style"]
+[background arg="res://assets/art/environments/kitchen_dusk.jpg" fade="0.0"]
+audio Music "res://DialogicStuff/CopyrightFreeAudio/cooking-food-background-music.mp3" [volume="-25.0" bus="" loop="true"]
+join Marianna/Marianna center [z_index="-50" extra_data="set Mood/Happy"]
+Marianna/Marianna: So first of all up the cabinet you have your current ingredients.
+Marianna/Marianna: By the counter you have a pantry when your mushrooms grow that you can put inside the soup.
+Marianna/Marianna: Don't ask why you never run out of them.
+Marianna/Marianna: Better to not know.
+Marianna/Marianna: Up in the right corner my father put a nifty feature that I have no idea how it's functioning.
+Marianna/Marianna: I just know that it tells us the capacity of the pot, how tasty food in it is and how much nourishment it provides to our customers.
+Marianna/Marianna: You can move easily between kitchen and the diner counter to see who is the ordering customer.
+Marianna/Marianna: Remember that when cooking it's best to remember your customers preferences.
+Marianna/Marianna: If you put into the soup ingredients they dislike they will give you less money.
+Marianna/Marianna: The same happens if you use ingredients that aren't fresh.
+Marianna/Marianna: And last or not least, remember to grab below the pot to actually serve the customer their food.
+Marianna/Marianna: I think those are the basics you need to know.
+Marianna/Marianna: Now let's put those instructions to practice.

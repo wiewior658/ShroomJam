@@ -50,15 +50,17 @@ directories/dtl_directory={
 "Prologue_2_timeline": "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl",
 "Resistance1": "res://DialogicStuff/Timelines/Resistance1.dtl",
 "Resistance2": "res://DialogicStuff/Timelines/Resistance2.dtl",
+"Tutorial": "res://DialogicStuff/Timelines/Tutorial.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
 "timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",
-"New_style": "res://DialogicStuff/New_style.tres"
+"New_style": "res://DialogicStuff/New_style.tres",
+"Text_Bubble_Style": "res://DialogicStuff/Text_Bubble_Style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://DialogicStuff/New_style.tres"]
+layout/style_list=["res://DialogicStuff/New_style.tres", "res://DialogicStuff/Text_Bubble_Style.tres"]
 layout/default_style="res://DialogicStuff/New_style.tres"
 variables={
 "Choices": 0.0,
