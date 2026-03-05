@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bigc0p38lqm2y"
-path="res://.godot/imported/zdzichu.png-f27ded0d085575293257ebfbb969404e.ctex"
+uid="uid://dxfbnaosqelvu"
+path="res://.godot/imported/michaFront.png-a2b69247b405e1c4e1edd687bfcb9bdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/zdzichu.png"
-dest_files=["res://.godot/imported/zdzichu.png-f27ded0d085575293257ebfbb969404e.ctex"]
+source_file="res://assets/art/environments/michaFront.png"
+dest_files=["res://.godot/imported/michaFront.png-a2b69247b405e1c4e1edd687bfcb9bdc.ctex"]
 
 [params]
 
