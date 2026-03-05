@@ -2,8 +2,9 @@ extends TextureRect
 
 var Capacity=5
 var EmptyPotColor=Color.BLACK
-var EmptyPotPos=35.0
+var EmptyPotPos=105.0
 
+var shroomnes = 0
 var taste
 var nourishment
 var soupColor
@@ -13,7 +14,9 @@ var CurrentCustomer: Customer
 var AvaibleCustomers = [1,2,3,4,5,6]
 var temp : String
 
-signal splash
+signal splash()
+signal moveLeft()
+signal serveSoup(color:Color)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -39,6 +42,7 @@ func newSoup()->void:
 	updateInfo()
 
 func updateInfo()->void:
+	pass
 	#wyświetlanie danych liczbowych
 	$"../Staty/Capacity".text=str("Capacity: ",contents.size(),"/",Capacity)
 	$"../Staty/Taste".text=str("Taste: ",taste)
@@ -60,9 +64,11 @@ func _drop_data(_pos, data):
 			GlobalVar.RemoveFood(droppedFood)
 		taste+=droppedFood.taste+CurrentCustomer.check_likes(droppedFood)
 		nourishment+=droppedFood.nourishment
+		shroomnes += droppedFood.shroom
 		soupPos-=6
 		contents.push_back(droppedFood.itemName)
 		print(contents)
+		splash.emit(-20)
 		if contents.size()==0:
 			soupColor=droppedFood.color
 		else:
@@ -71,13 +77,20 @@ func _drop_data(_pos, data):
 							(soupColor.b*(contents.size()-1)+droppedFood.color.b)/contents.size())
 			
 		updateInfo()
-	splash.emit(-30)
 
+func _on_serve_button_up() -> void:
+	if contents.size()>0:
+		serveSoup.emit(soupColor)
+		newSoup()
+		splash.emit()
+		moveLeft.emit()
+		
 func _on_button_button_up() -> void:
 	newSoup()
 	
 func _serve_customer() -> void:
 	Dialogic.VAR.Money+=CurrentCustomer.pay(taste, nourishment)
+	changeShroomnes()
 	Dialogic.VAR.CustomersLeft-=1
 	if Dialogic.VAR.CustomersLeft > 0:
 		AvaibleCustomers.shuffle()
@@ -86,8 +99,10 @@ func _serve_customer() -> void:
 			
 	else:
 		#get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
-		Dialogic.start(Dialogic.VAR.NextScene)
-	print(CurrentCustomer.Name)
+		#print(Dialogic.VAR.NextScene)
+		#Dialogic.start(Dialogic.VAR.NextScene)
+		get_tree().change_scene_to_file(Dialogic.VAR.NextScene)
+	#print(CurrentCustomer.Name)
 func update_customer(new_customer : Customer) -> void:
 	CurrentCustomer = new_customer
 	
@@ -108,5 +123,23 @@ func setSprite() -> void:
 				"Alina":
 					$"../CustomerSprite".texture = load("res://assets/art/characters/Alina/Base0.png")
 	
+func changeShroomnes() -> void:
+	match CurrentCustomer.Name:
+		"Marianna":
+			print(Dialogic.VAR.Shroomness.Marianna)
+			Dialogic.VAR.Shroomness.Marianna += shroomnes
+			print(Dialogic.VAR.Shroomness.Marianna)
+		"Zdzichu":
+			Dialogic.VAR.Shroomness.Zdzichu += shroomnes
+		"Richie":
+			Dialogic.VAR.Shroomness.Richie += shroomnes
+		"Danuta":
+			Dialogic.VAR.Shroomness.Danuta += shroomnes
+		"Katerina":
+			Dialogic.VAR.Shroomness.Katerina += shroomnes
+		"Barbara":
+			Dialogic.VAR.Shroomness.Barbara += shroomnes
+		"Alina":
+			Dialogic.VAR.Shroomness.Alina += shroomnes
 	
 	

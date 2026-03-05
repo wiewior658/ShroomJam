@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bigc0p38lqm2y"
-path="res://.godot/imported/zdzichu.png-f27ded0d085575293257ebfbb969404e.ctex"
+uid="uid://c6pri4pj7m8ia"
+path="res://.godot/imported/game_over_no_stars.png-313e9abf572a3b3a7b2e124f715ae21b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/characters/zdzichu.png"
-dest_files=["res://.godot/imported/zdzichu.png-f27ded0d085575293257ebfbb969404e.ctex"]
+source_file="res://assets/art/environments/game_over_no_stars.png"
+dest_files=["res://.godot/imported/game_over_no_stars.png-313e9abf572a3b3a7b2e124f715ae21b.ctex"]
 
 [params]
 

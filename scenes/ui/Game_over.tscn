@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bwinphajqpbh1"]
+
+[ext_resource type="Texture2D" uid="uid://c6pri4pj7m8ia" path="res://assets/art/environments/game_over_no_stars.png" id="1_arslm"]
+
+[node name="GameOver" type="Node2D" unique_id=467930514]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=687842020]
+position = Vector2(578, 350.50003)
+scale = Vector2(1.2640884, 1.1164063)
+texture = ExtResource("1_arslm")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c4xcxmj3vt7v6"]
+
+[ext_resource type="Texture2D" uid="uid://mwlvo8kx1cnk" path="res://assets/art/environments/game_over.png" id="1_70qmq"]
+
+[node name="GameOverWoosh" type="Node2D" unique_id=1573074374]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=859965432]
+position = Vector2(578, 350.50003)
+scale = Vector2(1.2640884, 1.1164063)
+texture = ExtResource("1_70qmq")

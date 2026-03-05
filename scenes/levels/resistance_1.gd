@@ -12,7 +12,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 func _on_timeline_ended()->void:
-	pass
+	get_tree().change_scene_to_file("res://scenes/levels/resistance2.tscn")
 func _on_dialogic_signal(argument : String)->void:
 	if(argument == "mouse_alcohol"):
 		print("hello")

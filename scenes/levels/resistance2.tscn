@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bshud8mbvtleg"]
+
+[ext_resource type="Script" uid="uid://ws15ehqa8fli" path="res://scenes/levels/resistance_2.gd" id="1_6k1kg"]
+
+[node name="Resistance2" type="Node2D" unique_id=45499494]
+script = ExtResource("1_6k1kg")

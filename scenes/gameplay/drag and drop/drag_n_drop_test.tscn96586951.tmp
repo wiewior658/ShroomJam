@@ -2,30 +2,20 @@
 
 [ext_resource type="Script" uid="uid://bf8xj65b2xjmh" path="res://scenes/gameplay/drag and drop/kitchen shelf/kitchen_shelf.gd" id="1_icbk6"]
 [ext_resource type="Script" uid="uid://jqcga4p5hce5" path="res://scenes/gameplay/drag and drop/BarWork.gd" id="1_v10i0"]
-[ext_resource type="Texture2D" uid="uid://ddbgcfwql04b4" path="res://assets/art/environments/diner_day.png" id="2_4c4re"]
 [ext_resource type="Texture2D" uid="uid://do32he1h4fvxs" path="res://assets/art/environments/diner_day.jpg" id="2_awjo4"]
 [ext_resource type="Texture2D" uid="uid://p3w8o08kqaeh" path="res://assets/art/environments/kitchen_day.jpg" id="3_rhpnf"]
 [ext_resource type="Texture2D" uid="uid://ddyp0ugl3iete" path="res://assets/art/environments/pixargar_front.png" id="5_e750r"]
 [ext_resource type="Script" uid="uid://lxxg0sfemenr" path="res://scenes/gameplay/drag and drop/gar.gd" id="5_gb2nm"]
-[ext_resource type="Theme" uid="uid://cv4lnboousp3h" path="res://scenes/gameplay/drag and drop/Kitchen_theme.tres" id="5_ugj3d"]
 [ext_resource type="Texture2D" uid="uid://bs23u7s8vinbo" path="res://assets/pics/soup.png" id="5_vbxp8"]
 [ext_resource type="Texture2D" uid="uid://ddm3mwqo3y2dv" path="res://assets/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b4mae02b4v33y" path="res://scenes/gameplay/drag and drop/Kitchen_audio_stream_player.gd" id="8_awjo4"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
-[ext_resource type="AudioStream" uid="uid://do1qtce3xnkcv" path="res://DialogicStuff/CopyrightFreeAudio/cooking-food-background-music.mp3" id="11_ugj3d"]
-[ext_resource type="Texture2D" uid="uid://c5n2endl0o8gq" path="res://assets/art/ui/speech_bubble.png" id="12_vft7v"]
 [ext_resource type="Texture2D" uid="uid://dbrv5wbpye3y" path="res://assets/art/environments/pixargar.png" id="8_ugj3d"]
-[ext_resource type="Texture2D" uid="uid://dmnofiebby2e8" path="res://assets/art/environments/micha.png" id="14_tqe0x"]
-[ext_resource type="Texture2D" uid="uid://dxfbnaosqelvu" path="res://assets/art/environments/michaFront.png" id="15_tqe0x"]
-[ext_resource type="Script" uid="uid://cur8y10qmdcyv" path="res://scenes/gameplay/drag and drop/micha.gd" id="15_y3ief"]
 
 [sub_resource type="Theme" id="Theme_gbcjh"]
 GridContainer/constants/h_separation = 1
 GridContainer/constants/v_separation = 9
 
-[sub_resource type="LabelSettings" id="LabelSettings_vft7v"]
-font_size = 60
-font_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbcjh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_awjo4"]
@@ -38,15 +28,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="Diner2" type="TextureRect" parent="Background" unique_id=1418846094]
-z_index = -10
-layout_mode = 0
-offset_left = -1276.9999
-offset_right = 1123.0001
-offset_bottom = 1159.0
-scale = Vector2(0.51859874, 0.55874425)
-texture = ExtResource("2_4c4re")
 
 [node name="Diner" type="TextureRect" parent="Background" unique_id=1386407993]
 z_index = -90
@@ -69,46 +50,36 @@ texture = ExtResource("3_rhpnf")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=152075155]
 position = Vector2(-576, 322)
 
-[node name="CookingMusic" type="AudioStreamPlayer" parent="." unique_id=1238484841]
-stream = ExtResource("11_ugj3d")
-volume_db = -30.0
-autoplay = true
-parameters/looping = true
-
 [node name="shelf" type="GridContainer" parent="." unique_id=1864656250]
 offset_left = 366.0
 offset_top = 70.0
-offset_right = 965.0
-offset_bottom = 262.0
+offset_right = 975.0
+offset_bottom = 337.0
 theme = SubResource("Theme_gbcjh")
-columns = 10
+columns = 6
 script = ExtResource("1_icbk6")
 
 [node name="Staty" type="VBoxContainer" parent="." unique_id=2056150798]
-offset_left = 33.0
+offset_left = 67.0
 offset_top = 23.0
-offset_right = 167.0
-offset_bottom = 159.0
+offset_right = 175.0
+offset_bottom = 147.0
 theme_override_constants/separation = 8
 
 [node name="Capacity" type="Label" parent="Staty" unique_id=2102957576]
 layout_mode = 2
-theme = ExtResource("5_ugj3d")
 text = "Capacity:"
 
 [node name="Taste" type="Label" parent="Staty" unique_id=1260725598]
 layout_mode = 2
-theme = ExtResource("5_ugj3d")
 text = "Taste:"
 
 [node name="Nourishment" type="Label" parent="Staty" unique_id=1877697057]
 layout_mode = 2
-theme = ExtResource("5_ugj3d")
 text = "Nourishment:"
 
 [node name="Serve" type="Button" parent="Staty" unique_id=1972255597]
 layout_mode = 2
-theme = ExtResource("5_ugj3d")
 text = "Serve soup"
 
 [node name="gar" type="TextureRect" parent="." unique_id=1849601396]
@@ -124,10 +95,10 @@ script = ExtResource("5_gb2nm")
 modulate = Color(0.15127608, 0.15127608, 0.15127608, 1)
 z_index = -1
 layout_mode = 0
-offset_left = -43.904
-offset_top = 105.0
-offset_right = 778.37476
-offset_bottom = 630.4177
+offset_left = -43.9037
+offset_top = 12.912827
+offset_right = 778.37506
+offset_bottom = 538.33057
 scale = Vector2(1.0516719, 1.0516719)
 texture = ExtResource("5_vbxp8")
 
@@ -138,99 +109,51 @@ offset_right = 1936.1335
 offset_bottom = 1874.1772
 scale = Vector2(0.3872111, 0.3872111)
 texture = ExtResource("8_ugj3d")
+script = ExtResource("5_gb2nm")
 
 [node name="ShroomPantry" type="TextureRect" parent="." unique_id=1097666609]
-offset_left = 997.00006
-offset_top = 500.00003
-offset_right = 1197.0
-offset_bottom = 700.0
-scale = Vector2(0.69245255, 0.69245255)
+offset_left = 928.0
+offset_top = 430.0
+offset_right = 1128.0
+offset_bottom = 630.0
 texture = ExtResource("7_v10i0")
 script = ExtResource("8_gbcjh")
 
 [node name="GoLeftBtn" type="Button" parent="." unique_id=1157287133]
 offset_left = 4.0
-offset_top = 204.0
+offset_top = 3.0
 offset_right = 56.0
-offset_bottom = 844.0
-scale = Vector2(1, 0.68)
+offset_bottom = 643.0
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxTexture_gbcjh")
 text = "<"
 
 [node name="GoRightBtn" type="Button" parent="." unique_id=920768010]
 offset_left = -56.0
-offset_top = 204.0
+offset_top = 3.0
 offset_right = -4.0
-offset_bottom = 844.0
-scale = Vector2(1, 0.68)
+offset_bottom = 643.0
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxTexture_awjo4")
 text = ">
 "
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=29998338]
-position = Vector2(-650, 200)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("12_vft7v")
-
-[node name="Label" type="Label" parent="Sprite2D" unique_id=1758568118]
-offset_left = -420.0
-offset_top = -60.0
-offset_right = 351.0
-offset_bottom = 23.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+[node name="Label" type="Label" parent="." unique_id=1758568118]
+offset_left = -886.0
+offset_top = 159.0
+offset_right = -751.0
+offset_bottom = 190.0
 theme_override_font_sizes/font_size = 22
-text = "Hello. Please give me food."
-label_settings = SubResource("LabelSettings_vft7v")
+text = "Hi. Gib soup."
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1936717707]
 volume_db = -12.817
 script = ExtResource("8_awjo4")
 
-[node name="Micha" type="TextureRect" parent="." unique_id=541034071]
-offset_left = -601.99994
-offset_top = 419.0
-offset_right = 148.00006
-offset_bottom = 1145.0
-scale = Vector2(0.3105563, 0.23475167)
-texture = ExtResource("14_tqe0x")
-script = ExtResource("15_y3ief")
-
-[node name="soup" type="TextureRect" parent="Micha" unique_id=210384613]
-layout_mode = 0
-offset_left = -77.280815
-offset_top = 230.03036
-offset_right = 122.719185
-offset_bottom = 430.03036
-scale = Vector2(4.6908207, 3.2133207)
-texture = ExtResource("5_vbxp8")
-
-[node name="Micha front" type="TextureRect" parent="Micha" unique_id=4195557]
-z_index = 5
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("15_tqe0x")
-
-[node name="Gib" type="Button" parent="Micha" unique_id=890630694]
-layout_mode = 0
-offset_left = 93.380714
-offset_top = 174.65263
-offset_right = 543.38074
-offset_bottom = 274.65265
-scale = Vector2(1.3015579, 1.6919528)
-theme = ExtResource("5_ugj3d")
-theme_override_font_sizes/font_size = 61
-text = "Sell for Xzł"
-
-[connection signal="button_up" from="Staty/Serve" to="gar" method="_on_serve_button_up"]
-[connection signal="moveLeft" from="gar" to="." method="_on_go_left_btn_button_up"]
-[connection signal="serveSoup" from="gar" to="Micha" method="serveSoup"]
+[connection signal="button_up" from="Staty/Serve" to="gar" method="_on_button_button_up"]
+[connection signal="button_up" from="Staty/Serve" to="AudioStreamPlayer" method="_playSplash"]
 [connection signal="splash" from="gar" to="AudioStreamPlayer" method="_playSplash"]
-[connection signal="mouse_entered" from="ShroomPantry" to="ShroomPantry" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="ShroomPantry" to="AudioStreamPlayer" method="_playPantryOpen"]
-[connection signal="mouse_exited" from="ShroomPantry" to="ShroomPantry" method="_on_mouse_exited"]
 [connection signal="mouse_exited" from="ShroomPantry" to="AudioStreamPlayer" method="_playPantryClose"]
 [connection signal="button_up" from="GoLeftBtn" to="." method="_on_go_left_btn_button_up"]
 [connection signal="mouse_entered" from="GoLeftBtn" to="." method="_on_go_left_btn_button_up"]
@@ -238,5 +161,3 @@ text = "Sell for Xzł"
 [connection signal="button_up" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]
 [connection signal="mouse_entered" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]
 [connection signal="mouse_entered" from="GoRightBtn" to="AudioStreamPlayer" method="_playSwipe"]
-[connection signal="button_up" from="Micha/Gib" to="AudioStreamPlayer" method="_playCashRegister"]
-[connection signal="button_up" from="Micha/Gib" to="Micha" method="SoupTaken"]
