@@ -71,6 +71,7 @@ variables={
 "PlayerName": "Bezi",
 "Pronouns": "They/Them",
 "Shroomness": {
+"Alina": 0,
 "Barbara": 3,
 "Bezi": 0,
 "Danuta": 0,

@@ -12,9 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://ddm3mwqo3y2dv" path="res://assets/pics/shroomPantry.png" id="7_v10i0"]
 [ext_resource type="Script" uid="uid://b4mae02b4v33y" path="res://scenes/gameplay/drag and drop/Kitchen_audio_stream_player.gd" id="8_awjo4"]
 [ext_resource type="Script" uid="uid://b3ceb6vbpfqi5" path="res://scenes/gameplay/drag and drop/shroom_pantry.gd" id="8_gbcjh"]
+[ext_resource type="Texture2D" uid="uid://dbrv5wbpye3y" path="res://assets/art/environments/pixargar.png" id="8_ugj3d"]
 [ext_resource type="AudioStream" uid="uid://do1qtce3xnkcv" path="res://DialogicStuff/CopyrightFreeAudio/cooking-food-background-music.mp3" id="11_ugj3d"]
 [ext_resource type="Texture2D" uid="uid://c5n2endl0o8gq" path="res://assets/art/ui/speech_bubble.png" id="12_vft7v"]
-[ext_resource type="Texture2D" uid="uid://dbrv5wbpye3y" path="res://assets/art/environments/pixargar.png" id="8_ugj3d"]
 [ext_resource type="Texture2D" uid="uid://dmnofiebby2e8" path="res://assets/art/environments/micha.png" id="14_tqe0x"]
 [ext_resource type="Texture2D" uid="uid://dxfbnaosqelvu" path="res://assets/art/environments/michaFront.png" id="15_tqe0x"]
 [ext_resource type="Script" uid="uid://cur8y10qmdcyv" path="res://scenes/gameplay/drag and drop/micha.gd" id="15_y3ief"]
@@ -23,15 +23,20 @@
 GridContainer/constants/h_separation = 1
 GridContainer/constants/v_separation = 9
 
-[sub_resource type="LabelSettings" id="LabelSettings_vft7v"]
-font_size = 60
-font_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbcjh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_awjo4"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_vft7v"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
 [node name="DragNDropTest" type="Node2D" unique_id=949569843]
 script = ExtResource("1_v10i0")
+
+[node name="CustomerSprite" type="Sprite2D" parent="." unique_id=1802827899]
+position = Vector2(-522, 383)
+scale = Vector2(0.17, 0.17)
 
 [node name="Background" type="Control" parent="." unique_id=656463901]
 layout_mode = 3
@@ -238,5 +243,6 @@ text = "Sell for Xzł"
 [connection signal="button_up" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]
 [connection signal="mouse_entered" from="GoRightBtn" to="." method="_on_go_right_btn_button_up"]
 [connection signal="mouse_entered" from="GoRightBtn" to="AudioStreamPlayer" method="_playSwipe"]
+[connection signal="button_up" from="Micha/Gib" to="gar" method="_on_gib_button_up"]
 [connection signal="button_up" from="Micha/Gib" to="AudioStreamPlayer" method="_playCashRegister"]
 [connection signal="button_up" from="Micha/Gib" to="Micha" method="SoupTaken"]
