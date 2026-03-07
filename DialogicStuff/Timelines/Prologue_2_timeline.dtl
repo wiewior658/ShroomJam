@@ -31,7 +31,7 @@ Marianna/Marianna: Uhhh, kind of? I mean… You know, it’s what I’ve wanted 
 - Question her motive
 	Bezi: Actually… I know that you want to go to the city to finally have a chance to be yourself but…
 	Bezi: You’ve never really mentioned in your letters about why you want to leave so suddenly?
-	update Marianna/Marianna [animation="Tada" length="0.1" extra_data="ste Mood/Pensive"]
+	update Marianna/Marianna [animation="Tada" length="0.1" extra_data="set Mood/Pensive"]
 	Marianna/Marianna: Oh… I just feel like now is the time to do that you know? Recently the air here became just so… suffocating.
 	Bezi: And uncle really is ok with you leaving?
 	Marianna/Marianna: We’ve… discussed it. He didn’t really have much to say…
