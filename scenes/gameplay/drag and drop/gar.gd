@@ -20,6 +20,7 @@ signal serveSoup(color:Color)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	Dialogic.VAR.CustomersLeft = 3
 	AvaibleCustomers.shuffle()
 	CurrentCustomer=Food.allCustomers[str(AvaibleCustomers.pop_front())]
@@ -30,10 +31,10 @@ func _ready() -> void:
 	newSoup()
 
 func newSoup()->void:
-	if(contents.size()>0):
-		_serve_customer()
-	else:
-		print("Can't serve empty plate")
+	#if(contents.size()>0):
+	#	pass#_serve_customer()
+	#else:
+	#	print("Can't serve empty plate")
 	nourishment=0
 	taste=0
 	soupColor=EmptyPotColor
@@ -85,8 +86,8 @@ func _on_serve_button_up() -> void:
 		splash.emit()
 		moveLeft.emit()
 		
-func _on_button_button_up() -> void:
-	newSoup()
+#func _on_button_button_up() -> void:
+#	newSoup()
 	
 func _serve_customer() -> void:
 	Dialogic.VAR.Money+=CurrentCustomer.pay(taste, nourishment)
@@ -143,3 +144,7 @@ func changeShroomnes() -> void:
 			Dialogic.VAR.Shroomness.Alina += shroomnes
 	
 	
+
+
+func _on_gib_button_up() -> void:
+	_serve_customer()
