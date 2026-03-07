@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c77r11j1eofvt"]
+
+[ext_resource type="Script" uid="uid://c13u0fpdof2wo" path="res://scenes/levels/shroom_path.gd" id="1_1oivq"]
+
+[node name="ShroomPath" type="Node2D" unique_id=325767310]
+script = ExtResource("1_1oivq")

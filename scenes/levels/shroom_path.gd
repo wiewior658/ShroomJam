@@ -2,32 +2,22 @@ extends Node2D
 
 var optionChoosed := ""
 var _save : SaveStats 
-var nextScene = ""
 #var tutorial := "res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	autosave()
-	Dialogic.start("res://DialogicStuff/Timelines/Day_1_before_cooking_timeline.dtl")
+	Dialogic.start("res://DialogicStuff/Timelines/Day_3_SHROOMED_PATH.dtl")
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
-	Dialogic.signal_event.connect(_on_dialogic_signal)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
 func _on_timeline_ended()->void:
-	get_tree().change_scene_to_file(nextScene)
+	pass#get_tree().change_scene_to_file("res://scenes/levels/resistance1.tscn")
+	#Dialogic.VAR.NextScene = ""
 func autosave() -> void:
 	_save = SaveStats.new()
-	 
-	
-	 
-	
-	
 #	_save.timeline = "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl"
 	_save.write_SaveGame()
-func _on_dialogic_signal(argument : String)-> void:
-	if(argument == "toMarket"):
-		nextScene = "res://scenes/gameplay/shop/Shop.tscn"
-	elif(argument == "toDiner"):
-		nextScene = "res://scenes/levels/day1b.tscn"

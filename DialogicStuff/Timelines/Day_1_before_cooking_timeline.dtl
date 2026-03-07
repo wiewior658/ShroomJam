@@ -103,6 +103,7 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 	elif {Pronouns} == "He/Him":
 		With a smile, Richie waves him goodbye as {PlayerName} leaves for the lumber.
 	leave Hippie
+	[signal arg="toDiner"]
 - GO TO THE SQUARE MARKET
 	[background arg="res://assets/art/environments/village_square_day.jpg" fade="0.0"]
 	audio Music "res://DialogicStuff/CopyrightFreeAudio/folk_acoustic-village.mp3" [volume="-15.0" bus="" loop="true"]
@@ -213,4 +214,5 @@ Bezi: [i]It’s still early enough. I don’t expect any clients so early in the
 			elif {Pronouns} == "He/Him":
 				If {PlayerName} ever sees him at the diner, he’ll remember not to put mushrooms in his dishes.
 			This might be the beginning of a rather interesting day.
-leave Zdzichu
+	leave Zdzichu
+	[signal arg="toMarket"]

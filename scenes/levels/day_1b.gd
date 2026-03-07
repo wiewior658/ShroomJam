@@ -8,13 +8,15 @@ func _ready() -> void:
 	autosave()
 	Dialogic.start("res://DialogicStuff/Timelines/Day_1_after_farmers_market.dtl")
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
 func _on_timeline_ended()->void:
-	get_tree().change_scene_to_file("res://scenes/ui/Apology.tscn")
+	Dialogic.VAR.NextScene = "res://scenes/levels/day1c.tscn"
+	get_tree().change_scene_to_file("res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn")
 func autosave() -> void:
 	_save = SaveStats.new()
 #	_save.timeline = "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl"
