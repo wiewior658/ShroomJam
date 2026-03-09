@@ -14,9 +14,8 @@ func _ready() -> void:
 #func _process(delta: float) -> void:
 #	pass
 func _on_timeline_ended()->void:
-	#get_tree().change_scene_to_file("res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn")
-	pass
-
+	get_tree().change_scene_to_file("res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn")
+	
 func autosave() -> void:
 	_save = SaveStats.new()
 #	_save.timeline = "res://DialogicStuff/Timelines/Prologue_2_timeline.dtl"

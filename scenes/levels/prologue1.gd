@@ -20,7 +20,7 @@ func _ready() -> void:
 
 func _on_timeline_ended()->void:
 	if Dialogic.VAR.Tutorial == true:
-		Dialogic.VAR.CurrentScene = "res://scenes/gameplay/drag and drop/drag_n_drop_test.tscn"
+		Dialogic.VAR.CurrentScene = "res://scenes/levels/tutorial.tscn"
 		Dialogic.VAR.NextScene = "res://scenes/levels/prologue2.tscn"
 	else:
 		Dialogic.VAR.CurrentScene = "res://scenes/levels/prologue2.tscn"
