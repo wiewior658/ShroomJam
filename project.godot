@@ -52,7 +52,8 @@ directories/dtl_directory={
 "Resistance2": "res://DialogicStuff/Timelines/Resistance2.dtl",
 "Tutorial": "res://DialogicStuff/Timelines/Tutorial.dtl",
 "mouse_test_timeline": "res://DialogicStuff/Timelines/mouse_test_timeline.dtl",
-"timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl"
+"timelineChangingCharacterTest": "res://DialogicStuff/ChangeCharacterPortrait/timelineChangingCharacterTest.dtl",
+"transition": "res://DialogicStuff/Timelines/transition.dtl"
 }
 layout/style_directory={
 "": "res://DialogicStuff/New_style.tres",

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ceqjkofurp0mk"]
+
+[ext_resource type="Script" uid="uid://cyh5avu888ueu" path="res://scenes/levels/transition_part_2.gd" id="1_tsiug"]
+
+[node name="TransitionPart2" type="Node2D" unique_id=932314909]
+script = ExtResource("1_tsiug")
